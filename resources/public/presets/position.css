@@ -1,0 +1,36 @@
+
+/***** Position presets *****/
+/*** Absolute ***/
+
+[data-position-absolute="tl"] { left:     0;
+                                top:      0;
+                                position: absolute; }
+[data-position-absolute="tr"] { right:    0;
+                                top:      0;
+                                position: absolute; }
+[data-position-absolute="br"] { bottom:   0;
+                                right:    0;
+                                position: absolute; }
+[data-position-absolute="bl"] { bottom:   0;
+                                left:     0;
+                                position: absolute; }
+
+/*** Absolute ***/
+
+/*** Fixed ***/
+
+[data-position-fixed="tl"] { left:     0;
+                             top:      0;
+                             position: fixed; }
+[data-position-fixed="tr"] { right:    0;
+                             top:      0;
+                             position: fixed; }
+[data-position-fixed="br"] { bottom:   0;
+                             right:    0;
+                             position: fixed; }
+[data-position-fixed="bl"] { bottom:   0;
+                             left:     0;
+                             position: fixed; }
+
+/*** Fixed ***/
+/***** Position presets *****/
