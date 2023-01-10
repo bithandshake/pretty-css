@@ -44,16 +44,15 @@
 
 /*** Hover color ***/
 
-/* XXX#4005 (source-code/cljs/elements/element/helpers.cljs) */
-[data-disabled="false"] [data-hover-color="var"]:hover       { background-color: var( --hover-color           ); }
-[data-disabled="false"] [data-hover-color="default"]:hover   { background-color: var( --hover-color-default   ); }
-[data-disabled="false"] [data-hover-color="highlight"]:hover { background-color: var( --hover-color-highlight ); }
-[data-disabled="false"] [data-hover-color="invert"]:hover    { background-color: var( --hover-color-invert    ); }
-[data-disabled="false"] [data-hover-color="muted"]:hover     { background-color: var( --hover-color-muted     ); }
-[data-disabled="false"] [data-hover-color="primary"]:hover   { background-color: var( --hover-color-primary   ); }
-[data-disabled="false"] [data-hover-color="secondary"]:hover { background-color: var( --hover-color-secondary ); }
-[data-disabled="false"] [data-hover-color="success"]:hover   { background-color: var( --hover-color-success   ); }
-[data-disabled="false"] [data-hover-color="warning"]:hover   { background-color: var( --hover-color-warning   ); }
+[data-hover-color="var"]:hover       { background-color: var( --hover-color           ); }
+[data-hover-color="default"]:hover   { background-color: var( --hover-color-default   ); }
+[data-hover-color="highlight"]:hover { background-color: var( --hover-color-highlight ); }
+[data-hover-color="invert"]:hover    { background-color: var( --hover-color-invert    ); }
+[data-hover-color="muted"]:hover     { background-color: var( --hover-color-muted     ); }
+[data-hover-color="primary"]:hover   { background-color: var( --hover-color-primary   ); }
+[data-hover-color="secondary"]:hover { background-color: var( --hover-color-secondary ); }
+[data-hover-color="success"]:hover   { background-color: var( --hover-color-success   ); }
+[data-hover-color="warning"]:hover   { background-color: var( --hover-color-warning   ); }
 
 /*** Hover color ***/
 

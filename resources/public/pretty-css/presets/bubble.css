@@ -1,0 +1,58 @@
+
+/* @description
+ * Displays a bubble over the element with the given label.
+ *
+ * @usage
+ * [:div {:data-bubble-color    :muted
+ *        :data-bubble-content  "Hello"
+ *        :data-bubble-position :right} "My content"] */
+
+
+
+/***** Bubble presets *****/
+/*** Color ***/
+
+[data-bubble-color="default"]::after   { color: var( --color-default   );  }
+[data-bubble-color="highlight"]::after { color: var( --color-highlight );  }
+[data-bubble-color="invert"]::after    { color: var( --color-invert    );  }
+[data-bubble-color="muted"]::after     { color: var( --color-muted     );  }
+[data-bubble-color="primary"]::after   { color: var( --color-primary   );  }
+[data-bubble-color="secondary"]::after { color: var( --color-secondary );  }
+[data-bubble-color="success"]::after   { color: var( --color-success   );  }
+[data-bubble-color="warning"]::after   { color: var( --color-warning   );  }
+
+/*** Color ***/
+
+/*** Content ***/
+
+[data-bubble-content]::after {
+  background-color: var( --fill-color-default );
+  border-color: var( --border-color-highlight );
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  font-size: var( --font-size-xs  );
+  font-weight: 500;
+  line-height: 24px;
+  padding: 0 12px;
+  position: absolute;
+  z-index: 9999;
+}
+
+[data-bubble-content]:hover::after {
+  content: attr(data-bubble-content);
+}
+
+/*** Content ***/
+
+/*** Position ***/
+
+[data-bubble-position="left"]::after  { left:      0;
+                                        top:       calc(50% - 13px);
+                                        transform: translateX(calc(-100% - 6px)); }
+[data-bubble-position="right"]::after { right:     0;
+                                        top:       calc(50% - 13px);
+                                        transform: translateX(calc(100% + 6px)); }
+
+/*** Position ***/
+/***** Bubble presets *****/

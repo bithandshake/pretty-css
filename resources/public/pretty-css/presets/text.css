@@ -1,0 +1,32 @@
+
+/***** Text presets *****/
+/*** Caret ***/
+
+[data-caret="hidden"] {
+  caret-color: transparent
+}
+
+/*** Caret ***/
+
+/*** Direction ***/
+
+[data-text-direction="reversed"] {
+  direction: rtl;
+}
+
+/*** Direction ***/
+
+/*** Overflow ***/
+
+[data-text-overflow="wrap"] {
+  white-space: normal;
+}
+
+[data-text-overflow="ellipsis"] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*** Overflow ***/
+/***** Text presets *****/

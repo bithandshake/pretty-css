@@ -1,0 +1,53 @@
+
+/***** Effect presets *****/
+/*** Hover effect ***/
+
+/* @usage
+ * [:button {:data-hover-effect :opacity} "My button"]
+ *
+ * @usage
+ * [:button {:data-click-effect :opacity :data-hover-effect :opacity} "My button"]
+ *
+ * @usage
+ * [:button {:data-hover-effect :targeted}
+ *          [:div {:data-hover-target :opacity} "Only the child element affected!"]]
+ *
+ * The hover effect preset must be placed above (in this file) the click effect preset
+ * (because of the CSS cascade)!
+ * The click effect must be more opaquer than the hover effect! */
+
+[data-hover-effect="opacity"]:hover,
+[data-hover-effect="targeted"]:hover [data-hover-target="opacity"] {
+  opacity: .7 !important;
+}
+
+/*** Hover effect ***/
+
+/*** Click effect ***/
+
+/* @usage
+ * [:button {:data-click-effect :opacity} "My button"]
+ *
+ * @usage
+ * [:button {:data-click-effect :opacity :data-hoverable :opacity} "My button"]
+ *
+ * @usage
+ * [:button {:data-click-effect :targeted}
+ *          [:div {:data-click-target :opacity} "Only the child element affected!"]]
+ *
+ * Don't forget to set up an on-mouse-up event to blur the element after clicking! */
+
+[data-click-effect="opacity"],
+[data-click-effect="targeted"] {
+  cursor: pointer;
+}
+
+[data-click-effect="opacity"]:active,
+[data-click-effect="opacity"]:focus,
+[data-click-effect="targeted"]:active [data-click-target="opacity"],
+[data-click-effect="targeted"]:focus  [data-click-target="opacity"] {
+  opacity: .5 !important;
+}
+
+/*** Click effect ***/
+/***** Effect presets *****/
