@@ -1,50 +1,63 @@
 
+
+
+/* height, line-height, overflow, width
+ * To avoid FOIT/FOUT effect before the icon-font family downloaded.
+ *
+ * line-height: ... !important
+ * Overwrites the default Fontawesome line-height value. */
+
+
+
 /***** Icon presets *****/
 /*** Icon size ***/
 
 [data-icon-size] {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  /* BUG#0983
-   * height, line-height, overflow, width:
-   * Az ikonokat megjelenítő font-készlet letöltődése előtt felvillan az ikon neve (FOIT/FOUT).
-   * A height, line-height, overflow, és width tulajdonságok beállítása nélkül az ikon méretének
-   * pillanatnyi megváltozását okozná. */
-  overflow: hidden;
+  display:    inline-block;
+  overflow:   hidden;
+  text-align: center;
 }
 
-/* BUG#0983 */
-[data-icon-size="xxs"] { font-size:   var( --icon-size-xxs );
-                         height:      24px;
-                         line-height: 24px;
-                         width:       24px; }
-[data-icon-size="xs"]  { font-size:   var( --icon-size-xs );
-                         height:      24px;
-                         line-height: 24px;
-                         width:       24px; }
-[data-icon-size="s"]   { font-size:   var( --icon-size-s );
-                         height:      24px;
-                         line-height: 24px;
-                         width:       24px; }
-[data-icon-size="m"]   { font-size:   var( --icon-size-m );
-                         height:      24px;
-                         line-height: 24px;
-                         width:       24px; }
-[data-icon-size="l"]   { font-size:   var( --icon-size-l );
-                         height:      36px;
-                         line-height: 36px;
-                         width:       36px; }
-[data-icon-size="xl"]  { font-size:   var( --icon-size-xl );
-                         height:      36px;
-                         line-height: 36px;
-                         width:       36px; }
-[data-icon-size="xxl"] { font-size:   var( --icon-size-xxl );
-                         height:      48px;
-                         line-height: 48px;
-                         width:       48px; }
+[data-icon-size="xxs"] { font-size:   var( --icon-size-xxs         );
+                         height:      var( --text-block-height-xxs );
+                         line-height: var( --text-block-height-xxs ) !important;
+                         width:       var( --text-block-height-xxs ); }
+[data-icon-size="xs"]  { font-size:   var( --icon-size-xs          );
+                         height:      var( --text-block-height-xs  );
+                         line-height: var( --text-block-height-xs  ) !important;
+                         width:       var( --text-block-height-xs  ); }
+[data-icon-size="s"]   { font-size:   var( --icon-size-s           );
+                         height:      var( --text-block-height-s   ) !important;
+                         line-height: var( --text-block-height-s   );
+                         width:       var( --text-block-height-sm  ); }
+[data-icon-size="m"]   { font-size:   var( --icon-size-m           );
+                         height:      var( --text-block-height-m   );
+                         line-height: var( --text-block-height-m   ) !important;
+                         width:       var( --text-block-height-m   ); }
+[data-icon-size="l"]   { font-size:   var( --icon-size-l           );
+                         height:      var( --text-block-height-l   );
+                         line-height: var( --text-block-height-l   ) !important;
+                         width:       var( --text-block-height-l   ); }
+[data-icon-size="xl"]  { font-size:   var( --icon-size-xl          );
+                         height:      var( --text-block-height-xl  );
+                         line-height: var( --text-block-height-xl  ) !important;
+                         width:       var( --text-block-height-xl  ); }
+[data-icon-size="xxl"] { font-size:   var( --icon-size-xxl         );
+                         height:      var( --text-block-height-xxl );
+                         line-height: var( --text-block-height-xxl ) !important;
+                         width:       var( --text-block-height-Xxl ); }
+[data-icon-size="3xl"] { font-size:   var( --icon-size-3xl         );
+                         height:      var( --text-block-height-3xl );
+                         line-height: var( --text-block-height-3xl ) !important;
+                         width:       var( --text-block-height-3xl ); }
+[data-icon-size="4xl"] { font-size:   var( --icon-size-4xl         );
+                         height:      var( --text-block-height-4xl );
+                         line-height: var( --text-block-height-4xl ) !important;
+                         width:       var( --text-block-height-4xl ); }
+[data-icon-size="5xl"] { font-size:   var( --icon-size-5xl         );
+                         height:      var( --text-block-height-5xl );
+                         line-height: var( --text-block-height-5xl ) !important;
+                         width:       var( --text-block-height-5xl ); }
 
 /*** Icon size ***/
 /***** Icon presets *****/

@@ -19,6 +19,11 @@
  * The other was that to extending the size range with extra sizes seemed a bit
  ; more sophisticated, than modifing the standardized step values. */
 
+/* XXX#0663
+ * Text block heights are basically line heights for texts you want to
+ * fit into the block size system.
+ * (Because line heights aren't standardized with the block size system.) */
+
 /* REM:
  * Equal to the computed value of font-size on the root element.
  * When specified on the font-size property of the root element,
@@ -26,7 +31,7 @@
 
 
 
-/***** Font *****/
+/***** Font profiles *****/
 /*** Default ***/
 
  html {
@@ -93,4 +98,21 @@ body {
 }
 
 /*** Line height ***/
-/***** Font *****/
+
+/*** Text block height ***/
+
+body {
+  --text-block-height-xxs: 24px;
+  --text-block-height-xs:  24px;
+  --text-block-height-s:   24px;
+  --text-block-height-m:   24px;
+  --text-block-height-l:   36px;
+  --text-block-height-xl:  36px;
+  --text-block-height-xxl: 48px;
+  --text-block-height-3xl: 48px;
+  --text-block-height-4xl: 48px;
+  --text-block-height-5xl: 48px;
+}
+
+/*** Text block height ***/
+/***** Font profiles *****/

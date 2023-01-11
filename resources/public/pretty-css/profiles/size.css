@@ -1,0 +1,269 @@
+
+
+
+/* Viewport width profiles
+ *
+ * XXS:  320px -  359px
+ * XS:   360px -  419px
+ * S:    420px -  479px
+ * M:    480px -  719px
+ * L:    720px - 1279px
+ * XL:  1280px - 1439px
+ * XXL: 1440px - 1679px
+ * 3XL: 1680px - 2159px
+ * 4XL: 2160px - 3839px
+ * 5XL: 3840px - 9999px */
+
+
+
+/***** Size profiles *****/
+/*** Block size ***/
+
+body {
+  --block-size-xxs:  6px;
+  --block-size-xs:  12px;
+  --block-size-s:   18px;
+  --block-size-m:   24px;
+  --block-size-l:   30px;
+  --block-size-xl:  36px;
+  --block-size-xxl: 42px;
+  --block-size-3xl: 48px;
+  --block-size-4xl: 54px;
+  --block-size-5xl: 60px;
+}
+
+/*** Block size ***/
+
+/*** Content height ***/
+
+body {
+  --content-height-xxs:  10vh;
+  --content-height-xs:   20vh;
+  --content-height-s:    30vh;
+  --content-height-m:    40vh;
+  --content-height-l:    50vh;
+  --content-height-xl:   60vh;
+  --content-height-xxl:  70vh;
+  --content-height-3xl:  80vh;
+  --content-height-4xl:  90vh;
+  --content-height-5xl: 100vh;
+}
+
+/*** Content height ***/
+
+/*** Content width ***/
+/* XXS */
+
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+body {
+  --content-width-xxs: 296px; /* 320px - 24px */
+  --content-width-xs:  100%;
+  --content-width-s:   100%;
+  --content-width-m:   100%;
+  --content-width-l:   100%;
+  --content-width-xl:  100%;
+  --content-width-xxl: 100%;
+  --content-width-3xl: 100%;
+  --content-width-4xl: 100%;
+  --content-width-5xl: 100%;
+}}
+
+/* XXS */
+
+/* XS */
+
+@media only screen and (min-width: 360px) and (max-width: 419px) {
+body {
+  --content-width-xxs: 296px; /* 320px - 24px */
+  --content-width-xs:  336px; /* 360px - 24px */
+  --content-width-s:   100%;
+  --content-width-m:   100%;
+  --content-width-l:   100%;
+  --content-width-xl:  100%;
+  --content-width-xxl: 100%;
+  --content-width-3xl: 100%;
+  --content-width-4xl: 100%;
+  --content-width-5xl: 100%;
+}}
+
+/* XS */
+
+/* S */
+
+@media only screen and (min-width: 419px) and (max-width: 479px) {
+body {
+  --content-width-xxs: 296px; /* 320px - 24px */
+  --content-width-xs:  336px; /* 360px - 24px */
+  --content-width-s:   396px; /* 420px - 24px */
+  --content-width-m:   100%;
+  --content-width-l:   100%;
+  --content-width-xl:  100%;
+  --content-width-xxl: 100%;
+  --content-width-3xl: 100%;
+  --content-width-4xl: 100%;
+  --content-width-5xl: 100%;
+}}
+
+/* S */
+
+/* M */
+
+@media only screen and (min-width: 480px) and (max-width: 719px) {
+body {
+  --content-width-xxs: 296px; /* 320px - 24px */
+  --content-width-xs:  336px; /* 360px - 24px */
+  --content-width-s:   396px; /* 420px - 24px */
+  --content-width-m:   456px; /* 480px - 24px */
+  --content-width-l:   calc(100% - 24px);
+  --content-width-xl:  calc(100% - 24px);
+  --content-width-xxl: calc(100% - 24px);
+  --content-width-3xl: calc(100% - 24px);
+  --content-width-4xl: calc(100% - 24px);
+  --content-width-5xl: calc(100% - 24px);
+}}
+
+/* M */
+
+/* L */
+
+@media only screen and (min-width: 720px) and (max-width: 1279px) {
+body {
+  --content-width-xxs: 296px; /* 320px - 24px */
+  --content-width-xs:  336px; /* 360px - 24px */
+  --content-width-s:   396px; /* 420px - 24px */
+  --content-width-m:   456px; /* 480px - 24px */
+  --content-width-l:   696px; /* 720px - 24px */
+  --content-width-xl:  calc(100% - 24px);
+  --content-width-xxl: calc(100% - 24px);
+  --content-width-3xl: calc(100% - 24px);
+  --content-width-4xl: calc(100% - 24px);
+  --content-width-5xl: calc(100% - 24px);
+}}
+
+/* L */
+
+/* XL */
+
+@media only screen and (min-width: 1280px) and (max-width: 1439px) {
+body {
+  --content-width-xxs:  296px; /*  320px - 24px */
+  --content-width-xs:   336px; /*  360px - 24px */
+  --content-width-s:    396px; /*  420px - 24px */
+  --content-width-m:    456px; /*  480px - 24px */
+  --content-width-l:    696px; /*  720px - 24px */
+  --content-width-xl:  1256px; /* 1280px - 24px */
+  --content-width-xxl: calc(100% - 24px);
+  --content-width-3xl: calc(100% - 24px);
+  --content-width-4xl: calc(100% - 24px);
+  --content-width-5xl: calc(100% - 24px);
+}}
+
+/* XL */
+
+/* XXL */
+
+@media only screen and (min-width: 1440px) and (max-width: 1679px) {
+body {
+  --content-width-xxs:  296px; /*  320px - 24px */
+  --content-width-xs:   336px; /*  360px - 24px */
+  --content-width-s:    396px; /*  420px - 24px */
+  --content-width-m:    456px; /*  480px - 24px */
+  --content-width-l:    696px; /*  720px - 24px */
+  --content-width-xl:  1256px; /* 1280px - 24px */
+  --content-width-xxl: 1416px; /* 1440px - 24px */
+  --content-width-3xl: calc(100% - 24px);
+  --content-width-4xl: calc(100% - 24px);
+  --content-width-5xl: calc(100% - 24px);
+}}
+
+/* XXL */
+
+/* 3XL */
+
+@media only screen and (min-width: 1680px) and (max-width: 2159px) {
+body {
+  --content-width-xxs:  296px; /*  320px - 24px */
+  --content-width-xs:   336px; /*  360px - 24px */
+  --content-width-s:    396px; /*  420px - 24px */
+  --content-width-m:    456px; /*  480px - 24px */
+  --content-width-l:    696px; /*  720px - 24px */
+  --content-width-xl:  1256px; /* 1280px - 24px */
+  --content-width-xxl: 1416px; /* 1440px - 24px */
+  --content-width-3xl: 1656px; /* 1680px - 24px */
+  --content-width-4xl: calc(100% - 24px);
+  --content-width-5xl: calc(100% - 24px);
+}}
+
+/* 3XL */
+
+/* 4XL */
+
+@media only screen and (min-width: 2160px) and (max-width: 3839px) {
+body {
+  --content-width-xxs:  296px; /*  320px - 24px */
+  --content-width-xs:   336px; /*  360px - 24px */
+  --content-width-s:    396px; /*  420px - 24px */
+  --content-width-m:    456px; /*  480px - 24px */
+  --content-width-l:    696px; /*  720px - 24px */
+  --content-width-xl:  1256px; /* 1280px - 24px */
+  --content-width-xxl: 1416px; /* 1440px - 24px */
+  --content-width-3xl: 1656px; /* 1680px - 24px */
+  --content-width-4xl: 2136px; /* 2140px - 24px */
+  --content-width-5xl: calc(100% - 24px);
+}}
+
+/* 4XL */
+
+/* 5XL */
+
+@media only screen and (min-width: 3840px) and (max-width: 9999px) {
+body {
+  --content-width-xxs:  296px; /*  320px - 24px */
+  --content-width-xs:   336px; /*  360px - 24px */
+  --content-width-s:    396px; /*  420px - 24px */
+  --content-width-m:    456px; /*  480px - 24px */
+  --content-width-l:    696px; /*  720px - 24px */
+  --content-width-xl:  1256px; /* 1280px - 24px */
+  --content-width-xxl: 1416px; /* 1440px - 24px */
+  --content-width-3xl: 1656px; /* 1680px - 24px */
+  --content-width-4xl: 2136px; /* 2140px - 24px */
+  --content-width-5xl: 3816px; /* 3840px - 24px */
+}}
+
+/* 5XL */
+/*** Content width ***/
+
+/*** Element size ***/
+
+body {
+  --element-size-xxs:  60px;
+  --element-size-xs:  120px;
+  --element-size-s:   180px;
+  --element-size-m:   240px;
+  --element-size-l:   300px;
+  --element-size-xl:  460px;
+  --element-size-xxl: 420px;
+  --element-size-3xl: 480px;
+  --element-size-4xl: 540px;
+  --element-size-5xl: 600px;
+}
+
+/*** Element size ***/
+
+/*** Thumbnail size ***/
+
+body {
+  --thumbnail-size-xxs:  24px;
+  --thumbnail-size-xs:   48px;
+  --thumbnail-size-s:    72px;
+  --thumbnail-size-m:    96px;
+  --thumbnail-size-l:   120px;
+  --thumbnail-size-xl:  144px;
+  --thumbnail-size-xxl: 168px;
+  --thumbnail-size-3xl: 192px;
+  --thumbnail-size-4xl: 216px;
+  --thumbnail-size-5xl: 240px;
+}
+
+/*** Thumbnail size ***/
+/***** Size profiles *****/

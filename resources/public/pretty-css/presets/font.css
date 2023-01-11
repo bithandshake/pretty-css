@@ -5,7 +5,7 @@
 /* XXX#0886
  * The basic line height presets are based on ...
  * The native line height presets are based on which font size is set.
- * The block line height presets are based on ... */
+ * The text-block line height presets are based on ... */
 
 [data-line-height="xxs"] { line-height: var( --line-height-xxs ); }
 [data-line-height="xs"]  { line-height: var( --line-height-xs  ); }
@@ -29,16 +29,16 @@
 [data-font-size="4xl"][data-line-height="native"] { line-height: var( --line-height-4xl ); }
 [data-font-size="5xl"][data-line-height="native"] { line-height: var( --line-height-5xl ); }
 
-[data-font-size="xxs"][data-line-height="block"] { line-height: var( --block-height-xxs ); }
-[data-font-size="xs"][data-line-height="block"]  { line-height: var( --block-height-xs  ); }
-[data-font-size="s"][data-line-height="block"]   { line-height: var( --block-height-s   ); }
-[data-font-size="m"][data-line-height="block"]   { line-height: var( --block-height-m   ); }
-[data-font-size="l"][data-line-height="block"]   { line-height: var( --block-height-l   ); }
-[data-font-size="xl"][data-line-height="block"]  { line-height: var( --block-height-xl  ); }
-[data-font-size="xxl"][data-line-height="block"] { line-height: var( --block-height-xxl ); }
-[data-font-size="3xl"][data-line-height="block"] { line-height: var( --block-height-3xl ); }
-[data-font-size="4xl"][data-line-height="block"] { line-height: var( --block-height-4xl ); }
-[data-font-size="5xl"][data-line-height="block"] { line-height: var( --block-height-5xl ); }
+[data-font-size="xxs"][data-line-height="text-block"] { line-height: var( --text-block-height-xxs ); }
+[data-font-size="xs"][data-line-height="text-block"]  { line-height: var( --text-block-height-xs  ); }
+[data-font-size="s"][data-line-height="text-block"]   { line-height: var( --text-block-height-s   ); }
+[data-font-size="m"][data-line-height="text-block"]   { line-height: var( --text-block-height-m   ); }
+[data-font-size="l"][data-line-height="text-block"]   { line-height: var( --text-block-height-l   ); }
+[data-font-size="xl"][data-line-height="text-block"]  { line-height: var( --text-block-height-xl  ); }
+[data-font-size="xxl"][data-line-height="text-block"] { line-height: var( --text-block-height-xxl ); }
+[data-font-size="3xl"][data-line-height="text-block"] { line-height: var( --text-block-height-3xl ); }
+[data-font-size="4xl"][data-line-height="text-block"] { line-height: var( --text-block-height-4xl ); }
+[data-font-size="5xl"][data-line-height="text-block"] { line-height: var( --text-block-height-5xl ); }
 
 /*** Line height ***/
 

@@ -18,14 +18,25 @@
 
 /*** Overflow ***/
 
+[data-text-overflow="hidden"] {
+  overflow:    hidden;
+  white-space: nowrap;
+  word-wrap:   normal;
+}
+
+[data-text-overflow="no-wrap"] {
+  white-space: nowrap;
+  word-wrap:   normal;
+}
+
 [data-text-overflow="wrap"] {
   white-space: normal;
 }
 
 [data-text-overflow="ellipsis"] {
-  overflow: hidden;
+  overflow:      hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space:   nowrap;
 }
 
 /*** Overflow ***/

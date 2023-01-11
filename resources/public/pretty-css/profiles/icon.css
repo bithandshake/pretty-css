@@ -1,10 +1,20 @@
 
-/***** Icon *****/
+
+
+/* The icon sizes are designed for using the Material Icons, Material Symbols
+ * and the Fontawesome Icons set!
+ *
+ * https://fonts.google.com/icons
+ * https://fontawesome.com */
+
+
+
+/***** Icon profiles *****/
 /*** Icon size ***/
 
 body {
-  /* XXX#0661 (resources/public/css/profiles/font.css) */
-  /* XXX#0662 (resources/css/profiles/font.css) */
+  /* XXX#0661 (resources/public/pretty-css/profiles/font.css) */
+  /* XXX#0662 (resources/public/pretty-css/profiles/font.css) */
   --icon-size-xxs: 12px;
   --icon-size-xs:  15px;
   --icon-size-s:   18px;
@@ -18,4 +28,4 @@ body {
 }
 
 /*** Icon size ***/
-/***** Icon *****/
+/***** Icon profiles *****/

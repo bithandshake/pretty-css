@@ -2,13 +2,13 @@
 /***** Shadow presets *****/
 /*** Black ***/
 
-[data-shadow-color="black"][data-shadow-strength="xxs"] { box-shadow: var( --box-shadow-black-xx-light ); }
-[data-shadow-color="black"][data-shadow-strength="xs"]  { box-shadow: var( --box-shadow-black-x-light  ); }
-[data-shadow-color="black"][data-shadow-strength="s"]   { box-shadow: var( --box-shadow-black-light    ); }
-[data-shadow-color="black"][data-shadow-strength="m"]   { box-shadow: var( --box-shadow-black          ); }
-[data-shadow-color="black"][data-shadow-strength="l"]   { box-shadow: var( --box-shadow-black-dark     ); }
-[data-shadow-color="black"][data-shadow-strength="xl"]  { box-shadow: var( --box-shadow-black-x-dark   ); }
-[data-shadow-color="black"][data-shadow-strength="xxl"] { box-shadow: var( --box-shadow-black-xx-dark  ); }
+[data-shadow-color="black"][data-shadow-strength="xxs"] { box-shadow: var( --shadow-black-xx-light ); }
+[data-shadow-color="black"][data-shadow-strength="xs"]  { box-shadow: var( --shadow-black-x-light  ); }
+[data-shadow-color="black"][data-shadow-strength="s"]   { box-shadow: var( --shadow-black-light    ); }
+[data-shadow-color="black"][data-shadow-strength="m"]   { box-shadow: var( --shadow-black          ); }
+[data-shadow-color="black"][data-shadow-strength="l"]   { box-shadow: var( --shadow-black-dark     ); }
+[data-shadow-color="black"][data-shadow-strength="xl"]  { box-shadow: var( --shadow-black-x-dark   ); }
+[data-shadow-color="black"][data-shadow-strength="xxl"] { box-shadow: var( --shadow-black-xx-dark  ); }
 
 /*** Black ***/
 /***** Shadow presets *****/

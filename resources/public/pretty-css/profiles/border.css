@@ -1,5 +1,5 @@
 
-/***** Border *****/
+/***** Border profiles *****/
 /*** Border radius ***/
 
 body {
@@ -10,6 +10,9 @@ body {
   --border-radius-l:   18px;
   --border-radius-xl:  24px;
   --border-radius-xxl: 36px;
+  --border-radius-3xl: 48px;
+  --border-radius-4xl: 60px;
+  --border-radius-5xl: 72px;
 }
 
 /*** Border radius ***/
@@ -24,7 +27,10 @@ body {
   --border-width-l:    8px;
   --border-width-xl:  10px;
   --border-width-xxl: 12px;
+  --border-width-3xl: 14px;
+  --border-width-4xl: 16px;
+  --border-width-5xl: 18px;
 }
 
 /*** Border width ***/
-/***** Border *****/
+/***** Border profiles *****/

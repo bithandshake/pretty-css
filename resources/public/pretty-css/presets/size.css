@@ -2,121 +2,211 @@
 /***** Size presets *****/
 /*** Block height ***/
 
-[data-block-height="xxs"] { height: var( --block-height-xxs ); }
-[data-block-height="xs"]  { height: var( --block-height-xs  ); }
-[data-block-height="s"]   { height: var( --block-height-s   ); }
-[data-block-height="m"]   { height: var( --block-height-m   ); }
-[data-block-height="l"]   { height: var( --block-height-l   ); }
-[data-block-height="xl"]  { height: var( --block-height-xl  ); }
-[data-block-height="xxl"] { height: var( --block-height-xxl ); }
-[data-block-height="3xl"] { height: var( --block-height-3xl ); }
-[data-block-height="4xl"] { height: var( --block-height-4xl ); }
-[data-block-height="5xl"] { height: var( --block-height-5xl ); }
+[data-block-height="xxs"] { height: var( --block-size-xxs ); }
+[data-block-height="xs"]  { height: var( --block-size-xs  ); }
+[data-block-height="s"]   { height: var( --block-size-s   ); }
+[data-block-height="m"]   { height: var( --block-size-m   ); }
+[data-block-height="l"]   { height: var( --block-size-l   ); }
+[data-block-height="xl"]  { height: var( --block-size-xl  ); }
+[data-block-height="xxl"] { height: var( --block-size-xxl ); }
+[data-block-height="3xl"] { height: var( --block-size-3xl ); }
+[data-block-height="4xl"] { height: var( --block-size-4xl ); }
+[data-block-height="5xl"] { height: var( --block-size-5xl ); }
 
 /*** Block height ***/
 
+/*** Block min height ***/
+
+[data-block-min-height="xxs"] { min-height: var( --block-size-xxs ); }
+[data-block-min-height="xs"]  { min-height: var( --block-size-xs  ); }
+[data-block-min-height="s"]   { min-height: var( --block-size-s   ); }
+[data-block-min-height="m"]   { min-height: var( --block-size-m   ); }
+[data-block-min-height="l"]   { min-height: var( --block-size-l   ); }
+[data-block-min-height="xl"]  { min-height: var( --block-size-xl  ); }
+[data-block-min-height="xxl"] { min-height: var( --block-size-xxl ); }
+[data-block-min-height="3xl"] { min-height: var( --block-size-3xl ); }
+[data-block-min-height="4xl"] { min-height: var( --block-size-4xl ); }
+[data-block-min-height="5xl"] { min-height: var( --block-size-5xl ); }
+
+/*** Block min height ***/
+
+/*** Block min width ***/
+
+[data-block-min-width="xxs"] { min-width: var( --block-size-xxs ); }
+[data-block-min-width="xs"]  { min-width: var( --block-size-xs  ); }
+[data-block-min-width="s"]   { min-width: var( --block-size-s   ); }
+[data-block-min-width="m"]   { min-width: var( --block-size-m   ); }
+[data-block-min-width="l"]   { min-width: var( --block-size-l   ); }
+[data-block-min-width="xl"]  { min-width: var( --block-size-xl  ); }
+[data-block-min-width="xxl"] { min-width: var( --block-size-xxl ); }
+[data-block-min-width="3xl"] { min-width: var( --block-size-3xl ); }
+[data-block-min-width="4xl"] { min-width: var( --block-size-4xl ); }
+[data-block-min-width="5xl"] { min-width: var( --block-size-5xl ); }
+
+/*** Block min width ***/
+
+/*** Block width ***/
+
+[data-block-width="xxs"] { width: var( --block-size-xxs ); }
+[data-block-width="xs"]  { width: var( --block-size-xs  ); }
+[data-block-width="s"]   { width: var( --block-size-s   ); }
+[data-block-width="m"]   { width: var( --block-size-m   ); }
+[data-block-width="l"]   { width: var( --block-size-l   ); }
+[data-block-width="xl"]  { width: var( --block-size-xl  ); }
+[data-block-width="xxl"] { width: var( --block-size-xxl ); }
+[data-block-width="3xl"] { width: var( --block-size-3xl ); }
+[data-block-width="4xl"] { width: var( --block-size-4xl ); }
+[data-block-width="5xl"] { width: var( --block-size-5xl ); }
+
+/*** Block width ***/
+
+/*** Content height ***/
+
+[data-content-height="xxs"] { height: var( --content-height-xxs ); }
+[data-content-height="xs"]  { height: var( --content-height-xs  ); }
+[data-content-height="s"]   { height: var( --content-height-s   ); }
+[data-content-height="m"]   { height: var( --content-height-m   ); }
+[data-content-height="l"]   { height: var( --content-height-l   ); }
+[data-content-height="xl"]  { height: var( --content-height-xl  ); }
+[data-content-height="xxl"] { height: var( --content-height-xxl ); }
+[data-content-height="3xl"] { height: var( --content-height-3xl ); }
+[data-content-height="4xl"] { height: var( --content-height-4xl ); }
+[data-content-height="5xl"] { height: var( --content-height-5xl ); }
+
+/*** Content height ***/
+
+/*** Content min height ***/
+
+[data-content-min-height="xxs"] { min-height: var( --content-height-xxs ); }
+[data-content-min-height="xs"]  { min-height: var( --content-height-xs  ); }
+[data-content-min-height="s"]   { min-height: var( --content-height-s   ); }
+[data-content-min-height="m"]   { min-height: var( --content-height-m   ); }
+[data-content-min-height="l"]   { min-height: var( --content-height-l   ); }
+[data-content-min-height="xl"]  { min-height: var( --content-height-xl  ); }
+[data-content-min-height="xxl"] { min-height: var( --content-height-xxl ); }
+[data-content-min-height="3xl"] { min-height: var( --content-height-3xl ); }
+[data-content-min-height="4xl"] { min-height: var( --content-height-4xl ); }
+[data-content-min-height="5xl"] { min-height: var( --content-height-5xl ); }
+
+/*** Content min height ***/
+
+/*** Content min width ***/
+
+[data-content-min-width="xxs"] { min-width: var( --content-width-xxs ); }
+[data-content-min-width="xs"]  { min-width: var( --content-width-xs  ); }
+[data-content-min-width="s"]   { min-width: var( --content-width-s   ); }
+[data-content-min-width="m"]   { min-width: var( --content-width-m   ); }
+[data-content-min-width="l"]   { min-width: var( --content-width-l   ); }
+[data-content-min-width="xl"]  { min-width: var( --content-width-xl  ); }
+[data-content-min-width="xxl"] { min-width: var( --content-width-xxl ); }
+[data-content-min-width="3xl"] { min-width: var( --content-width-3xl ); }
+[data-content-min-width="4xl"] { min-width: var( --content-width-4xl ); }
+[data-content-min-width="5xl"] { min-width: var( --content-width-5xl ); }
+
+/*** Content min width ***/
+
+/*** Content width ***/
+
+[data-content-width="xxs"] { width: var( --content-width-xxs ); }
+[data-content-width="xs"]  { width: var( --content-width-xs  ); }
+[data-content-width="s"]   { width: var( --content-width-s   ); }
+[data-content-width="m"]   { width: var( --content-width-m   ); }
+[data-content-width="l"]   { width: var( --content-width-l   ); }
+[data-content-width="xl"]  { width: var( --content-width-xl  ); }
+[data-content-width="xxl"] { width: var( --content-width-xxl ); }
+[data-content-width="3xl"] { width: var( --content-width-3xl ); }
+[data-content-width="4xl"] { width: var( --content-width-4xl ); }
+[data-content-width="5xl"] { width: var( --content-width-5xl ); }
+
+/*** Content width ***/
+
+/*** Element height ***/
+
+[data-element-height="xxs"] { height: var( --element-size-xxs ); }
+[data-element-height="xs"]  { height: var( --element-size-xs  ); }
+[data-element-height="s"]   { height: var( --element-size-s   ); }
+[data-element-height="m"]   { height: var( --element-size-m   ); }
+[data-element-height="l"]   { height: var( --element-size-l   ); }
+[data-element-height="xl"]  { height: var( --element-size-xl  ); }
+[data-element-height="xxl"] { height: var( --element-size-xxl ); }
+[data-element-height="3xl"] { height: var( --element-size-3xl ); }
+[data-element-height="4xl"] { height: var( --element-size-4xl ); }
+[data-element-height="5xl"] { height: var( --element-size-5xl ); }
+
+/*** Element height ***/
+
+/*** Element min height ***/
+
+[data-element-min-height="xxs"] { min-height: var( --element-size-xxs ); }
+[data-element-min-height="xs"]  { min-height: var( --element-size-xs  ); }
+[data-element-min-height="s"]   { min-height: var( --element-size-s   ); }
+[data-element-min-height="m"]   { min-height: var( --element-size-m   ); }
+[data-element-min-height="l"]   { min-height: var( --element-size-l   ); }
+[data-element-min-height="xl"]  { min-height: var( --element-size-xl  ); }
+[data-element-min-height="xxl"] { min-height: var( --element-size-xxl ); }
+[data-element-min-height="3xl"] { min-height: var( --element-size-3xl ); }
+[data-element-min-height="4xl"] { min-height: var( --element-size-4xl ); }
+[data-element-min-height="5xl"] { min-height: var( --element-size-5xl ); }
+
+/*** Element min height ***/
+
+/*** Element min width ***/
+
+[data-element-min-width="xxs"] { min-width: var( --element-size-xxs ); }
+[data-element-min-width="xs"]  { min-width: var( --element-size-xs  ); }
+[data-element-min-width="s"]   { min-width: var( --element-size-s   ); }
+[data-element-min-width="m"]   { min-width: var( --element-size-m   ); }
+[data-element-min-width="l"]   { min-width: var( --element-size-l   ); }
+[data-element-min-width="xl"]  { min-width: var( --element-size-xl  ); }
+[data-element-min-width="xxl"] { min-width: var( --element-size-xxl ); }
+[data-element-min-width="3xl"] { min-width: var( --element-size-3xl ); }
+[data-element-min-width="4xl"] { min-width: var( --element-size-4xl ); }
+[data-element-min-width="5xl"] { min-width: var( --element-size-5xl ); }
+
+/*** Element min width ***/
+
 /*** Element width ***/
 
-[data-element-width="xxs"] { min-width: var( --data-element-width-xxs ); }
-[data-element-width="xs"]  { min-width: var( --data-element-width-xs  ); }
-[data-element-width="s"]   { min-width: var( --data-element-width-s   ); }
-[data-element-width="m"]   { min-width: var( --data-element-width-m   ); }
-[data-element-width="l"]   { min-width: var( --data-element-width-l   ); }
-[data-element-width="xl"]  { min-width: var( --data-element-width-xl  ); }
-[data-element-width="xxl"] { min-width: var( --data-element-width-xxl ); }
-[data-element-width="3xl"] { min-width: var( --data-element-width-3xl ); }
-[data-element-width="4xl"] { min-width: var( --data-element-width-4xl ); }
-[data-element-width="5xl"] { min-width: var( --data-element-width-5xl ); }
+[data-element-width="xxs"] { width: var( --element-size-xxs ); }
+[data-element-width="xs"]  { width: var( --element-size-xs  ); }
+[data-element-width="s"]   { width: var( --element-size-s   ); }
+[data-element-width="m"]   { width: var( --element-size-m   ); }
+[data-element-width="l"]   { width: var( --element-size-l   ); }
+[data-element-width="xl"]  { width: var( --element-size-xl  ); }
+[data-element-width="xxl"] { width: var( --element-size-xxl ); }
+[data-element-width="3xl"] { width: var( --element-size-3xl ); }
+[data-element-width="4xl"] { width: var( --element-size-4xl ); }
+[data-element-width="5xl"] { width: var( --element-size-5xl ); }
 
 /*** Element width ***/
-
-/*** Height ***/
-
-[data-height="xxs"] { height:  6px; }
-[data-height="xs"]  { height: 12px; }
-[data-height="s"]   { height: 18px; }
-[data-height="m"]   { height: 24px; }
-[data-height="l"]   { height: 36px; }
-[data-height="xl"]  { height: 42px; }
-[data-height="xxl"] { height: 48px; }
-[data-height="3xl"] { height: 60px; }
-[data-height="4xl"] { height: 72px; }
-[data-height="5xl"] { height: 84px; }
-
-/*** Height ***/
-
-/*** Min height ***/
-
-[data-min-height="xxs"] { min-height:  6px; }
-[data-min-height="xs"]  { min-height: 12px; }
-[data-min-height="s"]   { min-height: 18px; }
-[data-min-height="m"]   { min-height: 24px; }
-[data-min-height="l"]   { min-height: 36px; }
-[data-min-height="xl"]  { min-height: 42px; }
-[data-min-height="xxl"] { min-height: 48px; }
-[data-min-height="3xl"] { min-height: 60px; }
-[data-min-height="4xl"] { min-height: 72px; }
-[data-min-height="5xl"] { min-height: 84px; }
-
-/*** Min height ***/
-
-/*** Min width ***/
-
-[data-min-width="xxs"] { min-width:   6px; }
-[data-min-width="xs"]  { min-width:  12px; }
-[data-min-width="s"]   { min-width:  18px; }
-[data-min-width="m"]   { min-width:  24px; }
-[data-min-width="l"]   { min-width:  36px; }
-[data-min-width="xl"]  { min-width:  42px; }
-[data-min-width="xxl"] { min-width:  48px; }
-[data-min-width="3xl"] { min-width:  60px; }
-[data-min-width="4xl"] { min-width:  72px; }
-[data-min-width="5xl"] { min-width:  84px; }
-
-/*** Min width ***/
 
 /*** Thumbnail height ***/
 
-[data-thumbnail-height="xxs"] { height:  36px; }
-[data-thumbnail-height="xs"]  { height:  48px; }
-[data-thumbnail-height="s"]   { height:  60px; }
-[data-thumbnail-height="m"]   { height:  72px; }
-[data-thumbnail-height="l"]   { height:  84px; }
-[data-thumbnail-height="xl"]  { height:  96px; }
-[data-thumbnail-height="xxl"] { height: 108px; }
-[data-thumbnail-height="3xl"] { height: 120px; }
-[data-thumbnail-height="4xl"] { height: 132px; }
-[data-thumbnail-height="5xl"] { height: 144px; }
+[data-thumbnail-height="xxs"] { height: var( --thumbnail-size-xxs ); }
+[data-thumbnail-height="xs"]  { height: var( --thumbnail-size-xs  ); }
+[data-thumbnail-height="s"]   { height: var( --thumbnail-size-s   ); }
+[data-thumbnail-height="m"]   { height: var( --thumbnail-size-m   ); }
+[data-thumbnail-height="l"]   { height: var( --thumbnail-size-l   ); }
+[data-thumbnail-height="xl"]  { height: var( --thumbnail-size-xl  ); }
+[data-thumbnail-height="xxl"] { height: var( --thumbnail-size-xxl ); }
+[data-thumbnail-height="3xl"] { height: var( --thumbnail-size-3xl ); }
+[data-thumbnail-height="4xl"] { height: var( --thumbnail-size-4xl ); }
+[data-thumbnail-height="5xl"] { height: var( --thumbnail-size-5xl ); }
 
 /*** Thumbnail height ***/
 
 /*** Thumbnail width ***/
 
-[data-thumbnail-width="xxs"] { width:   36px; }
-[data-thumbnail-width="xs"]  { width:   48px; }
-[data-thumbnail-width="s"]   { width:   60px; }
-[data-thumbnail-width="m"]   { width:   72px; }
-[data-thumbnail-width="l"]   { width:   84px; }
-[data-thumbnail-width="xl"]  { width:   96px; }
-[data-thumbnail-width="xxl"] { width:  108px; }
-[data-thumbnail-width="3xl"] { width:  120px; }
-[data-thumbnail-width="4xl"] { width:  132px; }
-[data-thumbnail-width="5xl"] { width:  144px; }
+[data-thumbnail-width="xxs"] { width: var( --thumbnail-size-xxs ); }
+[data-thumbnail-width="xs"]  { width: var( --thumbnail-size-xs  ); }
+[data-thumbnail-width="s"]   { width: var( --thumbnail-size-s   ); }
+[data-thumbnail-width="m"]   { width: var( --thumbnail-size-m   ); }
+[data-thumbnail-width="l"]   { width: var( --thumbnail-size-l   ); }
+[data-thumbnail-width="xl"]  { width: var( --thumbnail-size-xl  ); }
+[data-thumbnail-width="xxl"] { width: var( --thumbnail-size-xxl ); }
+[data-thumbnail-width="3xl"] { width: var( --thumbnail-size-3xl ); }
+[data-thumbnail-width="4xl"] { width: var( --thumbnail-size-4xl ); }
+[data-thumbnail-width="5xl"] { width: var( --thumbnail-size-5xl ); }
 
 /*** Thumbnail width ***/
-
-/*** Width ***/
-
-[data-width="xxs"] { width:   6px; }
-[data-width="xs"]  { width:  12px; }
-[data-width="s"]   { width:  18px; }
-[data-width="m"]   { width:  24px; }
-[data-width="l"]   { width:  36px; }
-[data-width="xl"]  { width:  42px; }
-[data-width="xxl"] { width:  48px; }
-[data-width="3xl"] { width:  60px; }
-[data-width="4xl"] { width:  72px; }
-[data-width="5xl"] { width:  84px; }
-
-/*** Width ***/
 /***** Size presets *****/
