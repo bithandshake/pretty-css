@@ -11,9 +11,7 @@
 /*** Icon size ***/
 
 [data-icon-size] {
-  display:    inline-block;
-  overflow:   hidden;
-  text-align: center;
+  overflow: hidden;
 }
 
 [data-icon-size="xxs"] { font-size:   var( --icon-size-xxs         );

@@ -10,23 +10,23 @@
 [data-border-radius="xl"]  { border-radius: var( --border-radius-xl  ); }
 [data-border-radius="xxl"] { border-radius: var( --border-radius-xxl ); }
 [data-border-radius="3xl"] { border-radius: var( --border-radius-3xl ); }
-[data-border-radius="!xl"] { border-radius: var( --border-radius-4xl ); }
+[data-border-radius="4xl"] { border-radius: var( --border-radius-4xl ); }
 [data-border-radius="5xl"] { border-radius: var( --border-radius-5xl ); }
 
 /*** Border radius ***/
 
 /*** Border width ***/
 
-[data-border-width="xxs"]::after { border-width: var( --border-width-xxs ); }
-[data-border-width="xs"]::after  { border-width: var( --border-width-xs  ); }
-[data-border-width="s"]::after   { border-width: var( --border-width-s   ); }
-[data-border-width="m"]::after   { border-width: var( --border-width-m   ); }
-[data-border-width="l"]::after   { border-width: var( --border-width-l   ); }
-[data-border-width="xl"]::after  { border-width: var( --border-width-xl  ); }
-[data-border-width="xxl"]::after { border-width: var( --border-width-xxl ); }
-[data-border-width="3xl"]::after { border-width: var( --border-width-3xl ); }
-[data-border-width="4xl"]::after { border-width: var( --border-width-4xl ); }
-[data-border-width="5xl"]::after { border-width: var( --border-width-5xl ); }
+[data-border-width="xxs"] { border-width: var( --border-width-xxs ); }
+[data-border-width="xs"]  { border-width: var( --border-width-xs  ); }
+[data-border-width="s"]   { border-width: var( --border-width-s   ); }
+[data-border-width="m"]   { border-width: var( --border-width-m   ); }
+[data-border-width="l"]   { border-width: var( --border-width-l   ); }
+[data-border-width="xl"]  { border-width: var( --border-width-xl  ); }
+[data-border-width="xxl"] { border-width: var( --border-width-xxl ); }
+[data-border-width="3xl"] { border-width: var( --border-width-3xl ); }
+[data-border-width="4xl"] { border-width: var( --border-width-4xl ); }
+[data-border-width="5xl"] { border-width: var( --border-width-5xl ); }
 
 /*** Border width ***/
 /***** Border presets *****/
