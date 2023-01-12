@@ -1,0 +1,19 @@
+
+/* TODO: split into soft black & hard black! */
+
+/***** Black palettes *****/
+/*** Black ***/
+
+body {
+  --black-semi-transparent: rgba(030, 030, 030, 0.850);
+  --black-xx-dark:           rgb(000, 000, 000);
+  --black-x-dark:            rgb(010, 010, 010);
+  --black-dark:              rgb(020, 020, 020);
+  --black:                   rgb(030, 030, 030);
+  --black-light:             rgb(040, 040, 040);
+  --black-x-light:           rgb(050, 050, 050);
+  --black-xx-light:          rgb(060, 060, 060);
+}
+
+/*** Black ***/
+/***** Black palettes *****/

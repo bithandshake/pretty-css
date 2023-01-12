@@ -1,0 +1,19 @@
+
+/* TODO: split into soft grey & hard grey! */
+
+/***** Grey palettes *****/
+/*** Grey ***/
+
+body {
+  --grey-semi-transparent: rgba(140, 140, 140, 0.850);
+  --grey-xx-dark:           rgb(080,  80,  80);
+  --grey-x-dark:            rgb(100, 100, 100);
+  --grey-dark:              rgb(120, 120, 120);
+  --grey:                   rgb(140, 140, 140);
+  --grey-light:             rgb(160, 160, 160);
+  --grey-x-light:           rgb(180, 180, 180);
+  --grey-xx-light:          rgb(200, 200, 200);
+}
+
+/*** Grey ***/
+/***** Grey palettes *****/

@@ -1,0 +1,22 @@
+
+/***** Animation presets *****/
+
+[data-animation] {
+  animation-fill-mode:       both;
+  animation-iteration-count: 1;
+}
+
+/*** Opacity animations ***/
+
+[data-animation="opacity-1-0-1"]  { animation-name: opacity-1-0-1;  }
+[data-animation="opacity-1-05-1"] { animation-name: opacity-1-05-1; }
+
+/*** Opacity animations ***/
+
+/*** Scale animations ***/
+
+[data-animation="scale-095-1"] { animation-name: scale-095-1; }
+[data-animation="scale-105-1"] { animation-name: scale-105-1; }
+
+/*** Scale animations ***/
+/***** Animation presets *****/

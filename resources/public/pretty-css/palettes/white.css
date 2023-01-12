@@ -1,0 +1,19 @@
+
+/* TODO: split into soft white & hard white! */
+
+/***** White palettes *****/
+/*** White ***/
+
+body {
+  --white-semi-transparent: rgba(240, 240, 240, 0.850);
+  --white-xx-dark:           rgb(225, 225, 225);
+  --white-x-dark:            rgb(230, 230, 230);
+  --white-dark:              rgb(235, 235, 235);
+  --white:                   rgb(240, 240, 240);
+  --white-light:             rgb(245, 245, 245);
+  --white-x-light:           rgb(250, 250, 250);
+  --white-xx-light:          rgb(255, 255, 255);
+}
+
+/*** White ***/
+/***** White palettes *****/

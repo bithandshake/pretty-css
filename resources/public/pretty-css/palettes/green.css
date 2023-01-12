@@ -1,0 +1,32 @@
+
+/***** Green palettes *****/
+/*** Hard green ***/
+
+body {
+  --hard-green-semi-transparent: rgba(080, 255, 030, 0.850);
+  --hard-green-xx-dark:           rgb(050, 225, 000);
+  --hard-green-x-dark:            rgb(060, 235, 010);
+  --hard-green-dark:              rgb(070, 245, 020);
+  --hard-green:                   rgb(080, 255, 030);
+  --hard-green-light:             rgb(090, 255, 040);
+  --hard-green-x-light:           rgb(100, 255, 050);
+  --hard-green-xx-light:          rgb(110, 255, 060);
+}
+
+/*** Hard green ***/
+
+/*** Soft green ***/
+
+body {
+  --soft-green-semi-transparent: rgba(080, 255, 140, 0.850);
+  --soft-green-xx-dark:           rgb(050, 225, 110);
+  --soft-green-x-dark:            rgb(060, 235, 120);
+  --soft-green-dark:              rgb(070, 245, 130);
+  --soft-green:                   rgb(080, 255, 140);
+  --soft-green-light:             rgb(090, 255, 150);
+  --soft-green-x-light:           rgb(100, 255, 160);
+  --soft-green-xx-light:          rgb(110, 255, 170);
+}
+
+/*** Soft green ***/
+/***** Green palettes *****/

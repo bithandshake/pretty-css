@@ -2,7 +2,7 @@
 /* BUG#9081
  * Google Chrome version 77.0.3
  * macOS Mojave version 10.14.6
- * The browser rounds up the line height values in textarea elements to whole numbers,
+ * The browser rounds line height values in textarea elements to whole numbers,
  * therefore it's important to use whole numbers as line heights, otherwise
  * components that calculates it's height based on the line count and the line height
  * might be calculates a different height for themeselves from what the browser calculated. */
@@ -12,19 +12,13 @@
  * When you put an :m sized icon next to an :m sized text, they both look
  * the same size. */
 
-/* XXX#0662
- * The normal range from :xxs to :xxl wasn't enough for fonts and icons.
- * One of the solutions was that the step value (between sizes) has to be increased
- * or the step value has to be unstandardized.
- * The other was that to extending the size range with extra sizes seemed a bit
- ; more sophisticated, than modifing the standardized step values. */
-
 /* XXX#0663
- * Text block heights are basically line heights for texts you want to
- * fit into the block size system.
- * (Because line heights aren't standardized with the block size system.) */
+ * Text block heights are basically line heights for texts you want to fit into
+ * the block size system.
+ * (Because the native line heights aren't standardized with the block size system.) */
 
 /* REM:
+ * https://www.w3.org/TR/css-values-3
  * Equal to the computed value of font-size on the root element.
  * When specified on the font-size property of the root element,
  * the rem units refer to the property’s initial value. */
@@ -34,16 +28,11 @@
 /***** Font profiles *****/
 /*** Default ***/
 
- html {
-   font-size: 10px;
- }
-
  body {
-   font-family:    'Montserrat';
-   font-size:      var( --font-size-s      );
-   letter-spacing: var( --letter-spacing-s );
-   line-height:    var( --line-height-s    );
-   font-weight:    400;
+   font-size:      var( --font-size-s        );
+   font-weight:    var( --font-weight-normal );
+   letter-spacing: var( --letter-spacing-s   );
+   line-height:    var( --line-height-s      );
  }
 
 /***** Default *****/
@@ -64,6 +53,19 @@ body {
 }
 
 /*** Font size ***/
+
+/*** Font weight ***/
+
+body {
+  --font-weight-extra-light: 200;
+  --font-weight-light:       300;
+  --font-weight-normal:      400;
+  --font-weight-medium:      500;
+  --font-weight-bold:        600;
+  --font-weight-extra-bold:  700;
+}
+
+/*** Font weight ***/
 
 /*** Letter spacing ***/
 

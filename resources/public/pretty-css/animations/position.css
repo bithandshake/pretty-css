@@ -1,18 +1,23 @@
 
+
+/* Positioning animations are using 110 (%, vh, vw) values instead of using
+ * 100 (%, vh, vw) values to avoid overlapping of borders and other additional
+ * parts of the animated elements. */
+
+
+
 /***** Position animations *****/
 /*** Rotate ***/
 
-/* A mozgató animációk 100vh és 100vw érték helyett 110vh és 110vw értékekkel
- * mozgatják az elemet, hogy az adott elem esetleges border és más kiegészítő
- * elemei is eltűnjenek a viewport-ból */
-
 /* Rotate, clockwise */
 @keyframes rotate-0-360deg {
-  to { transform: rotate( 360deg ) }}
+  100% { transform: rotate( 360deg )}
+}
 
 /* Rotate, counterclockwise */
 @keyframes rotate-0--360deg {
-  to { transform: rotate( -360deg ) }}
+  100% { transform: rotate( -360deg )}
+}
 
 /*** Rotate ***/
 
@@ -20,43 +25,51 @@
 
 /* Slide in, bottom to top, fullscreen */
 @keyframes translate-y-110vh-0 {
-  from { transform: translateY( 110vh ) }
-  to   { transform: translateY( 0 ) }}
+    0% { transform: translateY( 110vh )}
+  100% { transform: translateY(   0   )}
+}
 
 /* Slide in, left to right, fullscreen */
 @keyframes translate-x--110vw-0 {
-  from { transform: translateX( -110vw ) }
-  to   { transform: translateX( 0 ) }}
+    0% { transform: translateX( -110vw )}
+  100% { transform: translateX(    0   )}
+}
 
 /* Slide in, right to left, fullscreen */
 @keyframes translate-x-110vw-0 {
-  from { transform: translateX( 110vw ) }
-  to   { transform: translateX( 0 ) }}
+    0% { transform: translateX( 110vw )}
+  100% { transform: translateX(   0   )}
+}
 
 /* Slide in, top to bottom, fullscreen */
 @keyframes translate-y--110vh-0 {
-  from { transform: translateY( -110vh ) }
-  to   { transform: translateY( 0 ) }}
+    0% { transform: translateY( -110vh )}
+  100% { transform: translateY(    0   )}
+}
 
 /* Slide in, bottom to top */
 @keyframes translate-y-110p-0 {
-  from { transform: translateY( 110% ) }
-  to   { transform: translateY( 0 ) }}
+    0% { transform: translateY( 110% )}
+  100% { transform: translateY(   0  )}
+}
 
 /* Slide in, left to right */
 @keyframes translate-x--110p-0 {
-  from { transform: translateX( -110% ) }
-  to   { transform: translateX( 0 ) }}
+    0% { transform: translateX( -110% )}
+  100% { transform: translateX(    0  )}
+}
 
 /* Slide in, right to left */
 @keyframes translate-x-110p-0 {
-  from { transform: translateX( 110% ) }
-  to   { transform: translateX( 0 ) }}
+    0% { transform: translateX( 110% )}
+  100% { transform: translateX(   0  )}
+}
 
 /* Slide in, top to bottom */
 @keyframes translate-y--110p-0 {
-  from { transform: translateY( -110% ) }
-  to   { transform: translateY( 0 ) }}
+    0% { transform: translateY( -110% )}
+  100% { transform: translateY(    0  )}
+}
 
 /*** Slide in ***/
 
@@ -64,43 +77,51 @@
 
 /* Slide out, bottom to top, fullscreen */
 @keyframes translate-y-0--110vh {
-  from { transform: translateY( 0 ) }
-  to   { transform: translateY( -110vh ) }}
+    0% { transform: translateY(    0   )}
+  100% { transform: translateY( -110vh )}
+}
 
 /* Slide out, left to right, fullscreen */
 @keyframes translate-x-0-110vw {
-  from { transform: translateX( 0 ) }
-  to   { transform: translateX( 110vw ) }}
+    0% { transform: translateX(   0   )}
+  100% { transform: translateX( 110vw )}
+}
 
 /* Slide out, right to left, fullscreen */
 @keyframes translate-x-0--110vw {
-  from { transform: translateX( 0 ) }
-  to   { transform: translateX( -110vw ) }}
+    0% { transform: translateX(    0   )}
+  100% { transform: translateX( -110vw )}
+}
 
 /* Slide out, top to bottom, fullscreen */
 @keyframes translate-x-0-110vh {
-  from { transform: translateX( 0 ) }
-  to   { transform: translateX( 110vh ) }}
+    0% { transform: translateX(   0   )}
+  100% { transform: translateX( 110vh )}
+}
 
 /* Slide out, bottom to top */
 @keyframes translate-y-0--110p {
-  from { transform: translateY( 0 ) }
-  to   { transform: translateY( -110% ) }}
+    0% { transform: translateY(    0  )}
+  100% { transform: translateY( -110% )}
+}
 
 /* Slide out, left to right */
 @keyframes translate-x-0-110p {
-  from { transform: translateX( 0 ) }
-  to   { transform: translateX( 110% ) }}
+    0% { transform: translateX(   0  )}
+  100% { transform: translateX( 110% )}
+}
 
 /* Slide out, right to left */
 @keyframes translate-x-0--110p {
-  from { transform: translateX( 0 ) }
-  to   { transform: translateX( -110% ) }}
+    0% { transform: translateX(    0  )}
+  100% { transform: translateX( -110% )}
+}
 
 /* Slide out, top to bottom */
 @keyframes translate-y-0-110p {
-  from { transform: translateY( 0 ) }
-  to   { transform: translateY( 110% ) }}
+    0% { transform: translateY(   0  )}
+  100% { transform: translateY( 110% )}
+}
 
 /*** Slide out ***/
 /***** Position animations *****/

@@ -2,11 +2,6 @@
 /***** Font presets *****/
 /*** Line height ***/
 
-/* XXX#0886
- * The basic line height presets are based on ...
- * The native line height presets are based on which font size is set.
- * The text-block line height presets are based on ... */
-
 [data-line-height="xxs"] { line-height: var( --line-height-xxs ); }
 [data-line-height="xs"]  { line-height: var( --line-height-xs  ); }
 [data-line-height="s"]   { line-height: var( --line-height-s   ); }
@@ -69,9 +64,12 @@
 
 /*** Font weight ***/
 
-[data-font-weight="normal"]     { font-weight: 400; }
-[data-font-weight="bold"]       { font-weight: 500; }
-[data-font-weight="extra-bold"] { font-weight: 600; }
+[data-font-weight="extra-light"] { font-weight: var( --font-weight-extra-light ); }
+[data-font-weight="light"]       { font-weight: var( --font-weight-light       ); }
+[data-font-weight="normal"]      { font-weight: var( --font-weight-normal      ); }
+[data-font-weight="medium"]      { font-weight: var( --font-weight-medium      ); }
+[data-font-weight="bold"]        { font-weight: var( --font-weight-bold        ); }
+[data-font-weight="extra-bold"]  { font-weight: var( --font-weight-extra-bold  ); }
 
 /*** Font weight ***/
 /***** Font presets *****/

@@ -1,0 +1,32 @@
+
+/***** Purple palettes *****/
+/*** Hard purple ***/
+
+body {
+  --hard-purple-semi-transparent: rgba(200, 000, 255, 0.850);
+  --hard-purple-xx-dark:           rgb(170, 000, 225);
+  --hard-purple-x-dark:            rgb(180, 000, 235);
+  --hard-purple-dark:              rgb(190, 000, 245);
+  --hard-purple:                   rgb(200, 000, 255);
+  --hard-purple-light:             rgb(210, 010, 255);
+  --hard-purple-x-light:           rgb(220, 020, 255);
+  --hard-purple-xx-light:          rgb(230, 030, 255);
+}
+
+/*** Hard purple ***/
+
+/*** Soft purple ***/
+
+body {
+  --soft-purple-semi-transparent: rgba(200, 090, 255, 0.850);
+  --soft-purple-xx-dark:           rgb(170, 060, 225);
+  --soft-purple-x-dark:            rgb(180, 070, 235);
+  --soft-purple-dark:              rgb(190, 080, 245);
+  --soft-purple:                   rgb(200, 090, 255);
+  --soft-purple-light:             rgb(210, 100, 255);
+  --soft-purple-x-light:           rgb(220, 110, 255);
+  --soft-purple-xx-light:          rgb(230, 120, 255);
+}
+
+/*** Soft purple ***/
+/***** Purple palettes *****/

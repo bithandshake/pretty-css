@@ -1,6 +1,7 @@
 
 /* @description
- * Displays a bubble over the element with the given label.
+ * Displays a bubble near the element with the given label when the pointer
+ * is over the element.
  *
  * @usage
  * [:div {:data-bubble-color    :muted
