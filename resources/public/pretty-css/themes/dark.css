@@ -3,7 +3,7 @@
 
 body[data-theme="dark"] {
   background-color: var( --app-background-color );
-  color:            var( --color-default );
+  color:            var( --color-default        );
 }
 
 /***** Body container *****/
@@ -14,7 +14,7 @@ body[data-theme="dark"] {
 /*** App background ***/
 
 body[data-theme="dark"] {
-  --app-background-color:         var( --black );
+  --app-background-color:         var( --black      );
   --app-background-pattern-color: var( --black-dark );
 }
 
@@ -31,14 +31,14 @@ body[data-theme="dark"] {
 /*** Badge color ***/
 
 body[data-theme="dark"] {
-  --badge-color-default:   var( --black-x-light );
-  --badge-color-muted:     var( --black-xx-light );
-  --badge-color-highlight: var( --grey-xx-dark );
-  --badge-color-invert:    var( --grey-xx-light );
-  --badge-color-primary:   var( --soft-blue-xx-light );
+  --badge-color-default:   var( --black-x-light        );
+  --badge-color-muted:     var( --black-xx-light       );
+  --badge-color-highlight: var( --grey-xx-dark         );
+  --badge-color-invert:    var( --grey-xx-light        );
+  --badge-color-primary:   var( --soft-blue-xx-light   );
   --badge-color-secondary: var( --soft-purple-xx-light );
-  --badge-color-success:   var( --soft-green-xx-light );
-  --badge-color-warning:   var( --soft-red-xx-light );
+  --badge-color-success:   var( --soft-green-xx-light  );
+  --badge-color-warning:   var( --soft-red-xx-light    );
 }
 
 /*** Badge color ***/
@@ -111,6 +111,14 @@ body[data-theme="dark"] {
 
 /*** Hover color ***/
 
+/*** Shadow color ***/
+
+body[data-theme="dark"] {
+  --shadow-color: var( --white );
+}
+
+/*** Shadow color ***/
+
 /*** Sidebar background ***/
 
 body[data-theme="dark"] {
@@ -118,13 +126,4 @@ body[data-theme="dark"] {
 }
 
 /*** Sidebar background ***/
-
-/*** Scroll-shadow ***/
-
-body[data-theme="dark"] {
-  --scroll-shadow-bottom: 0  6px 6px -6px #5c5c5c;
-  --scroll-shadow-top:    0 -6px 6px -6px #5c5c5c;
-}
-
-/*** Scroll-shadow ***/
 /***** Theme variables *****/

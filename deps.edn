@@ -1,2 +1,2 @@
 
-{:paths ["resources"]}
+{:paths ["resources" "source-code/cljc"]}

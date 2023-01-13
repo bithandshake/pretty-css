@@ -1,14 +1,17 @@
 
 /***** Shadow presets *****/
-/*** Black ***/
+/*** Center ***/
 
-[data-shadow-color="black"][data-shadow-strength="xxs"] { box-shadow: var( --shadow-black-xx-light ); }
-[data-shadow-color="black"][data-shadow-strength="xs"]  { box-shadow: var( --shadow-black-x-light  ); }
-[data-shadow-color="black"][data-shadow-strength="s"]   { box-shadow: var( --shadow-black-light    ); }
-[data-shadow-color="black"][data-shadow-strength="m"]   { box-shadow: var( --shadow-black          ); }
-[data-shadow-color="black"][data-shadow-strength="l"]   { box-shadow: var( --shadow-black-dark     ); }
-[data-shadow-color="black"][data-shadow-strength="xl"]  { box-shadow: var( --shadow-black-x-dark   ); }
-[data-shadow-color="black"][data-shadow-strength="xxl"] { box-shadow: var( --shadow-black-xx-dark  ); }
+[data-shadow-position="center"][data-shadow-strength="xxs"] { box-shadow: 0 0 005px 0 rgba(var( --shadow-color ), 0.8); }
+[data-shadow-position="center"][data-shadow-strength="xs"]  { box-shadow: 0 0 005px 0 rgba(var( --shadow-color ), 0.8); }
+[data-shadow-position="center"][data-shadow-strength="s"]   { box-shadow: 0 0 005px 0 rgba(var( --shadow-color ), 0.8); }
+[data-shadow-position="center"][data-shadow-strength="m"]   { box-shadow: 0 0 005px 0 rgba(var( --shadow-color ), 0.8); }
+[data-shadow-position="center"][data-shadow-strength="l"]   { box-shadow: 0 0 005px 0 rgba(var( --shadow-color ), 0.8); }
+[data-shadow-position="center"][data-shadow-strength="xl"]  { box-shadow: 0 0 005px 0 rgba(var( --shadow-color ), 0.8); }
+[data-shadow-position="center"][data-shadow-strength="xxl"] { box-shadow: 0 0 005px 0 rgba(var( --shadow-color ), 0.8); }
+[data-shadow-position="center"][data-shadow-strength="3xl"] { box-shadow: 0 0 005px 0 rgba(var( --shadow-color ), 0.8); }
+[data-shadow-position="center"][data-shadow-strength="4xl"] { box-shadow: 0 0 005px 0 rgba(var( --shadow-color ), 0.8); }
+[data-shadow-position="center"][data-shadow-strength="5xl"] { box-shadow: 0 0 005px 0 rgba(var( --shadow-color ), 0.8); }
 
-/*** Black ***/
+/*** Center ***/
 /***** Shadow presets *****/

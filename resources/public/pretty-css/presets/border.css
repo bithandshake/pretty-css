@@ -1,5 +1,11 @@
 
 /***** Border presets *****/
+
+[data-border-color],
+[data-border-width] {
+  border-style: solid;
+}
+
 /*** Border radius ***/
 
 [data-border-radius="xxs"] { border-radius: var( --border-radius-xxs ); }

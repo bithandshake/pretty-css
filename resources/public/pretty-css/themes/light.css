@@ -100,26 +100,25 @@ body[data-theme="light"] {
 /*** Hover color ***/
 
 body[data-theme="light"] {
-  --hover-color-default:   var( --white-xx-light );
-  --hover-color-muted:     var( --grey-xx-light );
-  --hover-color-highlight: var( --white );
-  --hover-color-invert:    var( --black-xx-light );
-  --hover-color-primary:   var( --soft-blue-light );
+  --hover-color-default:   var( --white-xx-light    );
+  --hover-color-muted:     var( --grey-xx-light     );
+  --hover-color-highlight: var( --white             );
+  --hover-color-invert:    var( --black-xx-light    );
+  --hover-color-primary:   var( --soft-blue-light   );
   --hover-color-secondary: var( --soft-purple-light );
-  --hover-color-success:   var( --soft-green-light );
-  --hover-color-warning:   var( --soft-red-light );
+  --hover-color-success:   var( --soft-green-light  );
+  --hover-color-warning:   var( --soft-red-light    );
 }
 
 /*** Hover color ***/
 
-/*** Scroll-shadow ***/
+/*** Shadow color ***/
 
 body[data-theme="light"] {
-  --scroll-shadow-bottom: 0  6px 6px -6px #bcbcbc;
-  --scroll-shadow-top:    0 -6px 6px -6px #bcbcbc;
+  --shadow-color: var( --black );
 }
 
-/*** Scroll-shadow ***/
+/*** Shadow color ***/
 
 /*** Sidebar background ***/
 
