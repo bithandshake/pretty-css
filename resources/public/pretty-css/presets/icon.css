@@ -25,7 +25,7 @@
 [data-icon-size="s"]   { font-size:   var( --icon-size-s           );
                          height:      var( --text-block-height-s   ) !important;
                          line-height: var( --text-block-height-s   );
-                         width:       var( --text-block-height-sm  ); }
+                         width:       var( --text-block-height-s   ); }
 [data-icon-size="m"]   { font-size:   var( --icon-size-m           );
                          height:      var( --text-block-height-m   );
                          line-height: var( --text-block-height-m   ) !important;
@@ -41,7 +41,7 @@
 [data-icon-size="xxl"] { font-size:   var( --icon-size-xxl         );
                          height:      var( --text-block-height-xxl );
                          line-height: var( --text-block-height-xxl ) !important;
-                         width:       var( --text-block-height-Xxl ); }
+                         width:       var( --text-block-height-xxl ); }
 [data-icon-size="3xl"] { font-size:   var( --icon-size-3xl         );
                          height:      var( --text-block-height-3xl );
                          line-height: var( --text-block-height-3xl ) !important;

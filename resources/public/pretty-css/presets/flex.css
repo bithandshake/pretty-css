@@ -9,8 +9,26 @@
 [data-column-gap="l"]   { column-gap: var( --block-size-l   ); }
 [data-column-gap="xl"]  { column-gap: var( --block-size-xl  ); }
 [data-column-gap="xxl"] { column-gap: var( --block-size-xxl ); }
+[data-column-gap="3xl"] { column-gap: var( --block-size-3xl ); }
+[data-column-gap="4xl"] { column-gap: var( --block-size-4xl ); }
+[data-column-gap="%xl"] { column-gap: var( --block-size-5xl ); }
 
 /*** Column gap ***/
+
+/*** Gap ***/
+
+[data-gap="xxs"] { gap: var( --block-size-xxs ); }
+[data-gap="xs"]  { gap: var( --block-size-xs  ); }
+[data-gap="s"]   { gap: var( --block-size-s   ); }
+[data-gap="m"]   { gap: var( --block-size-m   ); }
+[data-gap="l"]   { gap: var( --block-size-l   ); }
+[data-gap="xl"]  { gap: var( --block-size-xl  ); }
+[data-gap="xxl"] { gap: var( --block-size-xxl ); }
+[data-gap="3xl"] { gap: var( --block-size-3xl ); }
+[data-gap="4xl"] { gap: var( --block-size-4xl ); }
+[data-gap="5xl"] { gap: var( --block-size-5xl ); }
+
+/*** Gap ***/
 
 /*** Orientation ***/
 
@@ -38,6 +56,9 @@
 [data-row-gap="l"]   { row-gap: var( --block-size-l   ); }
 [data-row-gap="xl"]  { row-gap: var( --block-size-xl  ); }
 [data-row-gap="xxl"] { row-gap: var( --block-size-xxl ); }
+[data-row-gap="3xl"] { row-gap: var( --block-size-3xl ); }
+[data-row-gap="4xl"] { row-gap: var( --block-size-4xl ); }
+[data-row-gap="5xl"] { row-gap: var( --block-size-5xl ); }
 
 /*** Row gap ***/
 

@@ -1,10 +1,16 @@
 
 /***** Border presets *****/
+/*** Border position ***/
 
-[data-border-color],
-[data-border-width] {
-  border-style: solid;
-}
+[data-border-position="all"]        { border-style: solid;                   }
+[data-border-position="bottom"]     { border-style: none  none  solid none;  }
+[data-border-position="top"]        { border-style: solid none  none  none;  }
+[data-border-position="left"]       { border-style: none  none  none  solid; }
+[data-border-position="right"]      { border-style: none  solid none  none;  }
+[data-border-position="horizontal"] { border-style: solid none  solid none;  }
+[data-border-position="vertical"]   { border-style: none  solid none  solid; }
+
+/*** Border position ***/
 
 /*** Border radius ***/
 

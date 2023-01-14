@@ -13,13 +13,25 @@
 
 - [badge-attributes](#badge-attributes)
 
+- [border-attributes](#border-attributes)
+
+- [bubble-attributes](#bubble-attributes)
+
+- [color-attributes](#color-attributes)
+
 - [default-attributes](#default-attributes)
+
+- [font-attributes](#font-attributes)
+
+- [icon-attributes](#icon-attributes)
 
 - [indent-attributes](#indent-attributes)
 
 - [marker-attributes](#marker-attributes)
 
 - [outdent-attributes](#outdent-attributes)
+
+- [text-attributes](#text-attributes)
 
 ### apply-color
 
@@ -213,6 +225,7 @@
 ### badge-attributes
 
 ```
+@param (map) element-attributes
 @param (map) element-props
 {:badge-color (keyword)
   :default, :highlight, :invert, :muted, :primary, :secondary, :success, :warning
@@ -223,12 +236,12 @@
 
 ```
 @usage
-(badge-attributes {...})
+(badge-attributes {...} {...})
 ```
 
 ```
 @example
-(badge-attributes {:badge-color :primary :badge-content "420" :badge-position :tr})
+(badge-attributes {...} {:badge-color :primary :badge-content "420" :badge-position :tr})
 =>
 {:data-badge-color    :primary
  :data-badge-content  "420"
@@ -247,10 +260,10 @@
 
 ```
 (defn badge-attributes
-  [{:keys [badge-color badge-content badge-position]}]
-  {:data-badge-content  badge-content
-   :data-badge-color    badge-color
-   :data-badge-position badge-position})
+  [element-attributes {:keys [badge-color badge-content badge-position]}]
+  (merge element-attributes {:data-badge-content  badge-content
+                             :data-badge-color    badge-color
+                             :data-badge-position badge-position}))
 ```
 
 </details>
@@ -269,9 +282,192 @@
 
 ---
 
+### border-attributes
+
+```
+@param (map) element-attributes
+@param (map) element-props
+{:border-color (keyword or string)(opt)
+  :default, :highlight, :invert, :muted, :primary, :secondary, :success, :warning
+ :border-radius (keyword)(opt)
+  :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+ :border-position (keyword)(opt)
+  :all, :bottom, :top, :left, :right, :horizontal, :vertical
+ :border-width (keyword)(opt)}
+```
+
+```
+@usage
+(border-attributes {...} {...})
+```
+
+```
+@example
+(border-attributes {...} {:border-color :default :border-radius :s :border-width :s})
+=>
+{:data-border-color  :default
+ :data-border-family :s
+ :data-border-size   :s}
+```
+
+```
+@return (map)
+{:data-border-position (keyword)
+ :data-border-radius (keyword)
+ :data-border-width (keyword)}
+```
+
+<details>
+<summary>Source code</summary>
+
+```
+(defn border-attributes
+  [element-attributes {:keys [border-color border-position border-radius border-width]}]
+  (-> (merge element-attributes {:data-border-radius   border-radius
+                                 :data-border-position border-position
+                                 :data-border-width    border-width})
+      (apply-color :border-color :data-border-color border-color)))
+```
+
+</details>
+
+<details>
+<summary>Require</summary>
+
+```
+(ns my-namespace (:require [pretty-css.api :refer [border-attributes]]))
+
+(pretty-css.api/border-attributes ...)
+(border-attributes                ...)
+```
+
+</details>
+
+---
+
+### bubble-attributes
+
+```
+@param (map) element-attributes
+@param (map) element-props
+{:bubble-color (keyword)(opt)
+  :default, :highlight, :invert, :muted, :primary, :secondary, :success, :warning
+ :bubble-content (string)(opt)
+ :bubble-position (keyword)(opt)
+  :left, :right}
+```
+
+```
+@usage
+(bubble-attributes {...} {...})
+```
+
+```
+@example
+(bubble-attributes {...} {:bubble-color :primary :bubble-content "Hello bubble!" :bubble-position :left})
+=>
+{:data-bubble-color    :primary
+ :data-bubble-content  "Hello bubble!"
+ :data-bubble-position :left}
+```
+
+```
+@return (map)
+{:data-bubble-color (keyword)
+ :data-bubble-content (string)
+ :data-bubble-position (keyword)}
+```
+
+<details>
+<summary>Source code</summary>
+
+```
+(defn bubble-attributes
+  [element-attributes {:keys [bubble-color bubble-content bubble-position]}]
+  (merge element-attributes {:data-bubble-color    bubble-color
+                             :data-bubble-position bubble-content
+                             :data-bubble-content  bubble-position}))
+```
+
+</details>
+
+<details>
+<summary>Require</summary>
+
+```
+(ns my-namespace (:require [pretty-css.api :refer [bubble-attributes]]))
+
+(pretty-css.api/bubble-attributes ...)
+(bubble-attributes                ...)
+```
+
+</details>
+
+---
+
+### color-attributes
+
+```
+@param (map) element-attributes
+@param (map) element-props
+{:color (keyword or string)(opt)
+  :default, :highlight, :invert, :muted, :primary, :secondary, :success, :warning
+ :fill-color (keyword or string)(opt)
+  :default, :highlight, :invert, :muted, :primary, :secondary, :success, :warning
+ :hover-color (keyword or string)(opt)
+  :default, :highlight, :invert, :muted, :primary, :secondary, :success, :warning}
+```
+
+```
+@usage
+(color-attributes {...} {...})
+```
+
+```
+@example
+(color-attributes {...} {:color :default :fill-color :highlight :hover-color :highlight})
+=>
+{:data-color       :default
+ :data-fill-color  :highlight
+ :data-hover-color :highlight}
+```
+
+```
+@return (map)
+{}
+```
+
+<details>
+<summary>Source code</summary>
+
+```
+(defn color-attributes
+  [element-attributes {:keys [color fill-color hover-color]}]
+  (-> element-attributes (apply-color :color       :data-color       color)
+                         (apply-color :fill-color  :data-fill-color  fill-color)
+                         (apply-color :hover-color :data-hover-color hover-color)))
+```
+
+</details>
+
+<details>
+<summary>Require</summary>
+
+```
+(ns my-namespace (:require [pretty-css.api :refer [color-attributes]]))
+
+(pretty-css.api/color-attributes ...)
+(color-attributes                ...)
+```
+
+</details>
+
+---
+
 ### default-attributes
 
 ```
+@param (map) element-attributes
 @param (map) element-props
 {:class (keyword or keywords in vector)(opt)
  :disabled? (boolean)(opt)}
@@ -279,12 +475,12 @@
 
 ```
 @usage
-(default-attributes {...})
+(default-attributes {...} {...})
 ```
 
 ```
 @example
-(default-attributes {:class :my-class :disabled? true})
+(default-attributes {...} {:class :my-class :disabled? true})
 =>
 {:class :my-element
  :data-disabled true}
@@ -292,7 +488,7 @@
 
 ```
 @example
-(default-attributes {:class [:my-class] :disabled? true})
+(default-attributes {...} {:class [:my-class] :disabled? true})
 =>
 {:class [:my-element]
  :data-disabled true}
@@ -309,9 +505,9 @@
 
 ```
 (defn default-attributes
-  [{:keys [class disabled?]}]
-  {:class         class
-   :data-disabled disabled?})
+  [element-attributes {:keys [class disabled?]}]
+  (merge element-attributes {:class         class
+                             :data-disabled disabled?}))
 ```
 
 </details>
@@ -330,9 +526,130 @@
 
 ---
 
+### font-attributes
+
+```
+@param (map) element-attributes
+@param (map) element-props
+{:font-size (keyword)(opt)
+  :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+ :font-weight (keyword)(opt)
+  :inherit, :extra-light, :light, :normal, :medium, :bold, :extra-bold
+ :line-height (keyword)(opt)}
+  :inherit, :native, :text-block, :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+```
+
+```
+@usage
+(font-attributes {...} {...})
+```
+
+```
+@example
+(font-attributes {...} {:font-size :s :font-weight :bold :line-height :text-block})
+=>
+{:data-font-size   :s
+ :data-font-weight :bold
+ :data-line-height :text-block}
+```
+
+```
+@return (map)
+{:data-font-size (keyword)
+ :data-font-weight (keyword)
+ :data-line-height (keyword)}
+```
+
+<details>
+<summary>Source code</summary>
+
+```
+(defn font-attributes
+  [element-attributes {:keys [font-size font-weight line-height]}]
+  (merge element-attributes {:data-font-size   font-size
+                             :data-font-weight font-weight
+                             :data-line-height line-height}))
+```
+
+</details>
+
+<details>
+<summary>Require</summary>
+
+```
+(ns my-namespace (:require [pretty-css.api :refer [font-attributes]]))
+
+(pretty-css.api/font-attributes ...)
+(font-attributes                ...)
+```
+
+</details>
+
+---
+
+### icon-attributes
+
+```
+@param (map) element-attributes
+@param (map) element-props
+{:icon-color (keyword or string)(opt)
+  :default, :highlight, :invert, :muted, :primary, :secondary, :success, :warning
+ :icon-family (keyword)(opt)
+ :icon-size (keyword)(opt)
+  :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl}
+```
+
+```
+@usage
+(icon-attributes {...} {...})
+```
+
+```
+@example
+(icon-attributes {...} {:icon-color :default :icon-family :my-icon-family :icon-size :s})
+=>
+{:data-icon-color  :default
+ :data-icon-family :my-icon-family
+ :data-icon-size   :s}
+```
+
+```
+@return (map)
+{:data-icon-family (keyword)
+ :data-icon-size (keyword)}
+```
+
+<details>
+<summary>Source code</summary>
+
+```
+(defn icon-attributes
+  [element-attributes {:keys [icon-color icon-family icon-size]}]
+  (-> (merge element-attributes {:data-icon-family icon-family
+                                 :data-icon-size   icon-size})
+      (apply-color :icon-color :data-icon-color icon-color)))
+```
+
+</details>
+
+<details>
+<summary>Require</summary>
+
+```
+(ns my-namespace (:require [pretty-css.api :refer [icon-attributes]]))
+
+(pretty-css.api/icon-attributes ...)
+(icon-attributes                ...)
+```
+
+</details>
+
+---
+
 ### indent-attributes
 
 ```
+@param (map) element-attributes
 @param (map) element-props
 {:indent (map)(opt)
   {:bottom (keyword)(opt)
@@ -347,12 +664,12 @@
 
 ```
 @usage
-(indent-attributes {:indent {...}})
+(indent-attributes {...} {:indent {...}})
 ```
 
 ```
 @example
-(indent-attributes {:indent {:horizontal :xxl :left :xs}})
+(indent-attributes {...} {:indent {:horizontal :xxl :left :xs}})
 =>
 {:data-indent-horizontal :xxl
  :data-indent-left       :xs}
@@ -367,10 +684,10 @@
 
 ```
 (defn indent-attributes
-  [{:keys [indent]}]
+  [element-attributes {:keys [indent]}]
   (letfn [(f [result key value]
              (assoc result (keyword (str "data-indent-" (name key))) value))]
-         (reduce-kv f {} indent)))
+         (merge element-attributes (reduce-kv f {} indent))))
 ```
 
 </details>
@@ -392,6 +709,7 @@
 ### marker-attributes
 
 ```
+@param (map) element-attributes
 @param (map) element-props
 {:marker-color (keyword)(opt)
   :default, :highlight, :invert, :muted, :primary, :secondary, :success, :warning
@@ -401,12 +719,12 @@
 
 ```
 @usage
-(marker-attributes {...})
+(marker-attributes {...} {...})
 ```
 
 ```
 @example
-(marker-attributes {:marker-color :primary :marker-position :tr})
+(marker-attributes {...} {:marker-color :primary :marker-position :tr})
 =>
 {:data-marker-color    :primary
  :data-marker-position :tr}
@@ -423,9 +741,9 @@
 
 ```
 (defn marker-attributes
-  [{:keys [marker-color marker-position]}]
-  {:data-marker-color    marker-color
-   :data-marker-position marker-position})
+  [element-attributes {:keys [marker-color marker-position]}]
+  (merge element-attributes {:data-marker-color    marker-color
+                             :data-marker-position marker-position}))
 ```
 
 </details>
@@ -447,6 +765,7 @@
 ### outdent-attributes
 
 ```
+@param (map) element-attributes
 @param (map) element-props
 {:outdent (map)(opt)
   {:bottom (keyword)(opt)
@@ -461,12 +780,12 @@
 
 ```
 @usage
-(outdent-attributes {:outdent {...}})
+(outdent-attributes {...} {:outdent {...}})
 ```
 
 ```
 @example
-(outdent-attributes {:outdent {:horizontal :xxl :left :xs}})
+(outdent-attributes {...} {:outdent {:horizontal :xxl :left :xs}})
 =>
 {:data-outdent-horizontal :xxl
  :data-outdent-left       :xs}
@@ -481,10 +800,10 @@
 
 ```
 (defn outdent-attributes
-  [{:keys [outdent]}]
+  [element-attributes {:keys [outdent]}]
   (letfn [(f [result key value]
              (assoc result (keyword (str "data-outdent-" (name key))) value))]
-         (reduce-kv f {} outdent)))
+         (merge element-attributes (reduce-kv f {} outdent))))
 ```
 
 </details>
@@ -497,6 +816,62 @@
 
 (pretty-css.api/outdent-attributes ...)
 (outdent-attributes                ...)
+```
+
+</details>
+
+---
+
+### text-attributes
+
+```
+@param (map) element-attributes
+@param (map) element-props
+{:text-direction (keyword)(opt)
+  :normal, :reversed
+ :text-overflow (keyword)(opt)
+  :ellipsis, :hidden, :no-wrap, :wrap}
+```
+
+```
+@usage
+(text-attributes {...} {...})
+```
+
+```
+@example
+(text-attributes {...} {:text-direction :reversed :text-overflow :ellipsis})
+=>
+{:data-text-direction :default
+ :data-text-overflow  :ellipsis}
+```
+
+```
+@return (map)
+{:data-text-direction (keyword)
+ :data-text-overflow (keyword)}
+```
+
+<details>
+<summary>Source code</summary>
+
+```
+(defn text-attributes
+  [element-attributes {:keys [text-direction text-overflow]}]
+  (merge element-attributes {:data-text-direction text-direction
+                             :data-text-overflow  text-overflow}))
+```
+
+</details>
+
+<details>
+<summary>Require</summary>
+
+```
+(ns my-namespace (:require [pretty-css.api :refer [text-attributes]]))
+
+(pretty-css.api/text-attributes ...)
+(text-attributes                ...)
 ```
 
 </details>
