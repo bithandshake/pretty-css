@@ -8,99 +8,126 @@
  /***** Indent presets *****/
  /*** All ***/
 
- [data-indent-all="xxs"] { padding: var( --block-size-xxs ); }
- [data-indent-all="xs"]  { padding: var( --block-size-xs  ); }
- [data-indent-all="s"]   { padding: var( --block-size-s   ); }
- [data-indent-all="m"]   { padding: var( --block-size-m   ); }
- [data-indent-all="l"]   { padding: var( --block-size-l   ); }
- [data-indent-all="xl"]  { padding: var( --block-size-xl  ); }
- [data-indent-all="xxl"] { padding: var( --block-size-xxl ); }
+[data-indent-all="xxs"] { padding: var( --block-size-xxs ); }
+[data-indent-all="xs"]  { padding: var( --block-size-xs  ); }
+[data-indent-all="s"]   { padding: var( --block-size-s   ); }
+[data-indent-all="m"]   { padding: var( --block-size-m   ); }
+[data-indent-all="l"]   { padding: var( --block-size-l   ); }
+[data-indent-all="xl"]  { padding: var( --block-size-xl  ); }
+[data-indent-all="xxl"] { padding: var( --block-size-xxl ); }
+[data-indent-all="3xl"] { padding: var( --block-size-3xl ); }
+[data-indent-all="4xl"] { padding: var( --block-size-4xl ); }
+[data-indent-all="5xl"] { padding: var( --block-size-5xl ); }
 
  /*** All ***/
 
  /*** Horizontal ***/
 
- [data-indent-horizontal="xxs"] { padding-bottom: var( --block-size-xxs );
-                                   padding-top:    var( --block-size-xxs ); }
- [data-indent-horizontal="xs"]  { padding-bottom: var( --block-size-xs  );
-                                   padding-top:    var( --block-size-xs  ); }
- [data-indent-horizontal="s"]   { padding-bottom: var( --block-size-s   );
-                                   padding-top:    var( --block-size-s   ); }
- [data-indent-horizontal="m"]   { padding-bottom: var( --block-size-m   );
-                                   padding-top:    var( --block-size-m   ); }
- [data-indent-horizontal="l"]   { padding-bottom: var( --block-size-l   );
-                                   padding-top:    var( --block-size-l   ); }
- [data-indent-horizontal="xl"]  { padding-bottom: var( --block-size-xl  );
-                                   padding-top:    var( --block-size-xl  ); }
- [data-indent-horizontal="xxl"] { padding-bottom: var( --block-size-xxl );
-                                   padding-top:    var( --block-size-xxl ); }
+[data-indent-horizontal="xxs"] { padding-bottom: var( --block-size-xxs );
+                                 padding-top:    var( --block-size-xxs ); }
+[data-indent-horizontal="xs"]  { padding-bottom: var( --block-size-xs  );
+                                 padding-top:    var( --block-size-xs  ); }
+[data-indent-horizontal="s"]   { padding-bottom: var( --block-size-s   );
+                                 padding-top:    var( --block-size-s   ); }
+[data-indent-horizontal="m"]   { padding-bottom: var( --block-size-m   );
+                                 padding-top:    var( --block-size-m   ); }
+[data-indent-horizontal="l"]   { padding-bottom: var( --block-size-l   );
+                                 padding-top:    var( --block-size-l   ); }
+[data-indent-horizontal="xl"]  { padding-bottom: var( --block-size-xl  );
+                                 padding-top:    var( --block-size-xl  ); }
+[data-indent-horizontal="xxl"] { padding-bottom: var( --block-size-xxl );
+                                 padding-top:    var( --block-size-xxl ); }
+[data-indent-horizontal="3xl"] { padding-bottom: var( --block-size-3xl );
+                                 padding-top:    var( --block-size-3xl ); }
+[data-indent-horizontal="4xl"] { padding-bottom: var( --block-size-4xl );
+                                 padding-top:    var( --block-size-4xl ); }
+[data-indent-horizontal="5xl"] { padding-bottom: var( --block-size-5xl );
+                                 padding-top:    var( --block-size-5xl ); }
 
  /*** Horizontal ***/
 
  /*** Vertical ***/
 
- [data-indent-vertical="xxs"] { padding-left:  var( --block-size-xxs );
-                                 padding-right: var( --block-size-xxs ); }
- [data-indent-vertical="xs"]  { padding-left:  var( --block-size-xs  );
-                                 padding-right: var( --block-size-xs  ); }
- [data-indent-vertical="s"]   { padding-left:  var( --block-size-s   );
-                                 padding-right: var( --block-size-s   ); }
- [data-indent-vertical="m"]   { padding-left:  var( --block-size-m   );
-                                 padding-right: var( --block-size-m   ); }
- [data-indent-vertical="l"]   { padding-left:  var( --block-size-l   );
-                                 padding-right: var( --block-size-l   ); }
- [data-indent-vertical="xl"]  { padding-left:  var( --block-size-xl  );
-                                 padding-right: var( --block-size-xl  ); }
- [data-indent-vertical="xxl"] { padding-left:  var( --block-size-xxl );
-                                 padding-right: var( --block-size-xxl ); }
+[data-indent-vertical="xxs"] { padding-left:  var( --block-size-xxs );
+                               padding-right: var( --block-size-xxs ); }
+[data-indent-vertical="xs"]  { padding-left:  var( --block-size-xs  );
+                               padding-right: var( --block-size-xs  ); }
+[data-indent-vertical="s"]   { padding-left:  var( --block-size-s   );
+                               padding-right: var( --block-size-s   ); }
+[data-indent-vertical="m"]   { padding-left:  var( --block-size-m   );
+                               padding-right: var( --block-size-m   ); }
+[data-indent-vertical="l"]   { padding-left:  var( --block-size-l   );
+                               padding-right: var( --block-size-l   ); }
+[data-indent-vertical="xl"]  { padding-left:  var( --block-size-xl  );
+                               padding-right: var( --block-size-xl  ); }
+[data-indent-vertical="xxl"] { padding-left:  var( --block-size-xxl );
+                               padding-right: var( --block-size-xxl ); }
+[data-indent-vertical="3xl"] { padding-left:  var( --block-size-3xl );
+                               padding-right: var( --block-size-3xl ); }
+[data-indent-vertical="4xl"] { padding-left:  var( --block-size-4xl );
+                               padding-right: var( --block-size-4xl ); }
+[data-indent-vertical="5xl"] { padding-left:  var( --block-size-5xl );
+                               padding-right: var( --block-size-5xl ); }
 
  /*** Vertical ***/
 
  /*** Bottom ***/
 
- [data-indent-bottom="xxs"] { padding-bottom: var( --block-size-xxs ); }
- [data-indent-bottom="xs"]  { padding-bottom: var( --block-size-xs  ); }
- [data-indent-bottom="s"]   { padding-bottom: var( --block-size-s   ); }
- [data-indent-bottom="m"]   { padding-bottom: var( --block-size-m   ); }
- [data-indent-bottom="l"]   { padding-bottom: var( --block-size-l   ); }
- [data-indent-bottom="xl"]  { padding-bottom: var( --block-size-xl  ); }
- [data-indent-bottom="xxl"] { padding-bottom: var( --block-size-xxl ); }
+[data-indent-bottom="xxs"] { padding-bottom: var( --block-size-xxs ); }
+[data-indent-bottom="xs"]  { padding-bottom: var( --block-size-xs  ); }
+[data-indent-bottom="s"]   { padding-bottom: var( --block-size-s   ); }
+[data-indent-bottom="m"]   { padding-bottom: var( --block-size-m   ); }
+[data-indent-bottom="l"]   { padding-bottom: var( --block-size-l   ); }
+[data-indent-bottom="xl"]  { padding-bottom: var( --block-size-xl  ); }
+[data-indent-bottom="xxl"] { padding-bottom: var( --block-size-xxl ); }
+[data-indent-bottom="3xl"] { padding-bottom: var( --block-size-3xl ); }
+[data-indent-bottom="4xl"] { padding-bottom: var( --block-size-4xl ); }
+[data-indent-bottom="5xl"] { padding-bottom: var( --block-size-5xl ); }
 
  /*** Bottom ***/
 
  /*** Left ***/
 
- [data-indent-left="xxs"] { padding-left: var( --block-size-xxs ); }
- [data-indent-left="xs"]  { padding-left: var( --block-size-xs  ); }
- [data-indent-left="s"]   { padding-left: var( --block-size-s   ); }
- [data-indent-left="m"]   { padding-left: var( --block-size-m   ); }
- [data-indent-left="l"]   { padding-left: var( --block-size-l   ); }
- [data-indent-left="xl"]  { padding-left: var( --block-size-xl  ); }
- [data-indent-left="xxl"] { padding-left: var( --block-size-xxl ); }
+[data-indent-left="xxs"] { padding-left: var( --block-size-xxs ); }
+[data-indent-left="xs"]  { padding-left: var( --block-size-xs  ); }
+[data-indent-left="s"]   { padding-left: var( --block-size-s   ); }
+[data-indent-left="m"]   { padding-left: var( --block-size-m   ); }
+[data-indent-left="l"]   { padding-left: var( --block-size-l   ); }
+[data-indent-left="xl"]  { padding-left: var( --block-size-xl  ); }
+[data-indent-left="xxl"] { padding-left: var( --block-size-xxl ); }
+[data-indent-left="3xl"] { padding-left: var( --block-size-3xl ); }
+[data-indent-left="4xl"] { padding-left: var( --block-size-4xl ); }
+[data-indent-left="5xl"] { padding-left: var( --block-size-5xl ); }
 
  /*** Left ***/
 
  /*** Right ***/
 
- [data-indent-right="xxs"] { padding-right: var( --block-size-xxs ); }
- [data-indent-right="xs"]  { padding-right: var( --block-size-xs  ); }
- [data-indent-right="s"]   { padding-right: var( --block-size-s   ); }
- [data-indent-right="m"]   { padding-right: var( --block-size-m   ); }
- [data-indent-right="l"]   { padding-right: var( --block-size-l   ); }
- [data-indent-right="xl"]  { padding-right: var( --block-size-xl  ); }
- [data-indent-right="xxl"] { padding-right: var( --block-size-xxl ); }
+[data-indent-right="xxs"] { padding-right: var( --block-size-xxs ); }
+[data-indent-right="xs"]  { padding-right: var( --block-size-xs  ); }
+[data-indent-right="s"]   { padding-right: var( --block-size-s   ); }
+[data-indent-right="m"]   { padding-right: var( --block-size-m   ); }
+[data-indent-right="l"]   { padding-right: var( --block-size-l   ); }
+[data-indent-right="xl"]  { padding-right: var( --block-size-xl  ); }
+[data-indent-right="xxl"] { padding-right: var( --block-size-xxl ); }
+[data-indent-right="3xl"] { padding-right: var( --block-size-3xl ); }
+[data-indent-right="4xl"] { padding-right: var( --block-size-4xl ); }
+[data-indent-right="5xl"] { padding-right: var( --block-size-5xl ); }
 
  /*** Right ***/
 
  /*** Top ***/
 
- [data-indent-top="xxs"] { padding-top: var( --block-size-xxs ); }
- [data-indent-top="xs"]  { padding-top: var( --block-size-xs  ); }
- [data-indent-top="s"]   { padding-top: var( --block-size-s   ); }
- [data-indent-top="m"]   { padding-top: var( --block-size-m   ); }
- [data-indent-top="l"]   { padding-top: var( --block-size-l   ); }
- [data-indent-top="xl"]  { padding-top: var( --block-size-xl  ); }
- [data-indent-top="xxl"] { padding-top: var( --block-size-xxl ); }
+[data-indent-top="xxs"] { padding-top: var( --block-size-xxs ); }
+[data-indent-top="xs"]  { padding-top: var( --block-size-xs  ); }
+[data-indent-top="s"]   { padding-top: var( --block-size-s   ); }
+[data-indent-top="m"]   { padding-top: var( --block-size-m   ); }
+[data-indent-top="l"]   { padding-top: var( --block-size-l   ); }
+[data-indent-top="xl"]  { padding-top: var( --block-size-xl  ); }
+[data-indent-top="xxl"] { padding-top: var( --block-size-xxl ); }
+[data-indent-top="3xl"] { padding-top: var( --block-size-3xl ); }
+[data-indent-top="4xl"] { padding-top: var( --block-size-4xl ); }
+[data-indent-top="5xl"] { padding-top: var( --block-size-5xl ); }
 
  /*** Top ***/
  /***** Indent presets *****/

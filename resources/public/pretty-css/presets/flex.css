@@ -39,14 +39,6 @@
 
 /*** Orientation ***/
 
-/*** Position profiles ***/
-
-[data-horizontal-position="left"]   { align-self: flex-start; }
-[data-horizontal-position="center"] { align-self: center;     }
-[data-horizontal-position="right"]  { align-self: flex-end;   }
-
-/*** Position profiles ***/
-
 /*** Row gap ***/
 
 [data-row-gap="xxs"] { row-gap: var( --block-size-xxs ); }
@@ -61,6 +53,17 @@
 [data-row-gap="5xl"] { row-gap: var( --block-size-5xl ); }
 
 /*** Row gap ***/
+
+/*** Self position ***/
+
+[data-self-position="left"]   { align-self: flex-start; }
+[data-self-position="center"] { align-self: center;     }
+[data-self-position="right"]  { align-self: flex-end;   }
+[data-self-position="bottom"] { align-self: flex-end;   }
+[data-self-position="center"] { align-self: center;     }
+[data-self-position="top"]    { align-self: flex-start; }
+
+/*** Self position ***/
 
 /*** Stretch ***/
 

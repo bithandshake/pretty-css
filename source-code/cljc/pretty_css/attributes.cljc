@@ -4,6 +4,32 @@
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
+(defn adaptive-border-radius
+  ; @param (keyword) border-radius
+  ; @param (number) ratio
+  ;
+  ; @usage
+  ; (adaptive-border-radius :s 0.3)
+  ;
+  ; @example
+  ; (adaptive-border-radius :s 0.3)
+  ; =>
+  ; "calc(var(--border-radius-s) * 0.3)"
+  ;
+  ; @example
+  ; (adaptive-border-radius nil 0.3)
+  ; =>
+  ; nil
+  ;
+  ; @return (string)
+  [border-radius ratio]
+  ; By using the adaptive border radius solution, elements can track the curve of
+  ; their outer border.
+  (if border-radius (str "calc(var(--border-radius-"(name border-radius)") * "ratio")")))
+
+;; ----------------------------------------------------------------------------
+;; ----------------------------------------------------------------------------
+
 (defn apply-preset
   ; @param (map) presets
   ; @param (map) element-props
@@ -364,13 +390,13 @@
   ; @param (map) element-props
   ; {:indent (map)(opt)
   ;   {:bottom (keyword)(opt)
-  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl
+  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
   ;    :left (keyword)(opt)
-  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl
+  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
   ;    :right (keyword)(opt)
-  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl
+  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
   ;    :top (keyword)(opt)
-  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl}}
+  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl}}
   ;
   ; @usage
   ; (indent-attributes {...} {:indent {...}})
@@ -392,13 +418,13 @@
   ; @param (map) element-props
   ; {:outdent (map)(opt)
   ;   {:bottom (keyword)(opt)
-  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl
+  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
   ;    :left (keyword)(opt)
-  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl
+  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
   ;    :right (keyword)(opt)
-  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl
+  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
   ;    :top (keyword)(opt)
-  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl}}
+  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl}}
   ;
   ; @usage
   ; (outdent-attributes {...} {:outdent {...}})

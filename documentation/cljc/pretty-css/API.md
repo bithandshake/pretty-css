@@ -5,6 +5,8 @@
 
 ### Index
 
+- [adaptive-border-radius](#adaptive-border-radius)
+
 - [apply-color](#apply-color)
 
 - [apply-dimension](#apply-dimension)
@@ -32,6 +34,61 @@
 - [outdent-attributes](#outdent-attributes)
 
 - [text-attributes](#text-attributes)
+
+### adaptive-border-radius
+
+```
+@param (keyword) border-radius
+@param (number) ratio
+```
+
+```
+@usage
+(adaptive-border-radius :s 0.3)
+```
+
+```
+@example
+(adaptive-border-radius :s 0.3)
+=>
+"calc(var(--border-radius-s) * 0.3)"
+```
+
+```
+@example
+(adaptive-border-radius nil 0.3)
+=>
+nil
+```
+
+```
+@return (string)
+```
+
+<details>
+<summary>Source code</summary>
+
+```
+(defn adaptive-border-radius
+  [border-radius ratio]
+  (if border-radius (str "calc(var(--border-radius-"(name border-radius)") * "ratio")")))
+```
+
+</details>
+
+<details>
+<summary>Require</summary>
+
+```
+(ns my-namespace (:require [pretty-css.api :refer [adaptive-border-radius]]))
+
+(pretty-css.api/adaptive-border-radius ...)
+(adaptive-border-radius                ...)
+```
+
+</details>
+
+---
 
 ### apply-color
 
@@ -653,13 +710,13 @@
 @param (map) element-props
 {:indent (map)(opt)
   {:bottom (keyword)(opt)
-    :xxs, :xs, :s, :m, :l, :xl, :xxl
+    :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
    :left (keyword)(opt)
-    :xxs, :xs, :s, :m, :l, :xl, :xxl
+    :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
    :right (keyword)(opt)
-    :xxs, :xs, :s, :m, :l, :xl, :xxl
+    :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
    :top (keyword)(opt)
-    :xxs, :xs, :s, :m, :l, :xl, :xxl}}
+    :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl}}
 ```
 
 ```
@@ -769,13 +826,13 @@
 @param (map) element-props
 {:outdent (map)(opt)
   {:bottom (keyword)(opt)
-    :xxs, :xs, :s, :m, :l, :xl, :xxl
+    :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
    :left (keyword)(opt)
-    :xxs, :xs, :s, :m, :l, :xl, :xxl
+    :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
    :right (keyword)(opt)
-    :xxs, :xs, :s, :m, :l, :xl, :xxl
+    :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
    :top (keyword)(opt)
-    :xxs, :xs, :s, :m, :l, :xl, :xxl}}
+    :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl}}
 ```
 
 ```
