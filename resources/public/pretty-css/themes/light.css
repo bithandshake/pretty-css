@@ -61,14 +61,14 @@ body[data-theme="light"] {
 /*** Color ***/
 
 body[data-theme="light"] {
-  --color-default:   var( --black-xx-light );
-  --color-muted:     var( --grey );
-  --color-highlight: var( --grey-x-light );
-  --color-invert:    var( --white-xx-dark );
-  --color-primary:   var( --hard-blue-xx-dark );
+  --color-default:   var( --black-xx-light      );
+  --color-muted:     var( --grey                );
+  --color-highlight: var( --grey-x-light        );
+  --color-invert:    var( --white-dark          );
+  --color-primary:   var( --hard-blue-xx-dark   );
   --color-secondary: var( --hard-purple-xx-dark );
-  --color-success:   var( --hard-green-xx-dark );
-  --color-warning:   var( --hard-red-xx-dark );
+  --color-success:   var( --hard-green-xx-dark  );
+  --color-warning:   var( --hard-red-xx-dark    );
 }
 
 /*** Color ***/

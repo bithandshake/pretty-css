@@ -3,6 +3,11 @@
  * The 'indent' property of DOM elements has to use padding instead of using
  * margin because the browser merges the margins in certain cases! */
 
+/* XXX#7007
+ * The more specific indent presets overwrite the less specific indent presets,
+ * therefore the 'all' presets have to be the very first before the 'horizontal'
+ * and 'vertical' presets! (because of the CSS cascade) */
+
 
 
  /***** Indent presets *****/
