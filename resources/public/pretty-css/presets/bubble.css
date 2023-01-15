@@ -35,10 +35,10 @@
 
 [data-bubble-position="left"]::after  { left:      0;
                                         top:       calc(50% - 14px);
-                                        transform: translateX(calc(-100% - 6px)); }
+                                        transform: translateX(calc(-100% - 12px)); }
 [data-bubble-position="right"]::after { right:     0;
                                         top:       calc(50% - 14px);
-                                        transform: translateX(calc(100% + 6px)); }
+                                        transform: translateX(calc(100% + 12px)); }
 
 /*** Position ***/
 /***** Bubble presets *****/

@@ -1,5 +1,13 @@
 
 /***** Text presets *****/
+/*** Align ***/
+
+[data-horizontal-text-align="left"]   { text-align: left;   }
+[data-horizontal-text-align="center"] { text-align: center; }
+[data-horizontal-text-align="right"]  { text-align: right;  }
+
+/*** Align ***/
+
 /*** Caret ***/
 
 [data-caret="hidden"] {
