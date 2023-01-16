@@ -1,0 +1,44 @@
+
+/* @description
+ * Displays a tooltip near the element with the given label when the pointer
+ * is over the element.
+ *
+ * @usage
+ * [:div {:data-tooltip-content  "Hello"
+ *        :data-tooltip-position :right} "My content"] */
+
+
+
+/***** Tooltip presets *****/
+/*** Content ***/
+
+[data-tooltip-content]::after {
+  background-color: var( --fill-color-invert );
+  border-radius:    4px;
+  color:            var( --color-invert );
+  font-size:        var( --font-size-xs  );
+  font-weight:      600;
+  line-height:      28px;
+  padding:          0 14px;
+  position:         absolute;
+  white-space:      nowrap;
+  z-index:          9999;
+}
+
+[data-tooltip-content]:hover::after {
+  content: attr(data-tooltip-content);
+}
+
+/*** Content ***/
+
+/*** Position ***/
+
+[data-tooltip-position="left"]::after  { left:      0;
+                                         top:       calc(50% - 14px);
+                                         transform: translateX(calc(-100% - 12px)); }
+[data-tooltip-position="right"]::after { right:     0;
+                                         top:       calc(50% - 14px);
+                                         transform: translateX(calc(100% + 12px)); }
+
+/*** Position ***/
+/***** Tooltip presets *****/

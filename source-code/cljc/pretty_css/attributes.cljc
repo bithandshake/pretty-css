@@ -378,9 +378,37 @@
   ; @return (map)
   ; {:class (keyword or keywords in vector)
   ;  :data-disabled (boolean)}
-  [element-attributes {:keys [class disabled?]}]
-  (merge element-attributes {:class         class
-                             :data-disabled disabled?}))
+  [element-attributes {:keys [class disabled?] :as element-props}]
+  (letfn [(f0 [%] (if % (if (vector? %) % [%]) []))
+          (f1 []  (vec  (concat (-> element-attributes :class f0)
+                                (-> element-props      :class f0))))]
+         (merge element-attributes {:class (f1)
+                                    :data-disabled disabled?})))
+
+;; ----------------------------------------------------------------------------
+;; ----------------------------------------------------------------------------
+
+(defn tooltip-attributes
+  ; @param (map) element-attributes
+  ; @param (map) element-props
+  ; {:tooltip-content (string)(opt)
+  ;  :tooltip-position (keyword)(opt)}
+  ;
+  ; @usage
+  ; (tooltip-attributes {...} {...})
+  ;
+  ; @example
+  ; (tooltip-attributes {...} {:tooltip-content "My tooltip" :tooltip-position :left})
+  ; =>
+  ; {:data-tooltip-content  "My tooltip"
+  ;  :data-tooltip-position :left}
+  ;
+  ; @return (map)
+  ; {:data-tooltip-content (string)
+  ;  :data-tooltip-position (keyword)}
+  [element-attributes {:keys [tooltip-content tooltip-position]}]
+  (merge element-attributes {:data-tooltip-content  tooltip-content
+                             :data-tooltip-position tooltip-position}))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------

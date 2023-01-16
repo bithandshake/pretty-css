@@ -35,6 +35,8 @@
 
 - [text-attributes](#text-attributes)
 
+- [tooltip-attributes](#tooltip-attributes)
+
 ### adaptive-border-radius
 
 ```
@@ -562,9 +564,12 @@ nil
 
 ```
 (defn default-attributes
-  [element-attributes {:keys [class disabled?]}]
-  (merge element-attributes {:class         class
-                             :data-disabled disabled?}))
+  [element-attributes {:keys [class disabled?] :as element-props}]
+  (letfn [(f0 [%] (if % (if (vector? %) % [%]) []))
+          (f1 []  (vec  (concat (-> element-attributes :class f0)
+                                (-> element-props      :class f0))))]
+         (merge element-attributes {:class (f1)
+                                    :data-disabled disabled?})))
 ```
 
 </details>
@@ -929,6 +934,60 @@ nil
 
 (pretty-css.api/text-attributes ...)
 (text-attributes                ...)
+```
+
+</details>
+
+---
+
+### tooltip-attributes
+
+```
+@param (map) element-attributes
+@param (map) element-props
+{:tooltip-content (string)(opt)
+ :tooltip-position (keyword)(opt)}
+```
+
+```
+@usage
+(tooltip-attributes {...} {...})
+```
+
+```
+@example
+(tooltip-attributes {...} {:tooltip-content "My tooltip" :tooltip-position :left})
+=>
+{:data-tooltip-content  "My tooltip"
+ :data-tooltip-position :left}
+```
+
+```
+@return (map)
+{:data-tooltip-content (string)
+ :data-tooltip-position (keyword)}
+```
+
+<details>
+<summary>Source code</summary>
+
+```
+(defn tooltip-attributes
+  [element-attributes {:keys [tooltip-content tooltip-position]}]
+  (merge element-attributes {:data-tooltip-content  tooltip-content
+                             :data-tooltip-position tooltip-position}))
+```
+
+</details>
+
+<details>
+<summary>Require</summary>
+
+```
+(ns my-namespace (:require [pretty-css.api :refer [tooltip-attributes]]))
+
+(pretty-css.api/tooltip-attributes ...)
+(tooltip-attributes                ...)
 ```
 
 </details>

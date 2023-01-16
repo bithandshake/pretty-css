@@ -16,4 +16,34 @@ body {
 }
 
 /*** Black ***/
+
+/*** Hard black ***/
+
+body {
+  --hard-black-semi-transparent: rgba(015, 015, 015, 0.850);
+  --hard-black-xx-dark:           rgb(000, 000, 000);
+  --hard-black-x-dark:            rgb(005, 005, 005);
+  --hard-black-dark:              rgb(010, 010, 010);
+  --hard-black:                   rgb(015, 015, 015);
+  --hard-black-light:             rgb(020, 020, 020);
+  --hard-black-x-light:           rgb(025, 025, 025);
+  --hard-black-xx-light:          rgb(030, 030, 030);
+}
+
+/*** Hard black ***/
+
+/*** Soft black ***/
+
+body {
+  --soft-black-semi-transparent: rgba(050, 050, 050, 0.850);
+  --soft-black-xx-dark:           rgb(035, 035, 035);
+  --soft-black-x-dark:            rgb(040, 040, 040);
+  --soft-black-dark:              rgb(045, 045, 045);
+  --soft-black:                   rgb(050, 050, 050);
+  --soft-black-light:             rgb(055, 055, 055);
+  --soft-black-x-light:           rgb(060, 060, 060);
+  --soft-black-xx-light:          rgb(065, 065, 065);
+}
+
+/*** Soft black ***/
 /***** Black palettes *****/

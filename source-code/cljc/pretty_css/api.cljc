@@ -19,5 +19,6 @@
 (def border-attributes      attributes/border-attributes)
 (def text-attributes        attributes/text-attributes)
 (def default-attributes     attributes/default-attributes)
+(def tooltip-attributes     attributes/tooltip-attributes)
 (def indent-attributes      attributes/indent-attributes)
 (def outdent-attributes     attributes/outdent-attributes)

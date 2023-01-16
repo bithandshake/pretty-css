@@ -16,4 +16,34 @@ body {
 }
 
 /*** Grey ***/
+
+/*** Hard grey ***/
+
+body {
+  --grey-semi-transparent: rgba(135, 135, 135, 0.850);
+  --grey-xx-dark:           rgb(120, 120, 120);
+  --grey-x-dark:            rgb(125, 125, 125);
+  --grey-dark:              rgb(130, 130, 130);
+  --grey:                   rgb(135, 135, 135);
+  --grey-light:             rgb(140, 140, 140);
+  --grey-x-light:           rgb(145, 145, 145);
+  --grey-xx-light:          rgb(150, 150, 150);
+}
+
+/*** Hard grey ***/
+
+/*** Soft grey ***/
+
+body {
+  --grey-semi-transparent: rgba(170, 170, 170, 0.850);
+  --grey-xx-dark:           rgb(155, 155, 155);
+  --grey-x-dark:            rgb(160, 160, 160);
+  --grey-dark:              rgb(165, 165, 165);
+  --grey:                   rgb(170, 170, 170);
+  --grey-light:             rgb(175, 175, 175);
+  --grey-x-light:           rgb(180, 180, 180);
+  --grey-xx-light:          rgb(185, 185, 185);
+}
+
+/*** Soft grey ***/
 /***** Grey palettes *****/

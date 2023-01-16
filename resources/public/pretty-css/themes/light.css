@@ -77,7 +77,7 @@ body[data-theme="light"] {
 
 body[data-theme="light"] {
   --fill-color-default:   var( --white-xx-light );
-  --fill-color-muted:     var( --grey-x-light );
+  --fill-color-muted:     var( --white-xx-dark );
   --fill-color-highlight: var( --white-light );
   --fill-color-invert:    var( --black-x-light );
   --fill-color-primary:   var( --soft-blue );
@@ -101,7 +101,7 @@ body[data-theme="light"] {
 
 body[data-theme="light"] {
   --hover-color-default:   var( --white-xx-light    );
-  --hover-color-muted:     var( --grey-xx-light     );
+  --hover-color-muted:     var( --white-x-dark      );
   --hover-color-highlight: var( --white             );
   --hover-color-invert:    var( --black-xx-light    );
   --hover-color-primary:   var( --soft-blue-light   );
