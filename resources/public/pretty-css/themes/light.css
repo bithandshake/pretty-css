@@ -62,7 +62,7 @@ body[data-theme="light"] {
 
 body[data-theme="light"] {
   --color-default:   var( --black-xx-light      );
-  --color-muted:     var( --grey                );
+  --color-muted:     var( --grey-xx-dark        );
   --color-highlight: var( --grey-x-light        );
   --color-invert:    var( --white-dark          );
   --color-primary:   var( --hard-blue-xx-dark   );

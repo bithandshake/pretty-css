@@ -20,3 +20,5 @@ Check out the latest commit on the [release branch](https://github.com/bithandsh
 ### Changelog
 
 You can track the changes of the <strong>pretty-css</strong> library [here](CHANGES.md).
+
+### How to use this library?

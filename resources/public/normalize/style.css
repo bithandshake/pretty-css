@@ -1,0 +1,270 @@
+
+/***** Normalize *****/
+/*** HTML ***/
+
+html::-webkit-scrollbar {
+  /* Hide scrollbar in Webkit browsers */
+  display: none;
+}
+
+/*** HTML ***/
+
+/*** BODY ***/
+
+body {
+  margin:     0;
+  padding:    0;
+ -webkit-font-smoothing: antialiased;
+
+  /* All elements inherit the box-sizing property from the body element */
+  box-sizing: border-box;
+
+  /* All elements inherit the cursor property from the body element */
+  cursor: default;
+}
+
+/*** BODY ***/
+
+/*** IFRAME ***/
+
+iframe {
+  border: none;
+}
+
+/*** IFRAME ***/
+
+/*** * ***/
+
+*,
+*::before,
+*::after {
+  /* Inherit the box-sizing property of the body element */
+  box-sizing: inherit;
+}
+
+/*** * ***/
+
+/*** H* ***/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/*** H* ***/
+
+/*** DIV ***/
+
+div {
+  cursor:   inherit;
+  position: relative;
+}
+
+div[contenteditable="true"] {
+  /* Remove the border of focused content-editable elements */
+  outline-style: none;
+}
+
+/*** DIV ***/
+
+/*** PRE ***/
+
+pre {
+  margin: 0;
+}
+
+/*** PRE ***/
+
+/*** PROGRESS ***/
+
+progress {
+  appearance:        none;
+ -webkit-appearance: none;
+ -moz-appearance:    none;
+}
+
+/*** PROGRESS ***/
+
+/*** BUTTON ***/
+
+button {
+  background-color: transparent;
+  color:            inherit;
+  cursor:           pointer;
+  font-family:      inherit;
+  font-size:        inherit;
+  letter-spacing:   inherit;
+  line-height:      inherit;
+  margin:           0;
+  outline-style:    none;
+  padding:          0;
+  position:         relative;
+  border:           none;
+
+  /* Show the overflow in IE and Edge */
+  overflow: visible;
+
+  /* Remove the inheritence of text transforms in Edge, Firefox and IE */
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  /* Correct the inability to style clickable types in iOS and Safari */
+  -webkit-appearance: button;
+}
+
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  /* Restore the focus styles unset by the previous rule */
+  outline: 1px dotted ButtonText;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  /* Remove the inner border and padding in Firefox */
+  border-style: none;
+  padding:      0;
+}
+
+/*** BUTTON ***/
+
+/*** A ***/
+
+a {
+  /* Remove the gray background on active links in IE 10 */
+  background-color: transparent;
+  outline-style:    none;
+  position:         relative;
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+  color:           inherit;
+	text-decoration: none;
+}
+
+/*** A ***/
+
+/*** INPUT ***/
+
+input {
+  background-color: transparent;
+  border:           none;
+  font-family:      inherit;
+  font-size:        inherit;
+  letter-spacing:   inherit;
+  line-height:      inherit;
+  margin:           0;
+  outline-style:    none;
+  padding:          0;
+
+  /* Show the overflow in IE and Edge */
+  overflow: visible;
+}
+
+/*** INPUT ***/
+
+/*** TEXTAREA ***/
+
+textarea {
+  background-color: transparent;
+  border:           none;
+  font-family:      inherit;
+  font-size:        inherit;
+  letter-spacing:   inherit;
+  line-height:      inherit;
+  margin:           0;
+  outline-style:    none;
+  padding:          0;
+
+  /* Remove the default vertical scrollbar in IE 10+ */
+  /* overflow: auto; */
+}
+
+/*** TEXTAREA ***/
+
+/*** SELECT, OPTGROUP ***/
+
+select,
+optgroup {
+  margin:  0;
+  padding: 0;
+
+  /* Remove the inheritence of text transforms in Edge, Firefox and IE */
+  text-transform: none;
+}
+
+/*** SELECT, OPTGROUP ***/
+
+/*** IMG ***/
+
+img {
+  box-sizing: content-box;
+  display:    block;
+  position:   relative;
+
+  /* Remove the border on images inside links in IE 10 */
+  border-style: none;
+}
+
+/*** IMG ***/
+
+/*** P, SPAN, LABEL ***/
+
+p {
+  margin:  0;
+  padding: 0;
+}
+
+p,
+span,
+label {
+  cursor:   inherit;
+  position: relative;
+}
+
+/*** P, SPAN, LABEL ***/
+
+/*** FOOTER, HEADER, SECTION ***/
+
+footer,
+header,
+section {
+  cursor: inherit;
+  position: relative;
+}
+
+/*** FOOTER, HEADER, SECTION ***/
+
+/*** TABLE, TD, TH ***/
+
+table {
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+td {
+  position: relative;
+}
+
+/*** TABLE, TD, TH ***/
+/***** Normalize *****/
