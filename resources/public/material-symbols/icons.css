@@ -1,0 +1,41 @@
+
+/***** Material Symbols *****/
+
+[data-icon-family="material-symbols-filled"],
+[data-icon-family="material-symbols-outlined"] {
+  direction:                    ltr;
+  font-style:                   normal;
+  font-weight:                  normal;
+  letter-spacing:               normal;
+  text-transform:               none;
+  white-space:                  nowrap;
+  word-wrap:                    normal;
+ -webkit-font-feature-settings: 'liga';
+ -webkit-font-smoothing:        antialiased;
+
+  /* XXX#5210
+   * By default the Material Symbols are selectable elements,
+   * therefore the selection has to be turned off. */
+ -ms-user-select:     none;
+ -moz-user-select:    none;
+ -webkit-user-select: none;
+  user-select:        none;
+
+  /* XXX#5211
+   * By default the Material Symbols has no positioning rules. */
+  align-items:     center;
+  display:         flex;
+  justify-content: center;
+}
+
+[data-icon-family="material-symbols-filled"] {
+  font-family:             'Material Symbols Outlined';
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+[data-icon-family="material-symbols-outlined"] {
+  font-family:             'Material Symbols Outlined';
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+/***** Material Symbols *****/

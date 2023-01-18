@@ -1,9 +1,6 @@
 
-/* height, line-height, overflow, width
- * To avoid FOIT/FOUT effect before the icon-font family downloaded.
- *
- * line-height: ... !important
- * Overwrites the default Fontawesome line-height value. */
+/* To avoid FOIT/FOUT effect before the icon-font family downloaded
+ * the height, line-height, overflow and width properties has to be set! */
 
 
 
@@ -16,43 +13,43 @@
 
 [data-icon-size="xxs"] { font-size:   var( --icon-size-xxs         );
                          height:      var( --text-block-height-xxs );
-                         line-height: var( --text-block-height-xxs ) !important;
+                         line-height: var( --text-block-height-xxs );
                          width:       var( --text-block-height-xxs ); }
 [data-icon-size="xs"]  { font-size:   var( --icon-size-xs          );
                          height:      var( --text-block-height-xs  );
-                         line-height: var( --text-block-height-xs  ) !important;
+                         line-height: var( --text-block-height-xs  );
                          width:       var( --text-block-height-xs  ); }
 [data-icon-size="s"]   { font-size:   var( --icon-size-s           );
-                         height:      var( --text-block-height-s   ) !important;
+                         height:      var( --text-block-height-s   );
                          line-height: var( --text-block-height-s   );
                          width:       var( --text-block-height-s   ); }
 [data-icon-size="m"]   { font-size:   var( --icon-size-m           );
                          height:      var( --text-block-height-m   );
-                         line-height: var( --text-block-height-m   ) !important;
+                         line-height: var( --text-block-height-m   );
                          width:       var( --text-block-height-m   ); }
 [data-icon-size="l"]   { font-size:   var( --icon-size-l           );
                          height:      var( --text-block-height-l   );
-                         line-height: var( --text-block-height-l   ) !important;
+                         line-height: var( --text-block-height-l   );
                          width:       var( --text-block-height-l   ); }
 [data-icon-size="xl"]  { font-size:   var( --icon-size-xl          );
                          height:      var( --text-block-height-xl  );
-                         line-height: var( --text-block-height-xl  ) !important;
+                         line-height: var( --text-block-height-xl  );
                          width:       var( --text-block-height-xl  ); }
 [data-icon-size="xxl"] { font-size:   var( --icon-size-xxl         );
                          height:      var( --text-block-height-xxl );
-                         line-height: var( --text-block-height-xxl ) !important;
+                         line-height: var( --text-block-height-xxl );
                          width:       var( --text-block-height-xxl ); }
 [data-icon-size="3xl"] { font-size:   var( --icon-size-3xl         );
                          height:      var( --text-block-height-3xl );
-                         line-height: var( --text-block-height-3xl ) !important;
+                         line-height: var( --text-block-height-3xl );
                          width:       var( --text-block-height-3xl ); }
 [data-icon-size="4xl"] { font-size:   var( --icon-size-4xl         );
                          height:      var( --text-block-height-4xl );
-                         line-height: var( --text-block-height-4xl ) !important;
+                         line-height: var( --text-block-height-4xl );
                          width:       var( --text-block-height-4xl ); }
 [data-icon-size="5xl"] { font-size:   var( --icon-size-5xl         );
                          height:      var( --text-block-height-5xl );
-                         line-height: var( --text-block-height-5xl ) !important;
+                         line-height: var( --text-block-height-5xl );
                          width:       var( --text-block-height-5xl ); }
 
 /*** Icon size ***/
