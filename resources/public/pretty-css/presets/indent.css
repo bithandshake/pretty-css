@@ -4,7 +4,7 @@
  * margin because the browser merges the margins in certain cases! */
 
 /* XXX#7007
- * The more specific indent presets overwrite the less specific indent presets,
+ * The more specific indent presets overwrites the less specific indent presets,
  * therefore the 'all' presets have to be the very first before the 'horizontal'
  * and 'vertical' presets! (because of the CSS cascade) */
 

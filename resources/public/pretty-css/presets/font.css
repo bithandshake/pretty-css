@@ -39,26 +39,16 @@
 
 /*** Font size ***/
 
-[data-font-size="xxs"] { font-size:      var( --font-size-xxs      );
-                         letter-spacing: var( --letter-spacing-xxs ); }
-[data-font-size="xs"]  { font-size:      var( --font-size-xs       );
-                         letter-spacing: var( --letter-spacing-xs  ); }
-[data-font-size="s"]   { font-size:      var( --font-size-s        );
-                         letter-spacing: var( --letter-spacing-s   ); }
-[data-font-size="m"]   { font-size:      var( --font-size-m        );
-                         letter-spacing: var( --letter-spacing-m   ); }
-[data-font-size="l"]   { font-size:      var( --font-size-l        );
-                         letter-spacing: var( --letter-spacing-l   ); }
-[data-font-size="xl"]  { font-size:      var( --font-size-xl       );
-                         letter-spacing: var( --letter-spacing-xl  ); }
-[data-font-size="xxl"] { font-size:      var( --font-size-xxl      );
-                         letter-spacing: var( --letter-spacing-xxl ); }
-[data-font-size="3xl"] { font-size:      var( --font-size-3xl      );
-                         letter-spacing: var( --letter-spacing-3xl ); }
-[data-font-size="4xl"] { font-size:      var( --font-size-4xl      );
-                         letter-spacing: var( --letter-spacing-4xl ); }
-[data-font-size="5xl"] { font-size:      var( --font-size-5xl      );
-                         letter-spacing: var( --letter-spacing-5xl ); }
+[data-font-size="xxs"] { font-size: var( --font-size-xxs ); }
+[data-font-size="xs"]  { font-size: var( --font-size-xs  ); }
+[data-font-size="s"]   { font-size: var( --font-size-s   ); }
+[data-font-size="m"]   { font-size: var( --font-size-m   ); }
+[data-font-size="l"]   { font-size: var( --font-size-l   ); }
+[data-font-size="xl"]  { font-size: var( --font-size-xl  ); }
+[data-font-size="xxl"] { font-size: var( --font-size-xxl ); }
+[data-font-size="3xl"] { font-size: var( --font-size-3xl ); }
+[data-font-size="4xl"] { font-size: var( --font-size-4xl ); }
+[data-font-size="5xl"] { font-size: var( --font-size-5xl ); }
 
 /*** Font size ***/
 
@@ -72,4 +62,30 @@
 [data-font-weight="extra-bold"]  { font-weight: var( --font-weight-extra-bold  ); }
 
 /*** Font weight ***/
+
+/*** Letter spacing ***/
+
+[data-letter-spacing="xxs"] { letter-spacing: var( --letter-spacing-xxs ); }
+[data-letter-spacing="xs"]  { letter-spacing: var( --letter-spacing-xs  ); }
+[data-letter-spacing="s"]   { letter-spacing: var( --letter-spacing-s   ); }
+[data-letter-spacing="m"]   { letter-spacing: var( --letter-spacing-m   ); }
+[data-letter-spacing="l"]   { letter-spacing: var( --letter-spacing-l   ); }
+[data-letter-spacing="xl"]  { letter-spacing: var( --letter-spacing-xl  ); }
+[data-letter-spacing="xxl"] { letter-spacing: var( --letter-spacing-xxl ); }
+[data-letter-spacing="3xl"] { letter-spacing: var( --letter-spacing-3xl ); }
+[data-letter-spacing="4xl"] { letter-spacing: var( --letter-spacing-4xl ); }
+[data-letter-spacing="5xl"] { letter-spacing: var( --letter-spacing-5xl ); }
+
+[data-font-size="xxs"][data-letter-spacing="auto"] { letter-spacing: var( --letter-spacing-xxs ); }
+[data-font-size="xs"][data-letter-spacing="auto"]  { letter-spacing: var( --letter-spacing-xs  ); }
+[data-font-size="s"][data-letter-spacing="auto"]   { letter-spacing: var( --letter-spacing-s   ); }
+[data-font-size="m"][data-letter-spacing="auto"]   { letter-spacing: var( --letter-spacing-m   ); }
+[data-font-size="l"][data-letter-spacing="auto"]   { letter-spacing: var( --letter-spacing-l   ); }
+[data-font-size="xl"][data-letter-spacing="auto"]  { letter-spacing: var( --letter-spacing-xl  ); }
+[data-font-size="xxl"][data-letter-spacing="auto"] { letter-spacing: var( --letter-spacing-xxl ); }
+[data-font-size="3xl"][data-letter-spacing="auto"] { letter-spacing: var( --letter-spacing-3xl ); }
+[data-font-size="4xl"][data-letter-spacing="auto"] { letter-spacing: var( --letter-spacing-4xl ); }
+[data-font-size="5xl"][data-letter-spacing="auto"] { letter-spacing: var( --letter-spacing-5xl ); }
+
+/*** Letter spacing ***/
 /***** Font presets *****/

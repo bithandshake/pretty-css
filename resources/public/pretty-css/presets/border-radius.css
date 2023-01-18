@@ -1,0 +1,77 @@
+
+ /***** Border radius presets *****/
+ /*** All ***/
+
+[data-border-radius-all="xxs"] { border-radius: var( --border-radius-xxs ); }
+[data-border-radius-all="xs"]  { border-radius: var( --border-radius-xs  ); }
+[data-border-radius-all="s"]   { border-radius: var( --border-radius-s   ); }
+[data-border-radius-all="m"]   { border-radius: var( --border-radius-m   ); }
+[data-border-radius-all="l"]   { border-radius: var( --border-radius-l   ); }
+[data-border-radius-all="xl"]  { border-radius: var( --border-radius-xl  ); }
+[data-border-radius-all="xxl"] { border-radius: var( --border-radius-xxl ); }
+[data-border-radius-all="3xl"] { border-radius: var( --border-radius-3xl ); }
+[data-border-radius-all="4xl"] { border-radius: var( --border-radius-4xl ); }
+[data-border-radius-all="5xl"] { border-radius: var( --border-radius-5xl ); }
+
+ /*** All ***/
+
+ /*** Top left ***/
+
+[data-border-radius-tl="xxs"] { border-top-left-radius: var( --border-radius-xxs ); }
+[data-border-radius-tl="xs"]  { border-top-left-radius: var( --border-radius-xs  ); }
+[data-border-radius-tl="s"]   { border-top-left-radius: var( --border-radius-s   ); }
+[data-border-radius-tl="m"]   { border-top-left-radius: var( --border-radius-m   ); }
+[data-border-radius-tl="l"]   { border-top-left-radius: var( --border-radius-l   ); }
+[data-border-radius-tl="xl"]  { border-top-left-radius: var( --border-radius-xl  ); }
+[data-border-radius-tl="xxl"] { border-top-left-radius: var( --border-radius-xxl ); }
+[data-border-radius-tl="3xl"] { border-top-left-radius: var( --border-radius-3xl ); }
+[data-border-radius-tl="4xl"] { border-top-left-radius: var( --border-radius-4xl ); }
+[data-border-radius-tl="5xl"] { border-top-left-radius: var( --border-radius-5xl ); }
+
+ /*** Top left ***/
+
+ /*** Top right ***/
+
+[data-border-radius-tr="xxs"] { border-top-right-radius: var( --border-radius-xxs ); }
+[data-border-radius-tr="xs"]  { border-top-right-radius: var( --border-radius-xs  ); }
+[data-border-radius-tr="s"]   { border-top-right-radius: var( --border-radius-s   ); }
+[data-border-radius-tr="m"]   { border-top-right-radius: var( --border-radius-m   ); }
+[data-border-radius-tr="l"]   { border-top-right-radius: var( --border-radius-l   ); }
+[data-border-radius-tr="xl"]  { border-top-right-radius: var( --border-radius-xl  ); }
+[data-border-radius-tr="xxl"] { border-top-right-radius: var( --border-radius-xxl ); }
+[data-border-radius-tr="3xl"] { border-top-right-radius: var( --border-radius-3xl ); }
+[data-border-radius-tr="4xl"] { border-top-right-radius: var( --border-radius-4xl ); }
+[data-border-radius-tr="5xl"] { border-top-right-radius: var( --border-radius-5xl ); }
+
+ /*** Top right ***/
+
+ /*** Bottom right ***/
+
+[data-border-radius-br="xxs"] { border-bottom-right-radius: var( --border-radius-xxs ); }
+[data-border-radius-br="xs"]  { border-bottom-right-radius: var( --border-radius-xs  ); }
+[data-border-radius-br="s"]   { border-bottom-right-radius: var( --border-radius-s   ); }
+[data-border-radius-br="m"]   { border-bottom-right-radius: var( --border-radius-m   ); }
+[data-border-radius-br="l"]   { border-bottom-right-radius: var( --border-radius-l   ); }
+[data-border-radius-br="xl"]  { border-bottom-right-radius: var( --border-radius-xl  ); }
+[data-border-radius-br="xxl"] { border-bottom-right-radius: var( --border-radius-xxl ); }
+[data-border-radius-br="3xl"] { border-bottom-right-radius: var( --border-radius-3xl ); }
+[data-border-radius-br="4xl"] { border-bottom-right-radius: var( --border-radius-4xl ); }
+[data-border-radius-br="5xl"] { border-bottom-right-radius: var( --border-radius-5xl ); }
+
+ /*** Bottom right ***/
+
+ /*** Bottom left ***/
+
+[data-border-radius-bl="xxs"] { border-bottom-left-radius: var( --border-radius-xxs ); }
+[data-border-radius-bl="xs"]  { border-bottom-left-radius: var( --border-radius-xs  ); }
+[data-border-radius-bl="s"]   { border-bottom-left-radius: var( --border-radius-s   ); }
+[data-border-radius-bl="m"]   { border-bottom-left-radius: var( --border-radius-m   ); }
+[data-border-radius-bl="l"]   { border-bottom-left-radius: var( --border-radius-l   ); }
+[data-border-radius-bl="xl"]  { border-bottom-left-radius: var( --border-radius-xl  ); }
+[data-border-radius-bl="xxl"] { border-bottom-left-radius: var( --border-radius-xxl ); }
+[data-border-radius-bl="3xl"] { border-bottom-left-radius: var( --border-radius-3xl ); }
+[data-border-radius-bl="4xl"] { border-bottom-left-radius: var( --border-radius-4xl ); }
+[data-border-radius-bl="5xl"] { border-bottom-left-radius: var( --border-radius-5xl ); }
+
+ /*** Bottom left ***/
+ /***** Border radius presets *****/

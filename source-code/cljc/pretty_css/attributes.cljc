@@ -23,8 +23,8 @@
   ;
   ; @return (string)
   [border-radius ratio]
-  ; By using the adaptive border radius solution, elements can track the curve of
-  ; their outer border.
+  ; By using the adaptive border radius solution an element's border can tracks
+  ; the curve of its inner or outer border.
   (if border-radius (str "calc(var(--border-radius-"(name border-radius)") * "ratio")")))
 
 ;; ----------------------------------------------------------------------------
@@ -208,6 +208,8 @@
   ;   :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
   ;  :font-weight (keyword)(opt)
   ;   :inherit, :extra-light, :light, :normal, :medium, :bold, :extra-bold
+  ;  :letter-spacing (keyword)(opt)
+  ;   :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl, :auto
   ;  :line-height (keyword)(opt)}
   ;   :inherit, :native, :text-block, :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
   ;
@@ -215,20 +217,23 @@
   ; (font-attributes {...} {...})
   ;
   ; @example
-  ; (font-attributes {...} {:font-size :s :font-weight :bold :line-height :text-block})
+  ; (font-attributes {...} {:font-size :s :font-weight :bold :letter-spacing :s :line-height :text-block})
   ; =>
   ; {:data-font-size   :s
   ;  :data-font-weight :bold
+  ;  :data-letter-spacing :s
   ;  :data-line-height :text-block}
   ;
   ; @return (map)
   ; {:data-font-size (keyword)
   ;  :data-font-weight (keyword)
+  ;  :data-letter-spacing (keyword)
   ;  :data-line-height (keyword)}
-  [element-attributes {:keys [font-size font-weight line-height]}]
-  (merge element-attributes {:data-font-size   font-size
-                             :data-font-weight font-weight
-                             :data-line-height line-height}))
+  [element-attributes {:keys [font-size font-weight letter-spacing line-height]}]
+  (merge element-attributes {:data-font-size      font-size
+                             :data-font-weight    font-weight
+                             :data-letter-spacing letter-spacing
+                             :data-line-height    line-height}))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
@@ -293,13 +298,52 @@
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
+(defn border-radius-attributes
+  ; @param (map) element-attributes
+  ; @param (map) element-props
+  ; {:border-radius (map)(opt)
+  ;   {:tl (keyword)(opt)
+  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+  ;    :tr (keyword)(opt)
+  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+  ;    :br (keyword)(opt)
+  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+  ;    :bl (keyword)(opt)
+  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+  ;    :all (keyword)(opt)
+  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl}}
+  ;
+  ; @usage
+  ; (border-radius-attributes {...} {:border-radius {...}})
+  ;
+  ; @example
+  ; (border-radius-attributes {...} {:border-radius {:tr :xxl :tl :xs}})
+  ; =>
+  ; {:data-border-radius-tr :xxl
+  ;  :data-border-radius-tl :xs}
+  ;
+  ; @return (map)
+  [element-attributes {:keys [border-radius]}]
+  (letfn [(f [result key value]
+             (assoc result (keyword (str "data-border-radius-" (name key))) value))]
+         (merge element-attributes (reduce-kv f {} border-radius))))
+
 (defn border-attributes
   ; @param (map) element-attributes
   ; @param (map) element-props
   ; {:border-color (keyword or string)(opt)
   ;   :default, :highlight, :invert, :muted, :primary, :secondary, :success, :warning
-  ;  :border-radius (keyword)(opt)
-  ;   :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+  ;  :border-radius (map)(opt)
+  ;   {:tl (keyword)(opt)
+  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+  ;    :tr (keyword)(opt)
+  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+  ;    :br (keyword)(opt)
+  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+  ;    :bl (keyword)(opt)
+  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+  ;    :all (keyword)(opt)
+  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl}}
   ;  :border-position (keyword)(opt)
   ;   :all, :bottom, :top, :left, :right, :horizontal, :vertical
   ;  :border-width (keyword)(opt)}
@@ -308,20 +352,18 @@
   ; (border-attributes {...} {...})
   ;
   ; @example
-  ; (border-attributes {...} {:border-color :default :border-radius :s :border-width :s})
+  ; (border-attributes {...} {:border-color :default :border-width :s})
   ; =>
-  ; {:data-border-color  :default
-  ;  :data-border-family :s
-  ;  :data-border-size   :s}
+  ; {:data-border-color :default
+  ;  :data-border-width :s}
   ;
   ; @return (map)
   ; {:data-border-position (keyword)
-  ;  :data-border-radius (keyword)
   ;  :data-border-width (keyword)}
-  [element-attributes {:keys [border-color border-position border-radius border-width]}]
-  (-> (merge element-attributes {:data-border-radius   border-radius
-                                 :data-border-position border-position
+  [element-attributes {:keys [border-color border-position border-width] :as element-props}]
+  (-> (merge element-attributes {:data-border-position border-position
                                  :data-border-width    border-width})
+      (border-radius-attributes element-props)
       (apply-color :border-color :data-border-color border-color)))
 
 ;; ----------------------------------------------------------------------------
@@ -424,6 +466,12 @@
   ;    :right (keyword)(opt)
   ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
   ;    :top (keyword)(opt)
+  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+  ;    :horizontal (keyword)(opt)
+  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+  ;    :vertical (keyword)(opt)
+  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+  ;    :all (keyword)(opt)
   ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl}}
   ;
   ; @usage
@@ -452,6 +500,12 @@
   ;    :right (keyword)(opt)
   ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
   ;    :top (keyword)(opt)
+  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+  ;    :horizontal (keyword)(opt)
+  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+  ;    :vertical (keyword)(opt)
+  ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+  ;    :all (keyword)(opt)
   ;     :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl}}
   ;
   ; @usage
