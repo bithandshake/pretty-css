@@ -21,7 +21,7 @@ Check out the latest commit on the [release branch](https://github.com/bithandsh
 
 You can track the changes of the <strong>pretty-css</strong> library [here](CHANGES.md).
 
-### What's in this library?
+### What's in this kit?
 
 ...
 
