@@ -1,7 +1,7 @@
 
 /***** Body container *****/
 
-body[data-theme="light"] {
+[data-theme="light"] {
   background-color: var( --app-background-color );
   color:            var( --color-default );
 }
@@ -13,7 +13,7 @@ body[data-theme="light"] {
 /***** Theme variables *****/
 /*** App background ***/
 
-body[data-theme="light"] {
+[data-theme="light"] {
   --app-background-color:         #fcfdff;
   --app-background-pattern-color: var( --white-light );
 }
@@ -22,7 +22,7 @@ body[data-theme="light"] {
 
 /*** App overlay ***/
 
-body[data-theme="light"] {
+[data-theme="light"] {
   --app-overlay-color: var( --white-semi-transparent );
 }
 
@@ -30,7 +30,7 @@ body[data-theme="light"] {
 
 /*** Badge color ***/
 
-body[data-theme="light"] {
+[data-theme="light"] {
   --badge-color-default:   var( --grey-x-light );
   --badge-color-muted:     var( --grey-xx-light );
   --badge-color-highlight: var( --white-x-dark );
@@ -45,7 +45,7 @@ body[data-theme="light"] {
 
 /*** Border color ***/
 
-body[data-theme="light"] {
+[data-theme="light"] {
   --border-color-default:   var( --grey-x-light );
   --border-color-muted:     var( --grey-xx-light );
   --border-color-highlight: var( --white-x-dark );
@@ -60,7 +60,7 @@ body[data-theme="light"] {
 
 /*** Color ***/
 
-body[data-theme="light"] {
+[data-theme="light"] {
   --color-default:   var( --black-xx-light      );
   --color-muted:     var( --grey-xx-dark        );
   --color-highlight: var( --grey-x-light        );
@@ -75,7 +75,7 @@ body[data-theme="light"] {
 
 /*** Fill color ***/
 
-body[data-theme="light"] {
+[data-theme="light"] {
   --fill-color-default:   var( --white-xx-light );
   --fill-color-muted:     var( --white-xx-dark );
   --fill-color-highlight: var( --white-light );
@@ -90,7 +90,7 @@ body[data-theme="light"] {
 
 /*** Ghost color ***/
 
-body[data-theme="light"] {
+[data-theme="light"] {
   --ghost-color: var( --white );
   --ghost-color: #e0e1f4;
 }
@@ -99,7 +99,7 @@ body[data-theme="light"] {
 
 /*** Hover color ***/
 
-body[data-theme="light"] {
+[data-theme="light"] {
   --hover-color-default:   var( --white-xx-light    );
   --hover-color-muted:     var( --white-x-dark      );
   --hover-color-highlight: var( --white             );
@@ -114,7 +114,7 @@ body[data-theme="light"] {
 
 /*** Shadow color ***/
 
-body[data-theme="light"] {
+[data-theme="light"] {
   --shadow-color: var( --black );
 }
 
@@ -122,7 +122,7 @@ body[data-theme="light"] {
 
 /*** Sidebar background ***/
 
-body[data-theme="light"] {
+[data-theme="light"] {
   --sidebar-background-color: #4a5661;
 }
 

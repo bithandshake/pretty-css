@@ -40,8 +40,8 @@
 /*** Font size ***/
 
 body {
-  --font-size-xxs: 1.0rem;
-  --font-size-xs:  1.2rem;
+  --font-size-xxs: 1.2rem;
+  --font-size-xs:  1.3rem;
   --font-size-s:   1.4rem;
   --font-size-m:   1.6rem;
   --font-size-l:   1.8rem;
@@ -70,16 +70,16 @@ body {
 /*** Letter spacing ***/
 
 body {
-  --letter-spacing-xxs: 0.05rem;
-  --letter-spacing-xs:  0.06rem;
-  --letter-spacing-s:   0.07rem;
-  --letter-spacing-m:   0.08rem;
-  --letter-spacing-l:   0.09rem;
-  --letter-spacing-xl:  0.10rem;
-  --letter-spacing-xxl: 0.11rem;
-  --letter-spacing-3xl: 0.12rem;
-  --letter-spacing-4xl: 0.13rem;
-  --letter-spacing-5xl: 0.14rem;
+  --letter-spacing-xxs: 0.060rem;
+  --letter-spacing-xs:  0.065rem;
+  --letter-spacing-s:   0.070rem;
+  --letter-spacing-m:   0.080rem;
+  --letter-spacing-l:   0.090rem;
+  --letter-spacing-xl:  0.100rem;
+  --letter-spacing-xxl: 0.110rem;
+  --letter-spacing-3xl: 0.120rem;
+  --letter-spacing-4xl: 0.130rem;
+  --letter-spacing-5xl: 0.140rem;
 }
 
 /*** Letter spacing ***/
@@ -87,16 +87,16 @@ body {
 /*** Line height ***/
 
 body {
-  --line-height-xxs: 1.5rem;
-  --line-height-xs:  1.8rem;
-  --line-height-s:   2.1rem;
-  --line-height-m:   2.4rem;
-  --line-height-l:   2.7rem;
-  --line-height-xl:  3.0rem;
-  --line-height-xxl: 3.3rem;
-  --line-height-3xl: 3.6rem;
-  --line-height-4xl: 3.9rem;
-  --line-height-5xl: 4.2rem;
+  --line-height-xxs: 1.80rem;
+  --line-height-xs:  1.95rem;
+  --line-height-s:   2.10rem;
+  --line-height-m:   2.40rem;
+  --line-height-l:   2.70rem;
+  --line-height-xl:  3.00rem;
+  --line-height-xxl: 3.30rem;
+  --line-height-3xl: 3.60rem;
+  --line-height-4xl: 3.90rem;
+  --line-height-5xl: 4.20rem;
 }
 
 /*** Line height ***/
