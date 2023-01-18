@@ -1,8 +1,101 @@
 
+/* All color preset type has VARIABLE, THEMED and NATIVE values.
+ *
+ * Color preset types:
+ *
+ *  - Badge color
+ *  - Border color
+ *  - Fill color
+ *  - Hover color
+ *  - Icon color
+ *  - Marker color
+ *  - Stroke color
+ *  - Text color
+ */
+
+
+
+/* Variable color presets
+ *
+ * By using the 'pretty-css.api/apply-color' or the 'pretty-css.api/color-attributes'
+ * functions and a color preset takes as a string value, in the returned attributes map
+ * a variable will be placed in the element's inline style scope with the taken color.
+ *
+ *
+ *
+ * In the following example an empty attributes map given to the color-attributes
+ * function and in the properties map, the fill-color set to "#fff":
+ *
+ * (color-attributes {} {:fill-color "#fff"})
+ *
+ *
+ *
+ * The returned attributes map contains the inline style scope with the taken
+ * color set as the "--fill-color" variable and the :data-fill-color attribute
+ * set to :var:
+ *
+ * {:style {"--fill-color" "#fff"} :data-fill-color :var}
+ *
+ *
+ *
+ * In the CSS file the following preset will match with the {:data-fill-color :var}
+ * attribute and sets element's fill color to the value defined in the inline style:
+ *
+ * [data-fill-color="var"] { background-color: var( --fill-color ); }
+ */
+
+
+
+/* Themed color presets
+ *
+ * The pretty-css has three default themes: DARK, LIGHT, HIGH-CONTRAST.
+ * You can make your own themes by using one of them as a sample.
+ *
+ * In theme files every preset type has its themed values for the following colors:
+ *
+ *  - default
+ *  - highlight
+ *  - invert
+ *  - muted
+ *  - primary
+ *  - secondary
+ *  - success
+ *  - warning
+ *
+ *
+ *
+ * By setting the {:data-theme ...} attribute on a scope, you can use the themed
+ * color presets in it:
+ *
+ * [:div {:data-theme :light}
+ *       [:div {:data-fill-color :primary}]]
+ *
+ */
+
+
+
+/* Native color presets
+ *
+ * Every color from the pretty-css palettes has its preset for all preset types.
+ *
+ * By adding the color name as the preset attribute, the choosed color will be
+ * applied on the element:
+ *
+ * [:div {:data-fill-color :soft-green}]
+ */
+
+
+
 /***** Color presets *****/
 /*** Badge color ***/
+/* Variable */
 
-[data-badge-color="var"]::after       { background-color: var( --badge-color           ); }
+[data-badge-color="var"]::after { background-color: var( --badge-color ); }
+
+/* Variable */
+
+/* Themed */
+
 [data-badge-color="default"]::after   { background-color: var( --badge-color-default   ); }
 [data-badge-color="highlight"]::after { background-color: var( --badge-color-highlight ); }
 [data-badge-color="invert"]::after    { background-color: var( --badge-color-invert    ); }
@@ -12,25 +105,67 @@
 [data-badge-color="success"]::after   { background-color: var( --badge-color-success   ); }
 [data-badge-color="warning"]::after   { background-color: var( --badge-color-warning   ); }
 
+/* Themed */
+
+/* Native */
+
+[data-badge-color="hard-blue"]::after   { background-color: var( --hard-blue-xx-light   ); }
+[data-badge-color="soft-blue"]::after   { background-color: var( --soft-blue-xx-light   ); }
+[data-badge-color="hard-green"]::after  { background-color: var( --hard-green-xx-light  ); }
+[data-badge-color="khaki-green"]::after { background-color: var( --khaki-green-xx-light ); }
+[data-badge-color="soft-green"]::after  { background-color: var( --soft-green-xx-light  ); }
+[data-badge-color="hard-purple"]::after { background-color: var( --hard-purple-xx-light ); }
+[data-badge-color="soft-purple"]::after { background-color: var( --soft-purple-xx-light ); }
+[data-badge-color="hard-red"]::after    { background-color: var( --hard-red-xx-light    ); }
+[data-badge-color="soft-red"]::after    { background-color: var( --soft-red-xx-light    ); }
+
+/* Native */
 /*** Badge color ***/
 
 /*** Border color ***/
+/* Variable */
 
-[data-border-color="var"]         { border-color: var( --border-color           ); }
-[data-border-color="default"]     { border-color: var( --border-color-default   ); }
-[data-border-color="invert"]      { border-color: var( --border-color-invert    ); }
-[data-border-color="highlight"]   { border-color: var( --border-color-highlight ); }
-[data-border-color="muted"]       { border-color: var( --border-color-muted     ); }
-[data-border-color="primary"]     { border-color: var( --border-color-primary   ); }
-[data-border-color="secondary"]   { border-color: var( --border-color-secondary ); }
-[data-border-color="success"]     { border-color: var( --border-color-success   ); }
-[data-border-color="warning"]     { border-color: var( --border-color-warning   ); }
+[data-border-color="var"] { border-color: var( --border-color ); }
 
+/* Variable */
+
+/* Themed */
+
+[data-border-color="default"]   { border-color: var( --border-color-default   ); }
+[data-border-color="invert"]    { border-color: var( --border-color-invert    ); }
+[data-border-color="highlight"] { border-color: var( --border-color-highlight ); }
+[data-border-color="muted"]     { border-color: var( --border-color-muted     ); }
+[data-border-color="primary"]   { border-color: var( --border-color-primary   ); }
+[data-border-color="secondary"] { border-color: var( --border-color-secondary ); }
+[data-border-color="success"]   { border-color: var( --border-color-success   ); }
+[data-border-color="warning"]   { border-color: var( --border-color-warning   ); }
+
+/* Themed */
+
+/* Native */
+
+[data-border-color="hard-blue"]   { border-color: var( --hard-blue-xx-dark   ); }
+[data-border-color="soft-blue"]   { border-color: var( --soft-blue-xx-dark   ); }
+[data-border-color="hard-green"]  { border-color: var( --hard-green-xx-dark  ); }
+[data-border-color="khaki-green"] { border-color: var( --khaki-green-xx-dark ); }
+[data-border-color="soft-green"]  { border-color: var( --soft-green-xx-dark  ); }
+[data-border-color="hard-purple"] { border-color: var( --hard-purple-xx-dark ); }
+[data-border-color="soft-purple"] { border-color: var( --soft-purple-xx-dark ); }
+[data-border-color="hard-red"]    { border-color: var( --hard-red-xx-dark    ); }
+[data-border-color="soft-red"]    { border-color: var( --soft-red-xx-dark    ); }
+
+/* Native */
 /*** Border color ***/
 
 /*** Fill color ***/
+/* Variable */
 
-[data-fill-color="var"]       { background-color: var( --fill-color           ); }
+[data-fill-color="var"] { background-color: var( --fill-color ); }
+
+/* Variable */
+
+/* Themed */
+
 [data-fill-color="default"]   { background-color: var( --fill-color-default   ); }
 [data-fill-color="highlight"] { background-color: var( --fill-color-highlight ); }
 [data-fill-color="invert"]    { background-color: var( --fill-color-invert    ); }
@@ -40,11 +175,32 @@
 [data-fill-color="success"]   { background-color: var( --fill-color-success   ); }
 [data-fill-color="warning"]   { background-color: var( --fill-color-warning   ); }
 
+/* Themed */
+
+/* Native */
+
+[data-fill-color="hard-blue"]   { background-color: var( --hard-blue-xx-light   ); }
+[data-fill-color="soft-blue"]   { background-color: var( --soft-blue-xx-light   ); }
+[data-fill-color="hard-green"]  { background-color: var( --hard-green-xx-light  ); }
+[data-fill-color="khaki-green"] { background-color: var( --khaki-green-xx-light ); }
+[data-fill-color="soft-green"]  { background-color: var( --soft-green-xx-light  ); }
+[data-fill-color="hard-purple"] { background-color: var( --hard-purple-xx-light ); }
+[data-fill-color="soft-purple"] { background-color: var( --soft-purple-xx-light ); }
+[data-fill-color="hard-red"]    { background-color: var( --hard-red-xx-light    ); }
+[data-fill-color="soft-red"]    { background-color: var( --soft-red-xx-light    ); }
+
+/* Native */
 /*** Fill color ***/
 
 /*** Hover color ***/
+/* Variable */
 
-[data-hover-color="var"]:hover       { background-color: var( --hover-color           ); }
+[data-hover-color="var"]:hover { background-color: var( --hover-color ); }
+
+/* Variable */
+
+/* Themed */
+
 [data-hover-color="default"]:hover   { background-color: var( --hover-color-default   ); }
 [data-hover-color="highlight"]:hover { background-color: var( --hover-color-highlight ); }
 [data-hover-color="invert"]:hover    { background-color: var( --hover-color-invert    ); }
@@ -54,11 +210,32 @@
 [data-hover-color="success"]:hover   { background-color: var( --hover-color-success   ); }
 [data-hover-color="warning"]:hover   { background-color: var( --hover-color-warning   ); }
 
+/* Themed */
+
+/* Native */
+
+[data-hover-color="hard-blue"]:hover   { background-color: var( --hard-blue-light   ); }
+[data-hover-color="soft-blue"]:hover   { background-color: var( --soft-blue-light   ); }
+[data-hover-color="hard-green"]:hover  { background-color: var( --hard-green-light  ); }
+[data-hover-color="khaki-green"]:hover { background-color: var( --khaki-green-light ); }
+[data-hover-color="soft-green"]:hover  { background-color: var( --soft-green-light  ); }
+[data-hover-color="hard-purple"]:hover { background-color: var( --hard-purple-light ); }
+[data-hover-color="soft-purple"]:hover { background-color: var( --soft-purple-light ); }
+[data-hover-color="hard-red"]:hover    { background-color: var( --hard-red-light    ); }
+[data-hover-color="soft-red"]:hover    { background-color: var( --soft-red-light    ); }
+
+/* Native */
 /*** Hover color ***/
 
 /*** Icon color ***/
+/* Variable */
 
-[data-icon-color="var"]       { color: var( --icon-color      ); }
+[data-icon-color="var"] { color: var( --icon-color ); }
+
+/* Variable */
+
+/* Themed */
+
 [data-icon-color="default"]   { color: var( --color-default   ); }
 [data-icon-color="highlight"] { color: var( --color-highlight ); }
 [data-icon-color="invert"]    { color: var( --color-invert    ); }
@@ -68,11 +245,32 @@
 [data-icon-color="success"]   { color: var( --color-success   ); }
 [data-icon-color="warning"]   { color: var( --color-warning   ); }
 
+/* Themed */
+
+/* Native */
+
+[data-icon-color="hard-blue"]   { color: var( --hard-blue-xx-dark   ); }
+[data-icon-color="soft-blue"]   { color: var( --soft-blue-xx-dark   ); }
+[data-icon-color="hard-green"]  { color: var( --hard-green-xx-dark  ); }
+[data-icon-color="khaki-green"] { color: var( --khaki-green-xx-dark ); }
+[data-icon-color="soft-green"]  { color: var( --soft-green-xx-dark  ); }
+[data-icon-color="hard-purple"] { color: var( --hard-purple-xx-dark ); }
+[data-icon-color="soft-purple"] { color: var( --soft-purple-xx-dark ); }
+[data-icon-color="hard-red"]    { color: var( --hard-red-xx-dark    ); }
+[data-icon-color="soft-red"]    { color: var( --soft-red-xx-dark    ); }
+
+/* Native */
 /*** Icon color ***/
 
 /*** Marker color ***/
+/* Variable */
 
-[data-marker-color="var"]::after       { background-color: var( --marker-color           ); }
+[data-marker-color="var"]::after { background-color: var( --marker-color ); }
+
+/* Variable */
+
+/* Themed */
+
 [data-marker-color="default"]::after   { background-color: var( --border-color-default   ); }
 [data-marker-color="muted"]::after     { background-color: var( --border-color-muted     ); }
 [data-marker-color="highlight"]::after { background-color: var( --border-color-highlight ); }
@@ -82,11 +280,32 @@
 [data-marker-color="success"]::after   { background-color: var( --border-color-success   ); }
 [data-marker-color="warning"]::after   { background-color: var( --border-color-warning   ); }
 
+/* Themed */
+
+/* Native */
+
+[data-marker-color="hard-blue"]::after   { background-color: var( --hard-blue-xx-dark   ); }
+[data-marker-color="soft-blue"]::after   { background-color: var( --soft-blue-xx-dark   ); }
+[data-marker-color="hard-green"]::after  { background-color: var( --hard-green-xx-dark  ); }
+[data-marker-color="khaki-green"]::after { background-color: var( --khaki-green-xx-dark ); }
+[data-marker-color="soft-green"]::after  { background-color: var( --soft-green-xx-dark  ); }
+[data-marker-color="hard-purple"]::after { background-color: var( --hard-purple-xx-dark ); }
+[data-marker-color="soft-purple"]::after { background-color: var( --soft-purple-xx-dark ); }
+[data-marker-color="hard-red"]::after    { background-color: var( --hard-red-xx-dark    ); }
+[data-marker-color="soft-red"]::after    { background-color: var( --soft-red-xx-dark    ); }
+
+/* Native */
 /*** Marker color ***/
 
 /*** Stroke color ***/
+/* Variable */
 
-[data-stroke-color="var"]       { stroke: var( --stroke-color           ); }
+[data-stroke-color="var"] { stroke: var( --stroke-color ); }
+
+/* Variable */
+
+/* Themed */
+
 [data-stroke-color="default"]   { stroke: var( --border-color-default   ); }
 [data-stroke-color="highlight"] { stroke: var( --border-color-highlight ); }
 [data-stroke-color="invert"]    { stroke: var( --border-color-invert    ); }
@@ -96,11 +315,32 @@
 [data-stroke-color="success"]   { stroke: var( --border-color-success   ); }
 [data-stroke-color="warning"]   { stroke: var( --border-color-warning   ); }
 
+/* Themed */
+
+/* Native */
+
+[data-stroke-color="hard-blue"]   { stroke: var( --hard-blue-xx-dark   ); }
+[data-stroke-color="soft-blue"]   { stroke: var( --soft-blue-xx-dark   ); }
+[data-stroke-color="hard-green"]  { stroke: var( --hard-green-xx-dark  ); }
+[data-stroke-color="khaki-green"] { stroke: var( --khaki-green-xx-dark ); }
+[data-stroke-color="soft-green"]  { stroke: var( --soft-green-xx-dark  ); }
+[data-stroke-color="hard-purple"] { stroke: var( --hard-purple-xx-dark ); }
+[data-stroke-color="soft-purple"] { stroke: var( --soft-purple-xx-dark ); }
+[data-stroke-color="hard-red"]    { stroke: var( --hard-red-xx-dark    ); }
+[data-stroke-color="soft-red"]    { stroke: var( --soft-red-xx-dark    ); }
+
+/* Native */
 /*** Stroke color ***/
 
 /*** Text color ***/
+/* Variable */
 
-[data-color="var"]       { color: var( --color           ); }
+[data-color="var"] { color: var( --color ); }
+
+/* Variable */
+
+/* Themed */
+
 [data-color="default"]   { color: var( --color-default   ); }
 [data-color="highlight"] { color: var( --color-highlight ); }
 [data-color="invert"]    { color: var( --color-invert    ); }
@@ -110,5 +350,20 @@
 [data-color="success"]   { color: var( --color-success   ); }
 [data-color="warning"]   { color: var( --color-warning   ); }
 
+/* Themed */
+
+/* Native */
+
+[data-color="hard-blue"]   { color: var( --hard-blue-xx-dark   ); }
+[data-color="soft-blue"]   { color: var( --soft-blue-xx-dark   ); }
+[data-color="hard-green"]  { color: var( --hard-green-xx-dark  ); }
+[data-color="khaki-green"] { color: var( --khaki-green-xx-dark ); }
+[data-color="soft-green"]  { color: var( --soft-green-xx-dark  ); }
+[data-color="hard-purple"] { color: var( --hard-purple-xx-dark ); }
+[data-color="soft-purple"] { color: var( --soft-purple-xx-dark ); }
+[data-color="hard-red"]    { color: var( --hard-red-xx-dark    ); }
+[data-color="soft-red"]    { color: var( --soft-red-xx-dark    ); }
+
+/* Native */
 /*** Text color ***/
 /***** Color presets *****/

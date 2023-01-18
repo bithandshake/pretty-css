@@ -15,6 +15,21 @@ body {
 
 /*** Hard green ***/
 
+/*** Khaki green ***/
+
+body {
+  --khaki-green-semi-transparent: rgba(160, 200, 180, 0.850);
+  --khaki-green-xx-dark:           rgb(130, 170, 150);
+  --khaki-green-x-dark:            rgb(140, 180, 160);
+  --khaki-green-dark:              rgb(150, 190, 170);
+  --khaki-green:                   rgb(160, 200, 180);
+  --khaki-green-light:             rgb(170, 210, 190);
+  --khaki-green-x-light:           rgb(180, 220, 200);
+  --khaki-green-xx-light:          rgb(190, 230, 210);
+}
+
+/*** Khaki green ***/
+
 /*** Soft green ***/
 
 body {
