@@ -21,9 +21,11 @@ Check out the latest commit on the [release branch](https://github.com/bithandsh
 
 You can track the changes of the <strong>pretty-css</strong> library [here](CHANGES.md).
 
-### What's in this kit?
+### Index
 
-...
+- [How to use Material Icons or Material Symbols?](#how-to-use-material-icons-or-material-symbols)
+
+# Usage
 
 ### How to use Material Icons or Material Symbols?
 
