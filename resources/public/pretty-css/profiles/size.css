@@ -54,7 +54,7 @@ body {
 
 @media only screen and (min-width: 320px) and (max-width: 359px) {
 body {
-  --content-width-xxs: 296px; /* 320px - 24px */
+  --content-width-xxs: 320px;
   --content-width-xs:  100%;
   --content-width-s:   100%;
   --content-width-m:   100%;
@@ -72,8 +72,8 @@ body {
 
 @media only screen and (min-width: 360px) and (max-width: 419px) {
 body {
-  --content-width-xxs: 296px; /* 320px - 24px */
-  --content-width-xs:  336px; /* 360px - 24px */
+  --content-width-xxs: 320px;
+  --content-width-xs:  360px;
   --content-width-s:   100%;
   --content-width-m:   100%;
   --content-width-l:   100%;
@@ -90,9 +90,9 @@ body {
 
 @media only screen and (min-width: 419px) and (max-width: 479px) {
 body {
-  --content-width-xxs: 296px; /* 320px - 24px */
-  --content-width-xs:  336px; /* 360px - 24px */
-  --content-width-s:   396px; /* 420px - 24px */
+  --content-width-xxs: 320px;
+  --content-width-xs:  360px;
+  --content-width-s:   420px;
   --content-width-m:   100%;
   --content-width-l:   100%;
   --content-width-xl:  100%;
@@ -108,16 +108,16 @@ body {
 
 @media only screen and (min-width: 480px) and (max-width: 719px) {
 body {
-  --content-width-xxs: 296px; /* 320px - 24px */
-  --content-width-xs:  336px; /* 360px - 24px */
-  --content-width-s:   396px; /* 420px - 24px */
-  --content-width-m:   456px; /* 480px - 24px */
-  --content-width-l:   calc(100% - 24px);
-  --content-width-xl:  calc(100% - 24px);
-  --content-width-xxl: calc(100% - 24px);
-  --content-width-3xl: calc(100% - 24px);
-  --content-width-4xl: calc(100% - 24px);
-  --content-width-5xl: calc(100% - 24px);
+  --content-width-xxs: 320px;
+  --content-width-xs:  360px;
+  --content-width-s:   420px;
+  --content-width-m:   480px;
+  --content-width-l:   100%;
+  --content-width-xl:  100%;
+  --content-width-xxl: 100%;
+  --content-width-3xl: 100%;
+  --content-width-4xl: 100%;
+  --content-width-5xl: 100%;
 }}
 
 /* M */
@@ -126,16 +126,16 @@ body {
 
 @media only screen and (min-width: 720px) and (max-width: 1279px) {
 body {
-  --content-width-xxs: 296px; /* 320px - 24px */
-  --content-width-xs:  336px; /* 360px - 24px */
-  --content-width-s:   396px; /* 420px - 24px */
-  --content-width-m:   456px; /* 480px - 24px */
-  --content-width-l:   696px; /* 720px - 24px */
-  --content-width-xl:  calc(100% - 24px);
-  --content-width-xxl: calc(100% - 24px);
-  --content-width-3xl: calc(100% - 24px);
-  --content-width-4xl: calc(100% - 24px);
-  --content-width-5xl: calc(100% - 24px);
+  --content-width-xxs: 320px;
+  --content-width-xs:  360px;
+  --content-width-s:   420px;
+  --content-width-m:   480px;
+  --content-width-l:   720px;
+  --content-width-xl:  100%;
+  --content-width-xxl: 100%;
+  --content-width-3xl: 100%;
+  --content-width-4xl: 100%;
+  --content-width-5xl: 100%;
 }}
 
 /* L */
@@ -144,16 +144,16 @@ body {
 
 @media only screen and (min-width: 1280px) and (max-width: 1439px) {
 body {
-  --content-width-xxs:  296px; /*  320px - 24px */
-  --content-width-xs:   336px; /*  360px - 24px */
-  --content-width-s:    396px; /*  420px - 24px */
-  --content-width-m:    456px; /*  480px - 24px */
-  --content-width-l:    696px; /*  720px - 24px */
-  --content-width-xl:  1256px; /* 1280px - 24px */
-  --content-width-xxl: calc(100% - 24px);
-  --content-width-3xl: calc(100% - 24px);
-  --content-width-4xl: calc(100% - 24px);
-  --content-width-5xl: calc(100% - 24px);
+  --content-width-xxs:  320px;
+  --content-width-xs:   360px;
+  --content-width-s:    420px;
+  --content-width-m:    480px;
+  --content-width-l:    720px;
+  --content-width-xl:  1280px;
+  --content-width-xxl: 100%;
+  --content-width-3xl: 100%;
+  --content-width-4xl: 100%;
+  --content-width-5xl: 100%;
 }}
 
 /* XL */
@@ -162,16 +162,16 @@ body {
 
 @media only screen and (min-width: 1440px) and (max-width: 1679px) {
 body {
-  --content-width-xxs:  296px; /*  320px - 24px */
-  --content-width-xs:   336px; /*  360px - 24px */
-  --content-width-s:    396px; /*  420px - 24px */
-  --content-width-m:    456px; /*  480px - 24px */
-  --content-width-l:    696px; /*  720px - 24px */
-  --content-width-xl:  1256px; /* 1280px - 24px */
-  --content-width-xxl: 1416px; /* 1440px - 24px */
-  --content-width-3xl: calc(100% - 24px);
-  --content-width-4xl: calc(100% - 24px);
-  --content-width-5xl: calc(100% - 24px);
+  --content-width-xxs:  320px;
+  --content-width-xs:   360px;
+  --content-width-s:    420px;
+  --content-width-m:    480px;
+  --content-width-l:    720px;
+  --content-width-xl:  1280px;
+  --content-width-xxl: 1440px;
+  --content-width-3xl: 100%;
+  --content-width-4xl: 100%;
+  --content-width-5xl: 100%;
 }}
 
 /* XXL */
@@ -180,16 +180,16 @@ body {
 
 @media only screen and (min-width: 1680px) and (max-width: 2159px) {
 body {
-  --content-width-xxs:  296px; /*  320px - 24px */
-  --content-width-xs:   336px; /*  360px - 24px */
-  --content-width-s:    396px; /*  420px - 24px */
-  --content-width-m:    456px; /*  480px - 24px */
-  --content-width-l:    696px; /*  720px - 24px */
-  --content-width-xl:  1256px; /* 1280px - 24px */
-  --content-width-xxl: 1416px; /* 1440px - 24px */
-  --content-width-3xl: 1656px; /* 1680px - 24px */
-  --content-width-4xl: calc(100% - 24px);
-  --content-width-5xl: calc(100% - 24px);
+  --content-width-xxs:  320px;
+  --content-width-xs:   360px;
+  --content-width-s:    420px;
+  --content-width-m:    480px;
+  --content-width-l:    720px;
+  --content-width-xl:  1280px;
+  --content-width-xxl: 1440px;
+  --content-width-3xl: 1680px;
+  --content-width-4xl: 100%;
+  --content-width-5xl: 100%;
 }}
 
 /* 3XL */
@@ -198,16 +198,16 @@ body {
 
 @media only screen and (min-width: 2160px) and (max-width: 3839px) {
 body {
-  --content-width-xxs:  296px; /*  320px - 24px */
-  --content-width-xs:   336px; /*  360px - 24px */
-  --content-width-s:    396px; /*  420px - 24px */
-  --content-width-m:    456px; /*  480px - 24px */
-  --content-width-l:    696px; /*  720px - 24px */
-  --content-width-xl:  1256px; /* 1280px - 24px */
-  --content-width-xxl: 1416px; /* 1440px - 24px */
-  --content-width-3xl: 1656px; /* 1680px - 24px */
-  --content-width-4xl: 2136px; /* 2140px - 24px */
-  --content-width-5xl: calc(100% - 24px);
+  --content-width-xxs:  320px;
+  --content-width-xs:   360px;
+  --content-width-s:    420px;
+  --content-width-m:    480px;
+  --content-width-l:    720px;
+  --content-width-xl:  1280px;
+  --content-width-xxl: 1440px;
+  --content-width-3xl: 1680px;
+  --content-width-4xl: 2160px;
+  --content-width-5xl: 100%;
 }}
 
 /* 4XL */
@@ -216,16 +216,16 @@ body {
 
 @media only screen and (min-width: 3840px) and (max-width: 9999px) {
 body {
-  --content-width-xxs:  296px; /*  320px - 24px */
-  --content-width-xs:   336px; /*  360px - 24px */
-  --content-width-s:    396px; /*  420px - 24px */
-  --content-width-m:    456px; /*  480px - 24px */
-  --content-width-l:    696px; /*  720px - 24px */
-  --content-width-xl:  1256px; /* 1280px - 24px */
-  --content-width-xxl: 1416px; /* 1440px - 24px */
-  --content-width-3xl: 1656px; /* 1680px - 24px */
-  --content-width-4xl: 2136px; /* 2140px - 24px */
-  --content-width-5xl: 3816px; /* 3840px - 24px */
+  --content-width-xxs:  320px;
+  --content-width-xs:   360px;
+  --content-width-s:    420px;
+  --content-width-m:    480px;
+  --content-width-l:    720px;
+  --content-width-xl:  1280px;
+  --content-width-xxl: 1440px;
+  --content-width-3xl: 1680px;
+  --content-width-4xl: 2140px;
+  --content-width-5xl: 3840px;
 }}
 
 /* 5XL */
@@ -239,7 +239,7 @@ body {
   --element-size-s:   180px;
   --element-size-m:   240px;
   --element-size-l:   300px;
-  --element-size-xl:  460px;
+  --element-size-xl:  360px;
   --element-size-xxl: 420px;
   --element-size-3xl: 480px;
   --element-size-4xl: 540px;

@@ -15,6 +15,12 @@
 
 - [badge-attributes](#badge-attributes)
 
+- [block-max-size-attributes](#block-max-size-attributes)
+
+- [block-min-size-attributes](#block-min-size-attributes)
+
+- [block-size-attributes](#block-size-attributes)
+
 - [border-attributes](#border-attributes)
 
 - [border-radius-attributes](#border-radius-attributes)
@@ -23,7 +29,19 @@
 
 - [color-attributes](#color-attributes)
 
+- [content-max-size-attributes](#content-max-size-attributes)
+
+- [content-min-size-attributes](#content-min-size-attributes)
+
+- [content-size-attributes](#content-size-attributes)
+
 - [default-attributes](#default-attributes)
+
+- [element-max-size-attributes](#element-max-size-attributes)
+
+- [element-min-size-attributes](#element-min-size-attributes)
+
+- [element-size-attributes](#element-size-attributes)
 
 - [font-attributes](#font-attributes)
 
@@ -36,6 +54,8 @@
 - [outdent-attributes](#outdent-attributes)
 
 - [text-attributes](#text-attributes)
+
+- [thumbnail-size-attributes](#thumbnail-size-attributes)
 
 - [tooltip-attributes](#tooltip-attributes)
 
@@ -343,6 +363,174 @@ nil
 
 ---
 
+### block-max-size-attributes
+
+```
+@param (map) element-attributes
+@param (map) element-props
+{:max-height (keyword)(opt)
+  :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+ :max-width (keyword)(opt)
+  :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl}
+```
+
+```
+@usage
+(block-max-size-attributes {...} {...})
+```
+
+```
+@example
+(block-max-size-attributes {...} {:max-height :xl, :max-width :xl})
+=>
+{:data-max-block-height :xl
+ :data-max-block-width  :xl}
+```
+
+```
+@return (map)
+{:data-block-max-height (keyword)
+ :data-block-max-width (keyword)}
+```
+
+<details>
+<summary>Source code</summary>
+
+```
+(defn block-max-size-attributes
+  [element-attributes {:keys [max-height max-width]}]
+  (merge element-attributes {:data-block-max-height max-height
+                             :data-block-max-width  max-width}))
+```
+
+</details>
+
+<details>
+<summary>Require</summary>
+
+```
+(ns my-namespace (:require [pretty-css.api :refer [block-max-size-attributes]]))
+
+(pretty-css.api/block-max-size-attributes ...)
+(block-max-size-attributes                ...)
+```
+
+</details>
+
+---
+
+### block-min-size-attributes
+
+```
+@param (map) element-attributes
+@param (map) element-props
+{:min-height (keyword)(opt)
+  :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+ :min-width (keyword)(opt)
+  :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl}
+```
+
+```
+@usage
+(block-min-size-attributes {...} {...})
+```
+
+```
+@example
+(block-min-size-attributes {...} {:min-height :xl, :min-width :xl})
+=>
+{:data-block-min-height :xl
+ :data-block-min-width  :xl}
+```
+
+```
+@return (map)
+{:data-block-min-height (keyword)
+ :data-block-min-width (keyword)}
+```
+
+<details>
+<summary>Source code</summary>
+
+```
+(defn block-min-size-attributes
+  [element-attributes {:keys [min-height min-width]}]
+  (merge element-attributes {:data-block-min-height min-height
+                             :data-block-min-width  min-width}))
+```
+
+</details>
+
+<details>
+<summary>Require</summary>
+
+```
+(ns my-namespace (:require [pretty-css.api :refer [block-min-size-attributes]]))
+
+(pretty-css.api/block-min-size-attributes ...)
+(block-min-size-attributes                ...)
+```
+
+</details>
+
+---
+
+### block-size-attributes
+
+```
+@param (map) element-attributes
+@param (map) element-props
+{:height (keyword)(opt)
+  :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+ :width (keyword)(opt)
+  :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl}
+```
+
+```
+@usage
+(block-size-attributes {...} {...})
+```
+
+```
+@example
+(block-size-attributes {...} {:height :xl, :width :xl})
+=>
+{:data-block-height :xl
+ :data-block-width  :xl}
+```
+
+```
+@return (map)
+{:data-block-height (keyword)
+ :data-block-width (keyword)}
+```
+
+<details>
+<summary>Source code</summary>
+
+```
+(defn block-size-attributes
+  [element-attributes {:keys [height width]}]
+  (merge element-attributes {:data-block-height height
+                             :data-block-width  width}))
+```
+
+</details>
+
+<details>
+<summary>Require</summary>
+
+```
+(ns my-namespace (:require [pretty-css.api :refer [block-size-attributes]]))
+
+(pretty-css.api/block-size-attributes ...)
+(block-size-attributes                ...)
+```
+
+</details>
+
+---
+
 ### border-attributes
 
 ```
@@ -456,7 +644,8 @@ nil
   [element-attributes {:keys [border-radius]}]
   (letfn [(f [result key value]
              (assoc result (keyword (str "data-border-radius-" (name key))) value))]
-         (merge element-attributes (reduce-kv f {} border-radius))))
+         (merge element-attributes (if (map?           border-radius)
+                                       (reduce-kv f {} border-radius)))))
 ```
 
 </details>
@@ -594,6 +783,174 @@ nil
 
 ---
 
+### content-max-size-attributes
+
+```
+@param (map) element-attributes
+@param (map) element-props
+{:max-height (keyword)(opt)
+  :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+ :max-width (keyword)(opt)
+  :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl}
+```
+
+```
+@usage
+(content-max-size-attributes {...} {...})
+```
+
+```
+@example
+(content-max-size-attributes {...} {:max-height :xl, :max-width :xl})
+=>
+{:data-content-max-height :xl
+ :data-content-max-width  :xl}
+```
+
+```
+@return (map)
+{:data-content-max-height (keyword)
+ :data-content-max-width (keyword)}
+```
+
+<details>
+<summary>Source code</summary>
+
+```
+(defn content-max-size-attributes
+  [element-attributes {:keys [max-height max-width]}]
+  (merge element-attributes {:data-content-max-height max-height
+                             :data-content-max-width  max-width}))
+```
+
+</details>
+
+<details>
+<summary>Require</summary>
+
+```
+(ns my-namespace (:require [pretty-css.api :refer [content-max-size-attributes]]))
+
+(pretty-css.api/content-max-size-attributes ...)
+(content-max-size-attributes                ...)
+```
+
+</details>
+
+---
+
+### content-min-size-attributes
+
+```
+@param (map) element-attributes
+@param (map) element-props
+{:min-height (keyword)(opt)
+  :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+ :min-width (keyword)(opt)
+  :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl}
+```
+
+```
+@usage
+(content-min-size-attributes {...} {...})
+```
+
+```
+@example
+(content-min-size-attributes {...} {:min-height :xl, :min-width :xl})
+=>
+{:data-content-min-height :xl
+ :data-content-min-width  :xl}
+```
+
+```
+@return (map)
+{:data-content-min-height (keyword)
+ :data-content-min-width (keyword)}
+```
+
+<details>
+<summary>Source code</summary>
+
+```
+(defn content-min-size-attributes
+  [element-attributes {:keys [min-height min-width]}]
+  (merge element-attributes {:data-content-min-height min-height
+                             :data-content-min-width  min-width}))
+```
+
+</details>
+
+<details>
+<summary>Require</summary>
+
+```
+(ns my-namespace (:require [pretty-css.api :refer [content-min-size-attributes]]))
+
+(pretty-css.api/content-min-size-attributes ...)
+(content-min-size-attributes                ...)
+```
+
+</details>
+
+---
+
+### content-size-attributes
+
+```
+@param (map) element-attributes
+@param (map) element-props
+{:height (keyword)(opt)
+  :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+ :width (keyword)(opt)
+  :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl}
+```
+
+```
+@usage
+(content-size-attributes {...} {...})
+```
+
+```
+@example
+(content-size-attributes {...} {:height :xl, :width :xl})
+=>
+{:data-content-height :xl
+ :data-content-width  :xl}
+```
+
+```
+@return (map)
+{:data-content-height (keyword)
+ :data-content-width (keyword)}
+```
+
+<details>
+<summary>Source code</summary>
+
+```
+(defn content-size-attributes
+  [element-attributes {:keys [height width]}]
+  (merge element-attributes {:data-content-height height
+                             :data-content-width  width}))
+```
+
+</details>
+
+<details>
+<summary>Require</summary>
+
+```
+(ns my-namespace (:require [pretty-css.api :refer [content-size-attributes]]))
+
+(pretty-css.api/content-size-attributes ...)
+(content-size-attributes                ...)
+```
+
+</details>
+
+---
+
 ### default-attributes
 
 ```
@@ -653,6 +1010,174 @@ nil
 
 (pretty-css.api/default-attributes ...)
 (default-attributes                ...)
+```
+
+</details>
+
+---
+
+### element-max-size-attributes
+
+```
+@param (map) element-attributes
+@param (map) element-props
+{:max-height (keyword)(opt)
+  :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+ :max-width (keyword)(opt)
+  :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl}
+```
+
+```
+@usage
+(element-max-size-attributes {...} {...})
+```
+
+```
+@example
+(element-max-size-attributes {...} {:max-height :xl, :max-width :xl})
+=>
+{:data-element-max-height :xl
+ :data-element-max-width  :xl}
+```
+
+```
+@return (map)
+{:data-element-max-height (keyword)
+ :data-element-max-width (keyword)}
+```
+
+<details>
+<summary>Source code</summary>
+
+```
+(defn element-max-size-attributes
+  [element-attributes {:keys [max-height max-width]}]
+  (merge element-attributes {:data-element-max-height max-height
+                             :data-element-max-width  max-width}))
+```
+
+</details>
+
+<details>
+<summary>Require</summary>
+
+```
+(ns my-namespace (:require [pretty-css.api :refer [element-max-size-attributes]]))
+
+(pretty-css.api/element-max-size-attributes ...)
+(element-max-size-attributes                ...)
+```
+
+</details>
+
+---
+
+### element-min-size-attributes
+
+```
+@param (map) element-attributes
+@param (map) element-props
+{:min-height (keyword)(opt)
+  :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+ :min-width (keyword)(opt)
+  :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl}
+```
+
+```
+@usage
+(element-min-size-attributes {...} {...})
+```
+
+```
+@example
+(element-min-size-attributes {...} {:min-height :xl, :min-width :xl})
+=>
+{:data-element-min-height :xl
+ :data-element-min-width  :xl}
+```
+
+```
+@return (map)
+{:data-element-min-height (keyword)
+ :data-element-min-width (keyword)}
+```
+
+<details>
+<summary>Source code</summary>
+
+```
+(defn element-min-size-attributes
+  [element-attributes {:keys [min-height min-width]}]
+  (merge element-attributes {:data-element-min-height min-height
+                             :data-element-min-width  min-width}))
+```
+
+</details>
+
+<details>
+<summary>Require</summary>
+
+```
+(ns my-namespace (:require [pretty-css.api :refer [element-min-size-attributes]]))
+
+(pretty-css.api/element-min-size-attributes ...)
+(element-min-size-attributes                ...)
+```
+
+</details>
+
+---
+
+### element-size-attributes
+
+```
+@param (map) element-attributes
+@param (map) element-props
+{:height (keyword)(opt)
+  :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+ :width (keyword)(opt)
+  :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl}
+```
+
+```
+@usage
+(element-size-attributes {...} {...})
+```
+
+```
+@example
+(element-size-attributes {...} {:height :xl, :width :xl})
+=>
+{:data-element-height :xl
+ :data-element-width  :xl}
+```
+
+```
+@return (map)
+{:data-element-height (keyword)
+ :data-content-width (keyword)}
+```
+
+<details>
+<summary>Source code</summary>
+
+```
+(defn element-size-attributes
+  [element-attributes {:keys [height width]}]
+  (merge element-attributes {:data-element-height height
+                             :data-element-width  width}))
+```
+
+</details>
+
+<details>
+<summary>Require</summary>
+
+```
+(ns my-namespace (:require [pretty-css.api :refer [element-size-attributes]]))
+
+(pretty-css.api/element-size-attributes ...)
+(element-size-attributes                ...)
 ```
 
 </details>
@@ -831,7 +1356,8 @@ nil
   [element-attributes {:keys [indent]}]
   (letfn [(f [result key value]
              (assoc result (keyword (str "data-indent-" (name key))) value))]
-         (merge element-attributes (reduce-kv f {} indent))))
+         (merge element-attributes (if (map?           indent)
+                                       (reduce-kv f {} indent)))))
 ```
 
 </details>
@@ -953,7 +1479,8 @@ nil
   [element-attributes {:keys [outdent]}]
   (letfn [(f [result key value]
              (assoc result (keyword (str "data-outdent-" (name key))) value))]
-         (merge element-attributes (reduce-kv f {} outdent))))
+         (merge element-attributes (if (map?           outdent)
+                                       (reduce-kv f {} outdent)))))
 ```
 
 </details>
@@ -977,10 +1504,13 @@ nil
 ```
 @param (map) element-attributes
 @param (map) element-props
-{:text-direction (keyword)(opt)
+{:selectable? (boolean)(opt)
+ :text-direction (keyword)(opt)
   :normal, :reversed
  :text-overflow (keyword)(opt)
-  :ellipsis, :hidden, :no-wrap, :wrap}
+  :ellipsis, :hidden, :no-wrap, :wrap
+ :text-transform (keyword)(opt)
+  :capitalize, :lowercase, :uppercase}
 ```
 
 ```
@@ -998,8 +1528,10 @@ nil
 
 ```
 @return (map)
-{:data-text-direction (keyword)
+{:data-selectable (boolean)
+ :data-text-direction (keyword)
  :data-text-overflow (keyword)}
+ :data-text-transform (keyword)}
 ```
 
 <details>
@@ -1007,9 +1539,11 @@ nil
 
 ```
 (defn text-attributes
-  [element-attributes {:keys [text-direction text-overflow]}]
-  (merge element-attributes {:data-text-direction text-direction
-                             :data-text-overflow  text-overflow}))
+  [element-attributes {:keys [selectable? text-direction text-overflow text-transform]}]
+  (merge element-attributes {:data-selectable      selectable?
+                             :data-text-direction  text-direction
+                             :data-text-overflow   text-overflow
+                             :data-text-transform  text-transform}))
 ```
 
 </details>
@@ -1022,6 +1556,62 @@ nil
 
 (pretty-css.api/text-attributes ...)
 (text-attributes                ...)
+```
+
+</details>
+
+---
+
+### thumbnail-size-attributes
+
+```
+@param (map) element-attributes
+@param (map) element-props
+{:height (keyword)(opt)
+  :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl
+ :width (keyword)(opt)
+  :xxs, :xs, :s, :m, :l, :xl, :xxl, :3xl, :4xl, :5xl}
+```
+
+```
+@usage
+(thumbnail-size-attributes {...} {...})
+```
+
+```
+@example
+(thumbnail-size-attributes {...} {:height :xl, :width :xl})
+=>
+{:data-thumbnail-height :xl
+ :data-thumbnail-width  :xl}
+```
+
+```
+@return (map)
+{:data-thumbnail-height (keyword)
+ :data-thumbnail-width (keyword)}
+```
+
+<details>
+<summary>Source code</summary>
+
+```
+(defn thumbnail-size-attributes
+  [element-attributes {:keys [height width]}]
+  (merge element-attributes {:data-thumbnail-height height
+                             :data-thumbnail-width  width}))
+```
+
+</details>
+
+<details>
+<summary>Require</summary>
+
+```
+(ns my-namespace (:require [pretty-css.api :refer [thumbnail-size-attributes]]))
+
+(pretty-css.api/thumbnail-size-attributes ...)
+(thumbnail-size-attributes                ...)
 ```
 
 </details>

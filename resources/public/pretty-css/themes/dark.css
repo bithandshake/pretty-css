@@ -1,32 +1,12 @@
 
-/***** Body container *****/
-
-[data-theme="dark"] {
-  background-color: var( --app-background-color );
-  color:            var( --color-default        );
-}
-
-/***** Body container *****/
-
-
-
 /***** Theme variables *****/
 /*** App background ***/
 
 [data-theme="dark"] {
-  --app-background-color:         var( --black      );
-  --app-background-pattern-color: var( --black-dark );
+  --app-background-color: var( --black );
 }
 
 /*** App background ***/
-
-/*** App overlay ***/
-
-[data-theme="dark"] {
-  --app-overlay-color: var( --black-semi-transparent );
-}
-
-/*** App overlay ***/
 
 /*** Badge color ***/
 
@@ -118,12 +98,4 @@
 }
 
 /*** Shadow color ***/
-
-/*** Sidebar background ***/
-
-[data-theme="dark"] {
-  --sidebar-background-color: #4a5661;
-}
-
-/*** Sidebar background ***/
 /***** Theme variables *****/

@@ -1,14 +1,3 @@
 
-/***** Body container *****/
-
-body[data-theme="high-contrast"] {
-  background-color: var( --app-background-color );
-  color:            var( --color-default );
-}
-
-/***** Body container *****/
-
-
-
 /***** Theme variables *****/
 /***** Theme variables *****/

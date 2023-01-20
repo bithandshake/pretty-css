@@ -48,4 +48,35 @@
 }
 
 /*** Overflow ***/
+
+/*** Selectable ***/
+
+/* @usage
+ * [:p {:data-selectable false} "My unselectable text"] */
+
+[data-selectable="false"] {
+  /* The user-select is not supperted properly in all browsers! */
+  -ms-user-select:     none;
+  -moz-user-select:    none;
+  -webkit-user-select: none;
+  user-select:         none;
+}
+
+/*** Selectable ***/
+
+/*** Transform ***/
+
+[data-text-transform="capitalize"] {
+  text-transform: capitalize;
+}
+
+[data-text-transform="lowercase"] {
+  text-transform: lowercase;
+}
+
+[data-text-transform="uppercase"] {
+  text-transform: uppercase;
+}
+
+/*** Transform ***/
 /***** Text presets *****/

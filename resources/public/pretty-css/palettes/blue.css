@@ -3,14 +3,13 @@
 /*** Hard blue ***/
 
 body {
-  --hard-blue-semi-transparent: rgba( 70, 210, 255, 0.850);
-  --hard-blue-xx-dark:           rgb( 40, 180, 225);
-  --hard-blue-x-dark:            rgb( 50, 190, 235);
-  --hard-blue-dark:              rgb( 60, 200, 245);
-  --hard-blue:                   rgb( 70, 210, 255);
-  --hard-blue-light:             rgb( 80, 220, 255);
-  --hard-blue-x-light:           rgb( 90, 230, 255);
-  --hard-blue-xx-light:          rgb(100, 240, 255);
+  --hard-blue-xx-dark:  rgb( 40, 180, 225);
+  --hard-blue-x-dark:   rgb( 50, 190, 235);
+  --hard-blue-dark:     rgb( 60, 200, 245);
+  --hard-blue:          rgb( 70, 210, 255);
+  --hard-blue-light:    rgb( 80, 220, 255);
+  --hard-blue-x-light:  rgb( 90, 230, 255);
+  --hard-blue-xx-light: rgb(100, 240, 255);
 }
 
 /*** Hard blue ***/
@@ -18,14 +17,13 @@ body {
 /*** Soft blue ***/
 
 body {
-  --soft-blue-semi-transparent: rgba(150, 210, 245, 0.850);
-  --soft-blue-xx-dark:           rgb(120, 180, 215);
-  --soft-blue-x-dark:            rgb(130, 190, 225);
-  --soft-blue-dark:              rgb(140, 200, 235);
-  --soft-blue:                   rgb(150, 210, 245);
-  --soft-blue-light:             rgb(160, 220, 255);
-  --soft-blue-x-light:           rgb(170, 230, 255);
-  --soft-blue-xx-light:          rgb(180, 240, 255);
+  --soft-blue-xx-dark:  rgb(120, 180, 215);
+  --soft-blue-x-dark:   rgb(130, 190, 225);
+  --soft-blue-dark:     rgb(140, 200, 235);
+  --soft-blue:          rgb(150, 210, 245);
+  --soft-blue-light:    rgb(160, 220, 255);
+  --soft-blue-x-light:  rgb(170, 230, 255);
+  --soft-blue-xx-light: rgb(180, 240, 255);
 }
 
 /*** Soft blue ***/

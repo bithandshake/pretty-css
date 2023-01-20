@@ -109,6 +109,9 @@
 
 /* Native */
 
+[data-badge-color="black"]::after       { background-color: var( --black-xx-light       ); }
+[data-badge-color="grey"]::after        { background-color: var( --grey-xx-light        ); }
+[data-badge-color="white"]::after       { background-color: var( --white-xx-light       ); }
 [data-badge-color="hard-blue"]::after   { background-color: var( --hard-blue-xx-light   ); }
 [data-badge-color="soft-blue"]::after   { background-color: var( --soft-blue-xx-light   ); }
 [data-badge-color="hard-green"]::after  { background-color: var( --hard-green-xx-light  ); }
@@ -144,6 +147,9 @@
 
 /* Native */
 
+[data-border-color="black"]       { border-color: var( --black-xx-dark       ); }
+[data-border-color="grey"]        { border-color: var( --grey-xx-dark        ); }
+[data-border-color="white"]       { border-color: var( --white-xx-dark       ); }
 [data-border-color="hard-blue"]   { border-color: var( --hard-blue-xx-dark   ); }
 [data-border-color="soft-blue"]   { border-color: var( --soft-blue-xx-dark   ); }
 [data-border-color="hard-green"]  { border-color: var( --hard-green-xx-dark  ); }
@@ -179,6 +185,9 @@
 
 /* Native */
 
+[data-fill-color="black"]       { background-color: var( --black-xx-light       ); }
+[data-fill-color="grey"]        { background-color: var( --grey-xx-light        ); }
+[data-fill-color="white"]       { background-color: var( --white-xx-light       ); }
 [data-fill-color="hard-blue"]   { background-color: var( --hard-blue-xx-light   ); }
 [data-fill-color="soft-blue"]   { background-color: var( --soft-blue-xx-light   ); }
 [data-fill-color="hard-green"]  { background-color: var( --hard-green-xx-light  ); }
@@ -214,6 +223,9 @@
 
 /* Native */
 
+[data-hover-color="black"]:hover       { background-color: var( --black-xx-light    ); }
+[data-hover-color="grey"]:hover        { background-color: var( --grey-xx-light     ); }
+[data-hover-color="white"]:hover       { background-color: var( --white-xx-light    ); }
 [data-hover-color="hard-blue"]:hover   { background-color: var( --hard-blue-light   ); }
 [data-hover-color="soft-blue"]:hover   { background-color: var( --soft-blue-light   ); }
 [data-hover-color="hard-green"]:hover  { background-color: var( --hard-green-light  ); }
@@ -249,6 +261,9 @@
 
 /* Native */
 
+[data-icon-color="black"]       { color: var( --black-xx-dark       ); }
+[data-icon-color="grey"]        { color: var( --grey-xx-dark        ); }
+[data-icon-color="white"]       { color: var( --white-xx-dark       ); }
 [data-icon-color="hard-blue"]   { color: var( --hard-blue-xx-dark   ); }
 [data-icon-color="soft-blue"]   { color: var( --soft-blue-xx-dark   ); }
 [data-icon-color="hard-green"]  { color: var( --hard-green-xx-dark  ); }
@@ -284,6 +299,9 @@
 
 /* Native */
 
+[data-marker-color="black"]::after       { background-color: var( --black-xx-dark       ); }
+[data-marker-color="grey"]::after        { background-color: var( --grey-xx-dark        ); }
+[data-marker-color="white"]::after       { background-color: var( --white-xx-dark       ); }
 [data-marker-color="hard-blue"]::after   { background-color: var( --hard-blue-xx-dark   ); }
 [data-marker-color="soft-blue"]::after   { background-color: var( --soft-blue-xx-dark   ); }
 [data-marker-color="hard-green"]::after  { background-color: var( --hard-green-xx-dark  ); }
@@ -319,6 +337,9 @@
 
 /* Native */
 
+[data-stroke-color="black"]       { stroke: var( --black-xx-dark       ); }
+[data-stroke-color="grey"]        { stroke: var( --grey-xx-dark        ); }
+[data-stroke-color="white"]       { stroke: var( --white-xx-dark       ); }
 [data-stroke-color="hard-blue"]   { stroke: var( --hard-blue-xx-dark   ); }
 [data-stroke-color="soft-blue"]   { stroke: var( --soft-blue-xx-dark   ); }
 [data-stroke-color="hard-green"]  { stroke: var( --hard-green-xx-dark  ); }
@@ -354,6 +375,9 @@
 
 /* Native */
 
+[data-color="black"]       { color: var( --black-xx-dark       ); }
+[data-color="grey"]        { color: var( --grey-xx-dark        ); }
+[data-color="white"]       { color: var( --white-xx-dark       ); }
 [data-color="hard-blue"]   { color: var( --hard-blue-xx-dark   ); }
 [data-color="soft-blue"]   { color: var( --soft-blue-xx-dark   ); }
 [data-color="hard-green"]  { color: var( --hard-green-xx-dark  ); }

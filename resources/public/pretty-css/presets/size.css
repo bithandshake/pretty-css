@@ -15,6 +15,36 @@
 
 /*** Block height ***/
 
+/*** Block max height ***/
+
+[data-block-max-height="xxs"] { max-height: var( --block-size-xxs ); }
+[data-block-max-height="xs"]  { max-height: var( --block-size-xs  ); }
+[data-block-max-height="s"]   { max-height: var( --block-size-s   ); }
+[data-block-max-height="m"]   { max-height: var( --block-size-m   ); }
+[data-block-max-height="l"]   { max-height: var( --block-size-l   ); }
+[data-block-max-height="xl"]  { max-height: var( --block-size-xl  ); }
+[data-block-max-height="xxl"] { max-height: var( --block-size-xxl ); }
+[data-block-max-height="3xl"] { max-height: var( --block-size-3xl ); }
+[data-block-max-height="4xl"] { max-height: var( --block-size-4xl ); }
+[data-block-max-height="5xl"] { max-height: var( --block-size-5xl ); }
+
+/*** Block max height ***/
+
+/*** Block max width ***/
+
+[data-block-max-width="xxs"] { max-width: var( --block-size-xxs ); }
+[data-block-max-width="xs"]  { max-width: var( --block-size-xs  ); }
+[data-block-max-width="s"]   { max-width: var( --block-size-s   ); }
+[data-block-max-width="m"]   { max-width: var( --block-size-m   ); }
+[data-block-max-width="l"]   { max-width: var( --block-size-l   ); }
+[data-block-max-width="xl"]  { max-width: var( --block-size-xl  ); }
+[data-block-max-width="xxl"] { max-width: var( --block-size-xxl ); }
+[data-block-max-width="3xl"] { max-width: var( --block-size-3xl ); }
+[data-block-max-width="4xl"] { max-width: var( --block-size-4xl ); }
+[data-block-max-width="5xl"] { max-width: var( --block-size-5xl ); }
+
+/*** Block max width ***/
+
 /*** Block min height ***/
 
 [data-block-min-height="xxs"] { min-height: var( --block-size-xxs ); }
@@ -75,6 +105,36 @@
 
 /*** Content height ***/
 
+/*** Content max height ***/
+
+[data-content-max-height="xxs"] { max-height: var( --content-height-xxs ); }
+[data-content-max-height="xs"]  { max-height: var( --content-height-xs  ); }
+[data-content-max-height="s"]   { max-height: var( --content-height-s   ); }
+[data-content-max-height="m"]   { max-height: var( --content-height-m   ); }
+[data-content-max-height="l"]   { max-height: var( --content-height-l   ); }
+[data-content-max-height="xl"]  { max-height: var( --content-height-xl  ); }
+[data-content-max-height="xxl"] { max-height: var( --content-height-xxl ); }
+[data-content-max-height="3xl"] { max-height: var( --content-height-3xl ); }
+[data-content-max-height="4xl"] { max-height: var( --content-height-4xl ); }
+[data-content-max-height="5xl"] { max-height: var( --content-height-5xl ); }
+
+/*** Content max height ***/
+
+/*** Content max width ***/
+
+[data-content-max-width="xxs"] { max-width: var( --content-width-xxs ); }
+[data-content-max-width="xs"]  { max-width: var( --content-width-xs  ); }
+[data-content-max-width="s"]   { max-width: var( --content-width-s   ); }
+[data-content-max-width="m"]   { max-width: var( --content-width-m   ); }
+[data-content-max-width="l"]   { max-width: var( --content-width-l   ); }
+[data-content-max-width="xl"]  { max-width: var( --content-width-xl  ); }
+[data-content-max-width="xxl"] { max-width: var( --content-width-xxl ); }
+[data-content-max-width="3xl"] { max-width: var( --content-width-3xl ); }
+[data-content-max-width="4xl"] { max-width: var( --content-width-4xl ); }
+[data-content-max-width="5xl"] { max-width: var( --content-width-5xl ); }
+
+/*** Content max width ***/
+
 /*** Content min height ***/
 
 [data-content-min-height="xxs"] { min-height: var( --content-height-xxs ); }
@@ -134,6 +194,36 @@
 [data-element-height="5xl"] { height: var( --element-size-5xl ); }
 
 /*** Element height ***/
+
+/*** Element max height ***/
+
+[data-element-max-height="xxs"] { max-height: var( --element-size-xxs ); }
+[data-element-max-height="xs"]  { max-height: var( --element-size-xs  ); }
+[data-element-max-height="s"]   { max-height: var( --element-size-s   ); }
+[data-element-max-height="m"]   { max-height: var( --element-size-m   ); }
+[data-element-max-height="l"]   { max-height: var( --element-size-l   ); }
+[data-element-max-height="xl"]  { max-height: var( --element-size-xl  ); }
+[data-element-max-height="xxl"] { max-height: var( --element-size-xxl ); }
+[data-element-max-height="3xl"] { max-height: var( --element-size-3xl ); }
+[data-element-max-height="4xl"] { max-height: var( --element-size-4xl ); }
+[data-element-max-height="5xl"] { max-height: var( --element-size-5xl ); }
+
+/*** Element max height ***/
+
+/*** Element max width ***/
+
+[data-element-max-width="xxs"] { max-width: var( --element-size-xxs ); }
+[data-element-max-width="xs"]  { max-width: var( --element-size-xs  ); }
+[data-element-max-width="s"]   { max-width: var( --element-size-s   ); }
+[data-element-max-width="m"]   { max-width: var( --element-size-m   ); }
+[data-element-max-width="l"]   { max-width: var( --element-size-l   ); }
+[data-element-max-width="xl"]  { max-width: var( --element-size-xl  ); }
+[data-element-max-width="xxl"] { max-width: var( --element-size-xxl ); }
+[data-element-max-width="3xl"] { max-width: var( --element-size-3xl ); }
+[data-element-max-width="4xl"] { max-width: var( --element-size-4xl ); }
+[data-element-max-width="5xl"] { max-width: var( --element-size-5xl ); }
+
+/*** Element max width ***/
 
 /*** Element min height ***/
 
