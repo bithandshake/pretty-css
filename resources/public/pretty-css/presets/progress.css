@@ -1,0 +1,38 @@
+
+/* @usage
+ * [:div (pretty-css.api/progress-attributes {} {:progress           42
+ *                                               :progress-color     :muted
+ *                                               :progress-direction :ltr
+ *                                               :progress-duration  250})]
+ *
+
+/***** Progress presets *****/
+/*** Progress direction ***/
+
+[data-progress-direction] {
+  background-repeat: no-repeat;
+  transition: background-size var( --progress-duration ) linear;
+}
+
+[data-progress-direction="ltr"] {
+  background-position: top left;
+  background-size: var( --progress ) 100%;
+}
+
+[data-progress-direction="rtl"] {
+  background-position: top right;
+  background-size: var( --progress ) 100%;
+}
+
+[data-progress-direction="ttb"] {
+  background-position: top left;
+  background-size: 100% var( --progress );
+}
+
+[data-progress-direction="btt"] {
+  background-position: bottom left;
+  background-size: 100% var( --progress );
+}
+
+/*** Progress direction ***/
+/***** Progress presets *****/

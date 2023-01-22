@@ -37,6 +37,8 @@
 
 - [default-attributes](#default-attributes)
 
+- [effect-attributes](#effect-attributes)
+
 - [element-max-size-attributes](#element-max-size-attributes)
 
 - [element-min-size-attributes](#element-min-size-attributes)
@@ -49,9 +51,13 @@
 
 - [indent-attributes](#indent-attributes)
 
+- [link-attributes](#link-attributes)
+
 - [marker-attributes](#marker-attributes)
 
 - [outdent-attributes](#outdent-attributes)
+
+- [progress-attributes](#progress-attributes)
 
 - [text-attributes](#text-attributes)
 
@@ -1016,6 +1022,63 @@ nil
 
 ---
 
+### effect-attributes
+
+```
+@param (map) element-attributes
+@param (map) element-props
+{:click-effect (keyword)(opt)
+ :hover-effect (keyword)(opt)
+ :reveal-effect (keyword)(opt)}
+```
+
+```
+@usage
+(effect-attributes {...} {...})
+```
+
+```
+@example
+(effect-attributes {...} {:click-effect :opacity :hover-effect :opacity})
+=>
+{:data-click-effect :opacity
+ :data-hover-effect :opacity}
+```
+
+```
+@return (map)
+{:data-click-effect (keyword)
+ :data-hover-effect (keyword)
+ :data-reveal-effect (keyword)}
+```
+
+<details>
+<summary>Source code</summary>
+
+```
+(defn effect-attributes
+  [element-attributes {:keys [click-effect hover-effect reveal-effect]}]
+  (merge element-attributes {:data-click-effect  click-effect
+                             :data-hover-effect  hover-effect
+                             :data-reveal-effect reveal-effect}))
+```
+
+</details>
+
+<details>
+<summary>Require</summary>
+
+```
+(ns my-namespace (:require [pretty-css.api :refer [effect-attributes]]))
+
+(pretty-css.api/effect-attributes ...)
+(effect-attributes                ...)
+```
+
+</details>
+
+---
+
 ### element-max-size-attributes
 
 ```
@@ -1376,6 +1439,61 @@ nil
 
 ---
 
+### link-attributes
+
+```
+@param (map) element-attributes
+@param (map) element-props
+{:href (string)(opt)
+ :target (keyword)(opt)
+  :blank, :self}
+```
+
+```
+@usage
+(link-attributes {...} {...})
+```
+
+```
+@example
+(link-attributes {...} {:href "/my-link" :target :blank})
+=>
+{:href   "/my-link"
+ :target :_blank}
+```
+
+```
+@return (map)
+{:href (string)
+ :target (keyword)}
+```
+
+<details>
+<summary>Source code</summary>
+
+```
+(defn link-attributes
+  [element-attributes {:keys [href target]}]
+  (merge element-attributes {:href   href
+                             :target (case target :blank :_blank :self :_self nil)}))
+```
+
+</details>
+
+<details>
+<summary>Require</summary>
+
+```
+(ns my-namespace (:require [pretty-css.api :refer [link-attributes]]))
+
+(pretty-css.api/link-attributes ...)
+(link-attributes                ...)
+```
+
+</details>
+
+---
+
 ### marker-attributes
 
 ```
@@ -1493,6 +1611,73 @@ nil
 
 (pretty-css.api/outdent-attributes ...)
 (outdent-attributes                ...)
+```
+
+</details>
+
+---
+
+### progress-attributes
+
+```
+@param (map) element-attributes
+{:style (map)(opt)}
+@param (map) element-props
+{:progress (percent)(opt)
+ :progress-color (keyword)(opt)
+ :progress-direction (keyword)(opt)
+  :ltr, :rtl, :ttb, :btt
+ :progress-duration (ms)(opt)}
+```
+
+```
+@usage
+(progress-attributes {...} {...})
+```
+
+```
+@example
+(progress-attributes {...} {:progress           "50"
+                            :progress-color     :primary
+                            :progress-direction :ltr
+                            :progress-duration  250})
+=>
+{:data-progress-direction :ltr
+ :style {"background-image"    "linear-gradient(var(--fill-color-primary), var(--fill-color-primary))"
+         "--progress"          "50%"
+         "--progress-duration" "250ms"}}
+```
+
+```
+@return (map)
+{:data-progress-direction (keyword)
+ :style (map)
+  {"--progress" (string)
+   "--progress-duration" (string)}}
+```
+
+<details>
+<summary>Source code</summary>
+
+```
+(defn progress-attributes
+  [{:keys [style] :as element-attributes} {:keys [progress progress-color progress-direction progress-duration]}]
+  (assoc element-attributes :style (merge style (if progress          {"--progress"          (str progress          "%")})
+                                                (if progress-duration {"--progress-duration" (str progress-duration "ms")})
+                                                (if progress-color    {"background-image"    (progress-color-f progress-color)}))
+                            :data-progress-direction progress-direction))
+```
+
+</details>
+
+<details>
+<summary>Require</summary>
+
+```
+(ns my-namespace (:require [pretty-css.api :refer [progress-attributes]]))
+
+(pretty-css.api/progress-attributes ...)
+(progress-attributes                ...)
 ```
 
 </details>

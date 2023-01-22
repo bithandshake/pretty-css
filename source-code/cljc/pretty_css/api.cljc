@@ -10,6 +10,7 @@
 (def apply-preset                attributes/apply-preset)
 (def apply-color                 attributes/apply-color)
 (def apply-dimension             attributes/apply-dimension)
+(def progress-attributes         attributes/progress-attributes)
 (def block-max-size-attributes   attributes/block-max-size-attributes)
 (def block-min-size-attributes   attributes/block-min-size-attributes)
 (def block-size-attributes       attributes/block-size-attributes)
@@ -33,3 +34,5 @@
 (def tooltip-attributes          attributes/tooltip-attributes)
 (def indent-attributes           attributes/indent-attributes)
 (def outdent-attributes          attributes/outdent-attributes)
+(def link-attributes             attributes/link-attributes)
+(def effect-attributes           attributes/effect-attributes)

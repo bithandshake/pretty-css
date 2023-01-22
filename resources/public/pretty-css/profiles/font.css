@@ -29,10 +29,13 @@
 /*** Default ***/
 
  body {
-   font-size:      var( --font-size-s        );
-   font-weight:    var( --font-weight-normal );
-   letter-spacing: var( --letter-spacing-s   );
-   line-height:    var( --line-height-s      );
+   /* WARNING! DEPRECATED!
+    * Ha pl csak egy beépülő komponens használ pretty-css-t, akkor nem célszerű
+    * az egész oldalra alkalmazni a betűstílusokat! */
+   -font-size:      var( --font-size-s        );
+   -font-weight:    var( --font-weight-normal );
+   -letter-spacing: var( --letter-spacing-s   );
+   -line-height:    var( --line-height-s      );
  }
 
 /***** Default *****/
@@ -40,16 +43,17 @@
 /*** Font size ***/
 
 body {
-  --font-size-xxs: 1.2rem;
-  --font-size-xs:  1.3rem;
-  --font-size-s:   1.4rem;
-  --font-size-m:   1.6rem;
-  --font-size-l:   1.8rem;
-  --font-size-xl:  2.0rem;
-  --font-size-xxl: 2.2rem;
-  --font-size-3xl: 2.4rem;
-  --font-size-4xl: 2.6rem;
-  --font-size-5xl: 2.8rem;
+  --font-size-micro: 1.0rem;
+  --font-size-xxs:   1.2rem;
+  --font-size-xs:    1.3rem;
+  --font-size-s:     1.4rem;
+  --font-size-m:     1.6rem;
+  --font-size-l:     1.8rem;
+  --font-size-xl:    2.0rem;
+  --font-size-xxl:   2.2rem;
+  --font-size-3xl:   2.4rem;
+  --font-size-4xl:   2.6rem;
+  --font-size-5xl:   2.8rem;
 }
 
 /*** Font size ***/
@@ -70,16 +74,17 @@ body {
 /*** Letter spacing ***/
 
 body {
-  --letter-spacing-xxs: 0.060rem;
-  --letter-spacing-xs:  0.065rem;
-  --letter-spacing-s:   0.070rem;
-  --letter-spacing-m:   0.080rem;
-  --letter-spacing-l:   0.090rem;
-  --letter-spacing-xl:  0.100rem;
-  --letter-spacing-xxl: 0.110rem;
-  --letter-spacing-3xl: 0.120rem;
-  --letter-spacing-4xl: 0.130rem;
-  --letter-spacing-5xl: 0.140rem;
+  --letter-spacing-micro: 0.050rem;
+  --letter-spacing-xxs:   0.060rem;
+  --letter-spacing-xs:    0.065rem;
+  --letter-spacing-s:     0.070rem;
+  --letter-spacing-m:     0.080rem;
+  --letter-spacing-l:     0.090rem;
+  --letter-spacing-xl:    0.100rem;
+  --letter-spacing-xxl:   0.110rem;
+  --letter-spacing-3xl:   0.120rem;
+  --letter-spacing-4xl:   0.130rem;
+  --letter-spacing-5xl:   0.140rem;
 }
 
 /*** Letter spacing ***/
@@ -87,16 +92,17 @@ body {
 /*** Line height ***/
 
 body {
-  --line-height-xxs: 1.80rem;
-  --line-height-xs:  1.95rem;
-  --line-height-s:   2.10rem;
-  --line-height-m:   2.40rem;
-  --line-height-l:   2.70rem;
-  --line-height-xl:  3.00rem;
-  --line-height-xxl: 3.30rem;
-  --line-height-3xl: 3.60rem;
-  --line-height-4xl: 3.90rem;
-  --line-height-5xl: 4.20rem;
+  --line-height-micro: 1.50rem;
+  --line-height-xxs:   1.80rem;
+  --line-height-xs:    1.95rem;
+  --line-height-s:     2.10rem;
+  --line-height-m:     2.40rem;
+  --line-height-l:     2.70rem;
+  --line-height-xl:    3.00rem;
+  --line-height-xxl:   3.30rem;
+  --line-height-3xl:   3.60rem;
+  --line-height-4xl:   3.90rem;
+  --line-height-5xl:   4.20rem;
 }
 
 /*** Line height ***/
@@ -104,16 +110,17 @@ body {
 /*** Text block height ***/
 
 body {
-  --text-block-height-xxs: 24px;
-  --text-block-height-xs:  24px;
-  --text-block-height-s:   24px;
-  --text-block-height-m:   24px;
-  --text-block-height-l:   36px;
-  --text-block-height-xl:  36px;
-  --text-block-height-xxl: 48px;
-  --text-block-height-3xl: 48px;
-  --text-block-height-4xl: 48px;
-  --text-block-height-5xl: 48px;
+  --text-block-height-micro: 18px;
+  --text-block-height-xxs:   24px;
+  --text-block-height-xs:    24px;
+  --text-block-height-s:     24px;
+  --text-block-height-m:     24px;
+  --text-block-height-l:     36px;
+  --text-block-height-xl:    36px;
+  --text-block-height-xxl:   48px;
+  --text-block-height-3xl:   48px;
+  --text-block-height-4xl:   48px;
+  --text-block-height-5xl:   48px;
 }
 
 /*** Text block height ***/

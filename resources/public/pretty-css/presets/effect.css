@@ -60,5 +60,11 @@
   animation-fill-mode: both;
 }
 
+[data-reveal-effect="opacity"] {
+  animation-name:      opacity-0-1;
+  animation-duration:  .05s;
+  animation-fill-mode: both;
+}
+
 /*** Reveal effect ***/
 /***** Effect presets *****/
