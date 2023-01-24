@@ -45,11 +45,11 @@ on your elements:
 
 Before using font profiles and presets such as `:data-font-size`, `:data-font-weight`, `:data-letter-spacing`
 and `:data-line-height` set the font-size CSS property on your HTML element as
-the REM value of you page that the `pretty-css` can use to make scalable font profiles.
+the REM value of your page that the `pretty-css` can use to make scalable font profiles.
 
-Place something like this in one of your CSS files, it sets the REM to 10px and
+To set the REM place something like this in one of your CSS files, it sets the REM to 10px and
 by modifying this value you can scale the font sizes and other related values
-in your page by one step (= by modifying this value):
+in your page by one step (by modifying this value):
 
 ```
 html { font-size: 10px }
@@ -128,6 +128,15 @@ line height depends on the selected font size:
 - Text block line height + 4XL font size = 48px line height
 
 - Text block line height + 5XL font size = 48px line height
+
+### How to use the color palettes?
+
+### How to use the color themes?
+
+
+
+
+
 
 
 ### How to use Material Icons or Material Symbols?
